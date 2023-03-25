@@ -1,0 +1,37 @@
+#about-history-image {
+  height: 250px;
+  width: 250px;
+}
+
+.about-section-item {
+  background-color: var(--color-tertiary);
+  padding: 2rem;
+}
+
+.about-section-item-header,
+.about-button-container {
+  text-align: center;
+}
+
+.about-section-item-header {
+  margin-bottom: 3rem;
+}
+
+#about-section-container {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  display: grid;
+  grid-template-columns: 1.75fr .75fr;
+  grid-gap: 2rem;
+}
+
+#about-section-history-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.about-section-text {
+  margin-top: 0;
+  min-height: 185px;
+  font-size: large;
+}

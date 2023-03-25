@@ -1,0 +1,40 @@
+.intro-container {
+	background-color: var(--color-secondary-light);
+	text-align: center;
+}
+
+.intro-header {
+	color: var(--color-secondary);
+	padding-top: 3rem;
+  margin-top: 0;
+}
+
+.footbag-game-button {
+	color: black;
+	background-color: var(--color-secondary);
+}
+
+.footbag-game-button strong {
+  color: black;
+}
+
+#footbag-games-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+	margin: 2rem;
+	padding-bottom: 2rem;
+}
+
+.footbag-game {
+	min-height: 325px;
+}
+
+.footbag-description {
+	font-size: medium;
+	margin: 2rem 4rem 4rem 4rem;
+}
+
+.footbag-game-icon {
+	border-radius: 50%;
+}

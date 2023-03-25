@@ -1,0 +1,36 @@
+nav {
+	background: var(--color-primary);
+	color: white;
+	align-items: center;
+	padding: 2% 5%;
+}
+
+#header-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+  align-content: space-between;
+}
+
+#logo-image {
+	max-height: 45px;
+	cursor: pointer;
+	color: var(--color-secondary);
+  height: 35;
+  width: 300;
+}
+
+#menu-options a {
+	padding-left: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#email-icon {
+	color: var(--color-secondary);
+}
+
+#header-container a {
+	color: white;
+	text-decoration: none;
+}

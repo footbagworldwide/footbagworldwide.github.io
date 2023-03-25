@@ -1,0 +1,12 @@
+#kicking-games-title {
+	text-align: center;
+	font-weight: 900;
+	padding-top: 1rem;
+}
+
+#kicking-games-header-icons {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 3rem 25%;
+}

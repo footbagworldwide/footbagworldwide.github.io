@@ -1,0 +1,17 @@
+#not-found-page {
+  background-color: var(--color-primary);
+  text-align: center;
+  color: white;
+  height: 71vh;
+}
+
+#not-found-image {
+  width: 350px;
+  height: 200px;
+  margin-top: 5rem;
+}
+
+#not-found-description {
+  color: var(--color-system);
+  margin-bottom: 2rem;
+}

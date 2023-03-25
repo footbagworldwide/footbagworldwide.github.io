@@ -1,0 +1,52 @@
+#footer-container {
+	display: grid;	
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-column-gap: 3rem;
+	text-align: center;
+}
+
+footer {
+  padding: 10px;
+	background: var(--color-primary);
+	color: white;
+}
+
+.social {
+	margin-right: 10px;
+}
+
+.copyright {
+	color: var(--color-system);
+	font-size: var(--font-size-m);
+	text-align: center;
+}
+
+.contact-link {
+	text-align: center;
+	fill: white;
+}
+
+.ifpa-logo {
+	height: 4rem;
+}
+
+#contact-header {
+  margin-bottom: 10px;
+}
+
+#follow-us-header {
+  margin-bottom: 30px;
+}
+
+.footer-link {
+	color: white;
+	text-decoration: none;
+}
+
+#social-container {
+  margin-top: 1rem;
+}
+
+#donate-container {
+  margin-top: .5rem;
+}

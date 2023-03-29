@@ -5,7 +5,9 @@ import { ButtonLink } from '../../../../components/links/link-components';
 const latestEvent = events[0];
 const pastEvents = [events[1], events[2], events[3]];
 
-function EventsSectionItem(event) {
+function EventsSectionItem(props) {
+  const event = props.event;
+
   return (
     <div className="events-section-event" key={`previous-event_${event.title}`}>
       <div className="event-logo-container">
@@ -25,16 +27,16 @@ function EventsSection() {
       <div id="events-section-events-container">
         <div className="events-section-event-container">
           <h3 className="events-section-subheader"><strong>UPCOMING EVENTS</strong></h3>
-          {EventsSectionItem(latestEvent)}
+          <EventsSectionItem event={latestEvent} />
         </div>
         <div className="events-section-event-container">
           <h3 className="events-section-subheader"><strong>PAST EVENTS</strong></h3>
           <div id="events-section-past-events-container">
-            { EventsSectionItem(pastEvents[0]) }
+            <EventsSectionItem event={pastEvents[0]} />
             <div className="events-section-divider"></div>
-            { EventsSectionItem(pastEvents[1]) }
+            <EventsSectionItem event={pastEvents[1]} />
             <div className="events-section-divider"></div>
-            { EventsSectionItem(pastEvents[2]) }
+            <EventsSectionItem event={pastEvents[2]} />
           </div>
         </div>
       </div>

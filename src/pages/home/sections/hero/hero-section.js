@@ -18,6 +18,23 @@ function getVideoLink(video) {
   }
 }
 
+function Video(props) {
+  const video = props.video;
+  const index = props.index;
+
+  return (
+    <div className="video-container" key={`hero-video_${index}`}>
+      <iframe
+        className={video.class ? video.class : 'hero-video_default'}
+        src={getVideoLink(video)}
+        allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+        allowFullScreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  );
+}
+
 function HeroSection() {
 	return (
     <div>
@@ -27,17 +44,11 @@ function HeroSection() {
         showStatus={false}
         showThumbs={false}
       >
-        { videos.map((video, index) => 
-        <div className="video-container" key={`hero-video_${index}`}>
-          <iframe
-            className={video.class ? video.class : 'hero-video_default'}
-            src={getVideoLink(video)}
-            allow="accelerometer; autoplay; encrypted-media; gyroscope;"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </div>
-        )}
+        {
+          videos.map((video, index) => 
+            <Video video={video} index={index} />
+          )
+        }
       </Carousel>
     </div>		
 	);

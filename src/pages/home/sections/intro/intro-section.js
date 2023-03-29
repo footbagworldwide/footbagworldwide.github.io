@@ -2,7 +2,9 @@ import './intro-section.css';
 import { footbagGames } from "./intro-data";
 import { ButtonLink, ImageLink } from "../../../../components/links/link-components";
 
-function FootbagGameItem(footbagGame) {
+function FootbagGameItem(props) {
+  const footbagGame = props.footbagGame;
+
   return (
     <div key={`footbag-game_${footbagGame.title}`}>
       <div className="footbag-game">
@@ -30,7 +32,9 @@ function IntroSection() {
 					community around their love for a unique and amazing sport.
 			</p>
 			<div id="footbag-games-container">
-			  { footbagGames.map((footbagGame) => FootbagGameItem(footbagGame) )}
+			  { footbagGames.map((footbagGame) =>
+          <FootbagGameItem footbagGame={footbagGame} />
+        )}
 			</div>
 		</div>
 	);

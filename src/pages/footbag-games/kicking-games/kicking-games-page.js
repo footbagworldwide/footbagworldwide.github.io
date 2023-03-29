@@ -35,7 +35,10 @@ function KickingGamesPage() {
     }
   }
 
-  function KickingGameItem(kickingGame, index) {
+  function KickingGameItem(props) {
+    const kickingGame = props.kickingGame;
+    const index = props.index;
+
     return (
       <div
         key={`kicking-game_${kickingGame.title}`}
@@ -69,9 +72,13 @@ function KickingGamesPage() {
 	return (
 		<div>
 			<h1 id="kicking-games-title">KICKING GAMES</h1>
-			{ HeaderIcons() }
+      <HeaderIcons />
 			<div>
-				{ kickingGames.map((kickingGame, index) => KickingGameItem(kickingGame, index))}
+				{
+          kickingGames.map((kickingGame, index) =>
+            <KickingGameItem kickingGame={kickingGame} index={index} />
+          )
+        }
 			</div>
 		</div>
 	);

@@ -26,7 +26,7 @@ function FootbagHistory() {
             has spread globally and evolved into many
             forms since.
           </p>
-          { MoreButton() }
+          <MoreButton />
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ function AboutIfpa() {
         IFPA (International Footbag Players' Association, Inc.) is a volunteer-run, charitable non-profit corporation,
         dedicated to the growth of footbag play world-wide as lifetime recreation and as an amateur, competitive sport.
       </p>
-      { MoreButton() }
+      <MoreButton />
     </div>
   );
 }
@@ -49,8 +49,8 @@ function AboutIfpa() {
 function AboutSection() {
   return (
     <div id="about-section-container" className="home-page-section">
-      { FootbagHistory() }
-      { AboutIfpa() }
+      <FootbagHistory />
+      <AboutIfpa />
     </div>
   );
 }

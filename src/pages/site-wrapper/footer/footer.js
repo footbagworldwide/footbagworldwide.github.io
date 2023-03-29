@@ -1,14 +1,15 @@
 import './footer.css';
 import ifpaLogo from '../../../assets/images/icons/ifpa-logo.svg';
+import { EmailLink } from '../../../components/links/link-components';
 
 function Footer() {
 	return (
 		<footer>
 			<div id="footer-container">
 				<div>
-					<a className="footer-link contact-link" href="mailto:a@b.com">
+          <EmailLink className="footer-link">
             <img src={ifpaLogo} className="ifpa-logo" />
-          </a>
+          </EmailLink>
 				</div>
 
 				<div id="social-container">

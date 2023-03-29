@@ -2,12 +2,12 @@ nav {
 	background: var(--color-primary);
 	color: white;
 	align-items: center;
-	padding: 2% 5%;
+	padding: 2% 2% 2% 5%;
 }
 
 #header-container {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 2fr 1fr .25fr;
 	justify-content: space-between;
   align-content: space-between;
 }
@@ -22,4 +22,5 @@ nav {
 
 #email-icon {
 	color: var(--color-secondary);
+  font-size: large;
 }

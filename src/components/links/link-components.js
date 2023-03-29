@@ -40,4 +40,15 @@ function ImageLink(props) {
   );
 }
 
-export { ButtonLink, ImageLink };
+function EmailLink(props) {
+  const className = props.className;
+  const emailAddress = 'info@footbagworldwide.com';
+
+  return (
+    <a className={className} href={`mailto:${emailAddress}`}>
+      { props.children }
+    </a>
+  );
+}
+
+export { ButtonLink, ImageLink, EmailLink };

@@ -7,7 +7,7 @@ nav {
 
 #header-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	justify-content: space-between;
   align-content: space-between;
 }
@@ -20,17 +20,6 @@ nav {
   width: 300;
 }
 
-#menu-options a {
-	padding-left: 20px;
-	text-align: center;
-	vertical-align: middle;
-}
-
 #email-icon {
 	color: var(--color-secondary);
-}
-
-#header-container a {
-	color: white;
-	text-decoration: none;
 }

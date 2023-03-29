@@ -1,9 +1,9 @@
-import hackySackIcon_White from '../../../assets/images/footbag-games/icon_hackysack_white.svg';
-import hackySackIcon_Green from '../../../assets/images/footbag-games/icon_hackysack_green.svg';
-import twoSquareIcon_White from '../../../assets/images/footbag-games/icon_twosquare_white.svg';
-import twoSquareIcon_Green from '../../../assets/images/footbag-games/icon_twosquare_green.svg';
-import golfIcon_White from '../../../assets/images/footbag-games/icon_golf_white.svg';
-import golfIcon_Green from '../../../assets/images/footbag-games/icon_golf_green.svg';
+import hackySackIcon_White from '../../../assets/images/games/icon_hackysack_white.svg';
+import hackySackIcon_Green from '../../../assets/images/games/icon_hackysack_green.svg';
+import twoSquareIcon_White from '../../../assets/images/games/icon_twosquare_white.svg';
+import twoSquareIcon_Green from '../../../assets/images/games/icon_twosquare_green.svg';
+import golfIcon_White from '../../../assets/images/games/icon_golf_white.svg';
+import golfIcon_Green from '../../../assets/images/games/icon_golf_green.svg';
 
 const kickingGames = [
 	{

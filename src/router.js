@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 
 import HomePage from './pages/home/home-page.js';
 import EventsPage from './pages/events/events-page.js';
-import KickingGamesPage from "./pages/footbag-games/kicking-games/kicking-games-page.js";
-import FreestylePage from "./pages/footbag-games/freestyle/freestyle-page.js";
-import NetPage from "./pages/footbag-games/net/net-page.js";
+import KickingGamesPage from "./pages/games/kicking-games/kicking-games-page.js";
+import FreestylePage from "./pages/games/freestyle/freestyle-page.js";
+import NetPage from "./pages/games/net/net-page.js";
 import AboutPage from "./pages/about/about-page.js";
 import NotFoundPage from "./pages/404/404-page.js";
 

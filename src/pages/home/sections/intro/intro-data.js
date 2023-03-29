@@ -1,6 +1,6 @@
-import hackySackIcon from '../../../../assets/images/footbag-games/icon_hackysack_white.svg';
-import freestyleIcon from '../../../../assets/images/footbag-games/icon_freestyle_white.svg';
-import netIcon from '../../../../assets/images/footbag-games/icon_net_white.svg';
+import hackySackIcon from '../../../../assets/images/games/icon_hackysack_white.svg';
+import freestyleIcon from '../../../../assets/images/games/icon_freestyle_white.svg';
+import netIcon from '../../../../assets/images/games/icon_net_white.svg';
 
 const footbagGames = [
 	{

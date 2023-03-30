@@ -10,7 +10,7 @@ function OtherGame(props) {
 
   return (
     <div className='footbag-game-section'>
-      <div><ImageLink src={otherGame.icon} route={otherGame.route} className="footbag-game-other-icon" /></div>
+      <div><ImageLink src={otherGame.icon_green} route={otherGame.route} className="footbag-game-other-icon" /></div>
       <ButtonLink route={otherGame.route} className="other-game-button">
         { arrowLeft && <i className="fa-solid fa-chevron-left"></i> } {buttonText} { arrowRight && <i className="fa-solid fa-chevron-right"></i> }
       </ButtonLink>

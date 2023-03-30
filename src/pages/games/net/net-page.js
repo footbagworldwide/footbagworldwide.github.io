@@ -1,9 +1,5 @@
 import SingleSportGamePage from "../single-sport-games/single-sport-game-page.js";
-
-import freestyleIcon from '../../../assets/images/games/icon_freestyle_green.svg';
-import hackySackIcon from '../../../assets/images/games/icon_hackysack_green.svg';
-import netIcon from '../../../assets/images/games/icon_net_green.svg';
-
+import { freestyleData, kickingGamesData, netData } from "../footbag-games.data.js";
 import bagIcon from '../../../assets/images/icons/freestyle-page/freestyle-bag.svg';
 import shoeIcon from '../../../assets/images/icons/freestyle-page/freestyle-shoe.svg';
 import listIcon from '../../../assets/images/icons/freestyle-page/trick-list.svg';
@@ -36,20 +32,9 @@ function getCompetitionDescriptionHtml() {
 }
 
 const netSport = {
-  title: 'FOOTBAG NET',
-  icon: netIcon,
-  otherGames: [
-    {
-      title: 'FREESTYLE FOOTBAG',
-      icon: freestyleIcon,
-      route: '/games/freestyle'
-    },
-    {
-      title: 'KICKING GAMES',
-      icon: hackySackIcon,
-      route: '/games/kicking'
-    }    
-  ],
+  title: netData.title,
+  icon: netData.icon_green,
+  otherGames: [ freestyleData, kickingGamesData ],
   gif: "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif",
   descriptionHtml: getDescriptionHtml(),
   howToPlayHtml: getHowToPlayHtml(),
@@ -70,7 +55,7 @@ const netSport = {
   competitionDescriptionHtml: getCompetitionDescriptionHtml(),
   competitiveEvents: [
     {
-      title: 'ROUTINE',
+      title: 'SINGLES',
       description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
       video:  {
         // worlds 2022
@@ -79,25 +64,7 @@ const netSport = {
       }
     },
     {
-      title: 'CIRCLE',
-      description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
-      video:  {
-        // worlds 2022
-        type: VideoType.Youtube,
-        id: 'SzroZ78NKQs'
-      }
-    },
-    {
-      title: 'SICK 3',
-      description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
-      video:  {
-        // worlds 2022
-        type: VideoType.Youtube,
-        id: 'SzroZ78NKQs'
-      }
-    },
-    {
-      title: 'SHRED 30',
+      title: 'DOUBLES',
       description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
       video:  {
         // worlds 2022

@@ -1,19 +1,11 @@
-import hackySackIcon_White from '../../../assets/images/games/icon_hackysack_white.svg';
-import hackySackIcon_Green from '../../../assets/images/games/icon_hackysack_green.svg';
-import twoSquareIcon_White from '../../../assets/images/games/icon_twosquare_white.svg';
-import twoSquareIcon_Green from '../../../assets/images/games/icon_twosquare_green.svg';
-import golfIcon_White from '../../../assets/images/games/icon_golf_white.svg';
-import golfIcon_Green from '../../../assets/images/games/icon_golf_green.svg';
-
-import freestyleIcon from '../../../assets/images/games/icon_freestyle_green.svg';
-import netIcon from '../../../assets/images/games/icon_net_green.svg';
+import { freestyleData, kickingGamesData, hackySackData, twoSquareData, golfData, netData } from "../footbag-games.data.js";
 
 const kickingGames = [
 	{
 		anchor: "hackysack",
-		title: "HACKY SACK",
-		icon_green: hackySackIcon_Green,
-		icon_white: hackySackIcon_White,
+		title: hackySackData.title,
+		icon_green: hackySackData.icon_green,
+		icon_white: hackySackData.icon_white,
 		description: `Odit dolupti sitatias destio eaquiandunde pre mosam iasinctem. Expla vitate nis doluptas
 aceria exeriorumet occullant. Idestoris duciaes tioratiati odipita siti bearum et int. Soluptasi
 unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.`,
@@ -34,9 +26,9 @@ unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.`,
 		]
 	},
 	{
-		title: "TWO/FOUR SQUARE",
-		icon_green: twoSquareIcon_Green,
-		icon_white: twoSquareIcon_White,
+		title: twoSquareData.title,
+		icon_green: twoSquareData.icon_green,
+		icon_white: twoSquareData.icon_white,
 		description: `Odit dolupti sitatias destio eaquiandunde pre mosam iasinctem. Expla vitate nis doluptas
 aceria exeriorumet occullant. Idestoris duciaes tioratiati odipita siti bearum et int. Soluptasi
 unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.`,
@@ -57,9 +49,9 @@ unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.`,
 		]
 	},
 	{
-		title: "FOOTBAG GOLF",
-		icon_green: golfIcon_Green,
-		icon_white: golfIcon_White,
+		title: golfData.title,
+		icon_green: golfData.icon_green,
+		icon_white: golfData.icon_white,
 		description: `Odit dolupti sitatias destio eaquiandunde pre mosam iasinctem. Expla vitate nis doluptas
 aceria exeriorumet occullant. Idestoris duciaes tioratiati odipita siti bearum et int. Soluptasi
 unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.`,
@@ -82,19 +74,8 @@ unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.`,
 ];
 
 const kickingGameHeader = {
-  title: 'KICKING GAMES',
-  otherGames: [
-    {
-      title: 'FOOTBAG NET',
-      icon: netIcon,
-      route: '/games/net'
-    },
-    {
-      title: 'FREESTYLE FOOTBAG',
-      icon: freestyleIcon,
-      route: '/games/freestyle'
-    }    
-  ],
+  title: kickingGamesData.title,
+  otherGames: [ netData, freestyleData],
 };
 
 export { kickingGames, kickingGameHeader };

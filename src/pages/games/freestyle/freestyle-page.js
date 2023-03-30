@@ -1,9 +1,5 @@
 import SingleSportGamePage from "../single-sport-games/single-sport-game-page.js";
-
-import freestyleIcon from '../../../assets/images/games/icon_freestyle_green.svg';
-import hackySackIcon from '../../../assets/images/games/icon_hackysack_green.svg';
-import netIcon from '../../../assets/images/games/icon_net_green.svg';
-
+import { freestyleData, kickingGamesData, netData } from "../footbag-games.data.js";
 import bagIcon from '../../../assets/images/icons/freestyle-page/freestyle-bag.svg';
 import shoeIcon from '../../../assets/images/icons/freestyle-page/freestyle-shoe.svg';
 import listIcon from '../../../assets/images/icons/freestyle-page/trick-list.svg';
@@ -12,7 +8,7 @@ import { VideoType } from "../../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Freestyle Footbag is a footbag sport where players demonstrate their abilities by performing sequences of acrobatic tricks. The ending position of the bag on one trick becomes the starting position of the bag on the next trick. Tricks are created by combining different components between contacts (stalls or kicks, usually stalls). Components can be spins, dexterities (wrapping a leg around the bag in mid-air), or ducks (letting the bag pass a few inches above the neck). Contacts are usually on the inside of the foot behind the opposite support leg (clipper stall) or on the toe, however many inventive possibilities remain and are used to create a near-endless list of tricks.
+      Freestyle Footbag is a footbag sport where players demonstrate their abilities by performing <strong className="highlighted-description">sequences of acrobatic tricks</strong>. The ending position of the bag on one trick becomes the starting position of the bag on the next trick. Tricks are created by combining different components between contacts (stalls or kicks, usually stalls). Components can be <strong className="highlighted-description">spins</strong>, <strong className="highlighted-description">dexterities</strong> (wrapping a leg around the bag in mid-air), or ducks (letting the bag pass a few inches above the neck). Contacts are usually on the inside of the foot behind the opposite support leg (clipper stall) or on the toe, however many inventive possibilities remain and are used to create a near-endless list of tricks.
     </>
   );
 }
@@ -36,20 +32,9 @@ function getCompetitionDescriptionHtml() {
 }
 
 const freestyleSport = {
-  title: 'FREESTYLE FOOTBAG',
-  icon: freestyleIcon,
-  otherGames: [
-    {
-      title: 'KICKING GAMES',
-      icon: hackySackIcon,
-      route: '/games/kicking'
-    },
-    {
-      title: 'FOOTBAG NET',
-      icon: netIcon,
-      route: '/games/net'
-    }
-  ],
+  title: freestyleData.title,
+  icon: freestyleData.icon_green,
+  otherGames: [ kickingGamesData, netData ],
   gif: "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif",
   descriptionHtml: getDescriptionHtml(),
   howToPlayHtml: getHowToPlayHtml(),

@@ -21,7 +21,4 @@
 
 .other-game-button {
   background-color: var(--color-tertiary);
-  color: black;
-	cursor: pointer;
-	border-radius: 16px;
 }

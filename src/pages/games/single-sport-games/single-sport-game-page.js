@@ -1,6 +1,6 @@
 import './single-sport-game-page.css';
 
-import SingleSportHeader from './header/single-sport-header.js';
+import FootbagGameHeader from '../header/footbag-game-header';
 import AboutSingleSport from './about-sport/about-single-sport';
 import HowToPlaySingleSport from './how-to-play/how-to-play-single-sport';
 import SingleSportCompetition from './competition/single-sport-competition';
@@ -10,7 +10,9 @@ function SingleSportGamePage(props) {
 
   return (
     <div className='single-sport-page'>
-      <SingleSportHeader singleSportGame={singleSportGame} />
+      <FootbagGameHeader footbagGame={singleSportGame}>
+        <img className="footbag-game-header-icon" src={singleSportGame.icon} />
+      </FootbagGameHeader>
       <AboutSingleSport singleSportGame={singleSportGame} />
       <HowToPlaySingleSport singleSportGame={singleSportGame} />
       <SingleSportCompetition singleSportGame={singleSportGame} />

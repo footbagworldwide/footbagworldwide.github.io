@@ -5,6 +5,9 @@ import twoSquareIcon_Green from '../../../assets/images/games/icon_twosquare_gre
 import golfIcon_White from '../../../assets/images/games/icon_golf_white.svg';
 import golfIcon_Green from '../../../assets/images/games/icon_golf_green.svg';
 
+import freestyleIcon from '../../../assets/images/games/icon_freestyle_green.svg';
+import netIcon from '../../../assets/images/games/icon_net_green.svg';
+
 const kickingGames = [
 	{
 		anchor: "hackysack",
@@ -78,4 +81,20 @@ unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.`,
 	}
 ];
 
-export { kickingGames };
+const kickingGameHeader = {
+  title: 'KICKING GAMES',
+  otherGames: [
+    {
+      title: 'FOOTBAG NET',
+      icon: netIcon,
+      route: '/games/net'
+    },
+    {
+      title: 'FREESTYLE FOOTBAG',
+      icon: freestyleIcon,
+      route: '/games/freestyle'
+    }    
+  ],
+};
+
+export { kickingGames, kickingGameHeader };

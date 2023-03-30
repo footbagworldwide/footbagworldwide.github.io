@@ -16,7 +16,7 @@ function HowToPlaySingleSport(props) {
   const singleSportGame = props.singleSportGame;
   
   return (
-    <div className="single-sport-page-section">
+    <div className="footbag-game-section">
       <h3 className="single-sport-page-section-title">HOW TO PLAY {singleSportGame.title}</h3>
       <div className="single-sport-page-centered-container">{ singleSportGame.howToPlayHtml }</div>
       <div className="how-to-play-item-container single-sport-page-centered-container">

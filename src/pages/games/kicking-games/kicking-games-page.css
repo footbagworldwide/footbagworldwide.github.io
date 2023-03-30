@@ -7,6 +7,6 @@
 #kicking-games-header-icons {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 3rem 25%;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 5rem;
 }

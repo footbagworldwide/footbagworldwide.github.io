@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './kicking-games-page.css'
 import '../footbag-games.css';
-import { kickingGames } from './kicking-games-data'; 
+import { kickingGames, kickingGameHeader } from './kicking-games-data'; 
+import FootbagGameHeader from '../header/footbag-game-header';
 
 function KickingGamesPage() {
   const [isSingleColumnView, setIsSingleColumnView] = useState(shouldUseSingleColumnView());
@@ -72,8 +73,9 @@ function KickingGamesPage() {
 
 	return (
 		<div>
-			<h1 id="kicking-games-title">KICKING GAMES</h1>
-      <HeaderIcons />
+      <FootbagGameHeader footbagGame={kickingGameHeader}>
+        <HeaderIcons />
+      </FootbagGameHeader>
 			<div>
 				{
           kickingGames.map((kickingGame, index) =>

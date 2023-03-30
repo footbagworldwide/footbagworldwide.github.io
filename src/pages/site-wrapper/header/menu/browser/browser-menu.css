@@ -1,0 +1,9 @@
+.browser-menu-container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.browser-submenu-item-container {
+  position: absolute;
+  z-index: 1;
+}

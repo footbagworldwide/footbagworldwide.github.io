@@ -8,7 +8,7 @@ function Header() {
 		<nav id="header-container">
         <span><ImageLink id="logo-image" src={logo} route="/" width="300" height="35" /></span>
         <Menu />
-        <EmailLink><i id='email-icon' className="fa-regular fa-envelope"></i></EmailLink>
+        <div><EmailLink><i id='email-icon' className="fa-regular fa-envelope"></i></EmailLink></div>
 		</nav>
 	);
 }

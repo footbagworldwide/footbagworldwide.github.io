@@ -42,7 +42,7 @@ const netSport = {
     {
       title: 'FREESTYLE FOOTBAG',
       icon: freestyleIcon,
-      route: '/games/net'
+      route: '/games/freestyle'
     },
     {
       title: 'KICKING GAMES',

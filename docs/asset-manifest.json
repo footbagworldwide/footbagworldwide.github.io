@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.44536e70.css",
-    "main.js": "/static/js/main.b797f9fe.js",
+    "main.css": "/static/css/main.5b69b0a8.css",
+    "main.js": "/static/js/main.66176166.js",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
     "static/media/WFC2017.jpg": "/static/media/WFC2017.d600dabec61712ca2905.jpg",
     "static/media/WFC2019.jpg": "/static/media/WFC2019.fa844641f93b30f7bd0e.jpg",
@@ -10,6 +10,7 @@
     "static/media/WFC2021.png": "/static/media/WFC2021.66486b48ad9d178c132f.png",
     "static/media/WFC2023.jpg": "/static/media/WFC2023.6386db6876a22e5a3032.jpg",
     "static/media/ifpa-logo.svg": "/static/media/ifpa-logo.28623fe11338a19d48291efc72f2e160.svg",
+    "static/media/icon_net_green.svg": "/static/media/icon_net_green.344211148f561ea42a4520e0c35bd08b.svg",
     "static/media/icon_net_white.svg": "/static/media/icon_net_white.af5bacb188d2eaa57a454d3e8cbb29e3.svg",
     "static/media/WFC2020.png": "/static/media/WFC2020.e5dff50883040f22b5c0.png",
     "static/media/icon_hackysack_green.svg": "/static/media/icon_hackysack_green.f1fdeccf6cc050bbcbf39d9fc20110f7.svg",
@@ -19,20 +20,24 @@
     "static/media/404.svg": "/static/media/404.1123205853a3ef30814f59c3964ab8cc.svg",
     "static/media/icon_twosquare_green.svg": "/static/media/icon_twosquare_green.d8ac0a56f9458f9cbedf82b5fba8ac12.svg",
     "static/media/icon_twosquare_white.svg": "/static/media/icon_twosquare_white.4725f48ae012c3f4a229ec554a01f372.svg",
+    "static/media/icon_freestyle_green.svg": "/static/media/icon_freestyle_green.fd60d0e85cfc6de415ed58eef1e1de14.svg",
     "static/media/icon_freestyle_white.svg": "/static/media/icon_freestyle_white.6f8af1459d052c8a199e3ad00723a767.svg",
+    "static/media/freestyle-bag.svg": "/static/media/freestyle-bag.969fdaa53dd1247dc2d5c975b717ebf5.svg",
     "static/media/logo.svg": "/static/media/logo.7c1d0a59c00d2e2b75423675374dcfeb.svg",
     "static/media/results.svg": "/static/media/results.37b2b7ce3d34705b2f75422546ede16a.svg",
     "static/media/icon_golf_green.svg": "/static/media/icon_golf_green.d5b833fa3379099b8a8ff6c945090930.svg",
     "static/media/icon_golf_white.svg": "/static/media/icon_golf_white.b57a7dcb63ce870b168aab48059b909f.svg",
+    "static/media/freestyle-shoe.svg": "/static/media/freestyle-shoe.324cca418cfbe4b3e03810ed7ede676d.svg",
+    "static/media/trick-list.svg": "/static/media/trick-list.d8095a7ee5152758adf5a023425d986a.svg",
     "static/media/envelope.svg": "/static/media/envelope.9a82687072166deb6fdd59631ad4ae39.svg",
     "static/media/videos.svg": "/static/media/videos.35f7437de3c53f7689844e783f4e5223.svg",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "index.html": "/index.html",
-    "main.44536e70.css.map": "/static/css/main.44536e70.css.map",
-    "main.b797f9fe.js.map": "/static/js/main.b797f9fe.js.map"
+    "main.5b69b0a8.css.map": "/static/css/main.5b69b0a8.css.map",
+    "main.66176166.js.map": "/static/js/main.66176166.js.map"
   },
   "entrypoints": [
-    "static/css/main.44536e70.css",
-    "static/js/main.b797f9fe.js"
+    "static/css/main.5b69b0a8.css",
+    "static/js/main.66176166.js"
   ]
 }

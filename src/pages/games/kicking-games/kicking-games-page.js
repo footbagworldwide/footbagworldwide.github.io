@@ -22,12 +22,14 @@ function KickingGamesPage() {
     if(isSingleColumnView === false) {
       return (
         <div id="kicking-games-header-icons">
-          { kickingGames.map(kickingGame =>
-          <div key={`kicking-game-icon_${kickingGame.title}`}>
-            <img className="footbag-game-icon" src={kickingGame.icon_green} />
-            <h4 className="footbag-game-name">{kickingGame.title}</h4>
-          </div>
-          )}
+          {
+            kickingGames.map(kickingGame =>
+              <div key={`kicking-game-icon_${kickingGame.title}`}>
+                <img className="footbag-game-icon" src={kickingGame.icon_green} />
+                <h4 className="footbag-game-name">{kickingGame.title}</h4>
+              </div>
+            )
+          }
         </div>
       );
     } else {
@@ -40,10 +42,7 @@ function KickingGamesPage() {
     const index = props.index;
 
     return (
-      <div
-        key={`kicking-game_${kickingGame.title}`}
-        className={`footbag-game-container ${index % 2 == 0 ? 'footbag-game-odd' : 'footbag-game-even'}`}
-      >
+      <div className={`footbag-game-container ${index % 2 == 0 ? 'footbag-game-odd' : 'footbag-game-even'}`}>
         <div>
           { (isSingleColumnView === true || index % 2 == 0) && <img className="footbag-game-icon" src={kickingGame.icon_white} /> }
         </div>
@@ -53,11 +52,13 @@ function KickingGamesPage() {
           <div>
             <strong>MORE INFO</strong>
             <ul>
-              { kickingGame.links.map((link, linkIndex) => 
-              <li key={`kicking-game-link_${linkIndex}`}>
-                <a href={link.value}>{link.label}</a>
-              </li>
-              )}
+              {
+                kickingGame.links.map((link, linkIndex) => 
+                  <li key={`kicking-game-link_${linkIndex}`}>
+                    <a href={link.value}>{link.label}</a>
+                  </li>
+                )
+              }
             </ul>
           </div>
           <img src={kickingGame.gifPath} className="footbag-game-gif" />
@@ -76,7 +77,7 @@ function KickingGamesPage() {
 			<div>
 				{
           kickingGames.map((kickingGame, index) =>
-            <KickingGameItem kickingGame={kickingGame} index={index} />
+            <KickingGameItem kickingGame={kickingGame} index={index} key={`kicking-game_${kickingGame.title}`} />
           )
         }
 			</div>

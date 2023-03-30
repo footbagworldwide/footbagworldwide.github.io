@@ -16,7 +16,7 @@ function FootbagGameItem(props) {
         <h3>{footbagGame.title}</h3>
         <div>{footbagGame.description}</div>
       </div>
-      <ButtonLink label='MORE' route={footbagGame.route} />
+      <ButtonLink route={footbagGame.route}><strong>MORE</strong></ButtonLink>
     </div>
   );
 }
@@ -33,7 +33,7 @@ function IntroSection() {
 			</p>
 			<div id="footbag-games-container">
 			  { footbagGames.map((footbagGame) =>
-          <FootbagGameItem footbagGame={footbagGame} />
+          <FootbagGameItem footbagGame={footbagGame} key={`footbag-game_${footbagGame.title}`}/>
         )}
 			</div>
 		</div>

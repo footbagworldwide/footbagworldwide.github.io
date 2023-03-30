@@ -1,7 +1,7 @@
 #footer-container {
 	display: grid;	
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-column-gap: 3rem;
+	column-gap: 3rem;
 	text-align: center;
 }
 

@@ -5,7 +5,7 @@ import { ButtonLink } from '../../../../components/links/link-components';
 function MoreButton() {
   return (
     <div className="about-button-container">
-      <ButtonLink label="MORE" route="/about" />
+      <ButtonLink route="/about"><strong>MORE</strong></ButtonLink>
     </div>
   );
 }

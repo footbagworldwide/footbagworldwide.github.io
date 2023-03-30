@@ -1,0 +1,9 @@
+.competitive-event-video-container {
+  height: 400px;
+  padding: 1rem;
+}
+
+.competitive-event-video {
+  width: 100%;
+	height: 100%;
+}

@@ -28,7 +28,7 @@
 #latest-event-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-column-gap: 5rem;
+  column-gap: 5rem;
   padding: 3rem 15rem 2rem;
   background-color: var(--color-tertiary);
 }
@@ -70,7 +70,7 @@
 	grid-template-rows: repeat(2, 20px);
 	grid-template-columns: repeat(3, 60px);
 	justify-content: space-evenly;
-	grid-row-gap: 1rem;
+	row-gap: 1rem;
 }
 
 #all-events-button-container {

@@ -1,5 +1,10 @@
 .button-link {
-	border: none;
+  color: black;
+	background-color: var(--color-secondary);
+}
+
+.button-link_base {
+  border: none;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
@@ -7,6 +12,4 @@
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 16px;
-  color: black;
-	background-color: var(--color-secondary);
 }

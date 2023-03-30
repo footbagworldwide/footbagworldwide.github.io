@@ -92,7 +92,7 @@ function EventsPage() {
       <h3 className="events-section-header"><div>PAST EVENTS</div></h3>
 			<PastEventsSection />
       <div id="all-events-button-container">
-        <ButtonLink label="SEE ALL EVENTS ON FOOTBAG.ORG" external={true} route="http://footbag.org/events/list" />
+        <ButtonLink external={true} route="http://footbag.org/events/list">SEE ALL EVENTS ON FOOTBAG.ORG</ButtonLink>
       </div>
 		</div>
 	);

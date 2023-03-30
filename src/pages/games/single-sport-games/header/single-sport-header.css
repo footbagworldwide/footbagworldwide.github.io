@@ -1,0 +1,23 @@
+.single-sport-header-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.single-sport-game-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.other-game-icon {
+  width: 75px;
+  height: 75px;
+}
+
+.other-game-button {
+  background-color: var(--color-tertiary);
+  color: black;
+	cursor: pointer;
+	border-radius: 16px;
+}

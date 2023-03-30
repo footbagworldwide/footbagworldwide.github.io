@@ -2,23 +2,25 @@ import { Link } from "react-router-dom";
 import './link-components.css';
 
 function ButtonLink(props) {
+  let className = props.className ? props.className : 'button-link';
   const route = props.route;
-  const label = props.label;
   const external = props.external === true;
+
+  className += ' button-link_base';
 
   if(external === true) {
     return (
       <a href={route} target="_blank">
-        <button className="button-link">
-          <strong>{label}</strong>
+        <button className={className}>
+          { props.children }
         </button>
       </a>
     );
   } else {
     return (
       <Link to={route}>
-        <button className="button-link">
-          <strong>{label}</strong>
+        <button className={className}>
+          { props.children }
         </button>
       </Link>
     );

@@ -1,0 +1,9 @@
+.how-to-play-item-container {
+  display: grid;
+  grid-template-columns: 1fr .01fr 1fr .01fr 1fr;
+  margin-top: 2rem;
+}
+
+.how-to-play-icon {
+  height: 35px
+}

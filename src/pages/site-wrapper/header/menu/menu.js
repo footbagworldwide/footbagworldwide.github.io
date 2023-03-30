@@ -6,7 +6,7 @@ function MenuItem(props) {
   const menuItem = props.menuItem;
 
   return (
-    <div className="menu-item" key={`menu-item_${menuItem.label}`}>
+    <div className="menu-item">
       <strong><Link to={menuItem.route}>{menuItem.label}</Link></strong>
     </div>
   );
@@ -16,7 +16,7 @@ function Submenu(props) {
   const submenu = props.submenu;
 
   return (
-    <div key={`submenu_${submenu.label}`}>
+    <div>
       <div className="submenu">
         <strong className="menu-item">{submenu.label}</strong> <SubmenuArrow />
         <div className="submenu-items">
@@ -46,8 +46,8 @@ function Menu() {
     <div id="menu-container">
       {
         menuItems.map(menuItem => menuItem.menuItems ?
-          <Submenu submenu={menuItem} />
-          : <MenuItem menuItem={menuItem} />
+          <Submenu submenu={menuItem} key={`submenu_${menuItem.label}`} />
+          : <MenuItem menuItem={menuItem} key={`menu-item_${menuItem.label}`}/>
         )
       }
     </div>

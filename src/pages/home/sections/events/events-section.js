@@ -1,6 +1,7 @@
 import './events-section.css';
 import { events } from '../../../../data/events/events-data';
 import { ButtonLink } from '../../../../components/links/link-components';
+import ColumnDivider from '../../../../components/column-divider/column-divider';
 
 const latestEvent = events[0];
 const pastEvents = [events[1], events[2], events[3]];
@@ -33,14 +34,14 @@ function EventsSection() {
           <h3 className="events-section-subheader"><strong>PAST EVENTS</strong></h3>
           <div id="events-section-past-events-container">
             <EventsSectionItem event={pastEvents[0]} />
-            <div className="events-section-divider"></div>
+            <ColumnDivider />
             <EventsSectionItem event={pastEvents[1]} />
-            <div className="events-section-divider"></div>
+            <ColumnDivider />
             <EventsSectionItem event={pastEvents[2]} />
           </div>
         </div>
       </div>
-      <ButtonLink label="SEE ALL EVENTS" route="/events" />
+      <ButtonLink route="/events"><strong>SEE ALL EVENTS</strong></ButtonLink>
     </div>
   );
 }

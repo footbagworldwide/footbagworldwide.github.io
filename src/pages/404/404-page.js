@@ -12,7 +12,7 @@ function NotFoundPage() {
         <div>This page doesn't exist.</div>
         <div>The link is broken or the page has been moved.</div>
       </div>
-      <ButtonLink label="BACK TO HOME" route="/" />
+      <ButtonLink route="/">BACK TO HOME</ButtonLink>
     </div>
   );
 }

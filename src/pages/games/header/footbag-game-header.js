@@ -10,8 +10,8 @@ function OtherGame(props) {
 
   return (
     <div className='footbag-game-section'>
-      <div><ImageLink src={otherGame.icon_green} route={otherGame.route} className="footbag-game-other-icon" /></div>
-      <ButtonLink route={otherGame.route} className="other-game-button">
+      <div><ImageLink src={otherGame.icon_withBackground} route={otherGame.pageRoute} className="footbag-game-other-icon" /></div>
+      <ButtonLink route={otherGame.pageRoute} className="other-game-button">
         { arrowLeft && <i className="fa-solid fa-chevron-left"></i> } {buttonText} { arrowRight && <i className="fa-solid fa-chevron-right"></i> }
       </ButtonLink>
     </div>
@@ -19,17 +19,17 @@ function OtherGame(props) {
 }
 
 function FootbagGameHeader(props) {
-  const footbagGame = props.footbagGame;
+  const headerData = props.headerData;
 
   return (
     <div className="footbag-game-section">
-      <h1 className="footbag-game-title">{footbagGame.title}</h1>
+      <h1 className="footbag-game-title">{headerData.title}</h1>
       <div className="footbag-game-header-container">
-        <OtherGame otherGame={footbagGame.otherGames[0]} arrowLeft={true} />
+        <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} />
         <div>
           { props.children }
         </div>
-        <OtherGame otherGame={footbagGame.otherGames[1]} arrowRight={true} />
+        <OtherGame otherGame={headerData.otherGames[1]} arrowRight={true} />
       </div>
     </div>
   );

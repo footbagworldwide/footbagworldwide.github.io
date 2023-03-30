@@ -1,5 +1,5 @@
 import './intro-section.css';
-import { freestyleData, hackySackData, netData } from "../../../games/footbag-games.data.js";
+import { freestyleData, hackySackData, netData } from "../../../../data/games/footbag-games-data.js";
 import { ButtonLink, ImageLink } from "../../../../components/links/link-components";
 
 function FootbagGameItem(props) {
@@ -9,14 +9,14 @@ function FootbagGameItem(props) {
     <div key={`footbag-game_${footbagGame.title}`}>
       <div className="footbag-game">
         <ImageLink
-          route={footbagGame.route}
-          src={footbagGame.icon_white}
+          route={footbagGame.pageRoute}
+          src={footbagGame.icon}
           className="footbag-game-icon"
         />
         <h3>{footbagGame.title}</h3>
-        <div>{footbagGame.description}</div>
+        <div>{footbagGame.description.short}</div>
       </div>
-      <ButtonLink route={footbagGame.route}><strong>MORE</strong></ButtonLink>
+      <ButtonLink route={footbagGame.pageRoute}><strong>MORE</strong></ButtonLink>
     </div>
   );
 }

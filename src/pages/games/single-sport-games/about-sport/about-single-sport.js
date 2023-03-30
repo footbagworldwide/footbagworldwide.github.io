@@ -8,7 +8,7 @@ function AboutSingleSport(props) {
       <h3 className="single-sport-page-section-title">WHAT IS {singleSportGame.title}?</h3>
       <div className="single-sport-about-content-container">
         <div className="single-sport-about-gif"><img src={singleSportGame.gif} /></div>
-        <p className="single-sport-about-description">{singleSportGame.descriptionHtml}</p>
+        <p className="single-sport-about-description">{singleSportGame.description.long_html}</p>
       </div>
     </div>
   );

@@ -1,8 +1,15 @@
 import { useState } from 'react';
 import './kicking-games-page.css'
 import '../footbag-games.css';
-import { kickingGames, kickingGameHeader } from './kicking-games-data'; 
+import { kickingGamesData, hackySackData, twoSquareData, golfData, netData, freestyleData } from '../../../data/games/footbag-games-data.js';
 import FootbagGameHeader from '../header/footbag-game-header';
+
+const kickingGames = [hackySackData, twoSquareData, golfData];
+
+const kickingGameHeader = {
+  title: kickingGamesData.title,
+  otherGames: [ netData, freestyleData],
+};
 
 function KickingGamesPage() {
   const [isSingleColumnView, setIsSingleColumnView] = useState(shouldUseSingleColumnView());
@@ -17,7 +24,7 @@ function KickingGamesPage() {
 
   function shouldUseSingleColumnView() {
     return window.innerWidth <= 750;
-  }
+  }  
 
   function HeaderIcons() {
     if(isSingleColumnView === false) {
@@ -26,7 +33,7 @@ function KickingGamesPage() {
           {
             kickingGames.map(kickingGame =>
               <div key={`kicking-game-icon_${kickingGame.title}`}>
-                <img className="footbag-game-icon" src={kickingGame.icon_green} />
+                <img className="footbag-game-icon" src={kickingGame.icon_withBackground} />
                 <h4 className="footbag-game-name">{kickingGame.title}</h4>
               </div>
             )
@@ -45,27 +52,27 @@ function KickingGamesPage() {
     return (
       <div className={`footbag-game-container ${index % 2 == 0 ? 'footbag-game-odd' : 'footbag-game-even'}`}>
         <div>
-          { (isSingleColumnView === true || index % 2 == 0) && <img className="footbag-game-icon" src={kickingGame.icon_white} /> }
+          { (isSingleColumnView === true || index % 2 == 0) && <img className="footbag-game-icon" src={kickingGame.icon} /> }
         </div>
         <div>
           <h2 className="footbag-game-name">{kickingGame.title}</h2>
-          <p>{kickingGame.description}</p>
+          <p>{kickingGame.description.long_html}</p>
           <div>
             <strong>MORE INFO</strong>
             <ul>
               {
-                kickingGame.links.map((link, linkIndex) => 
-                  <li key={`kicking-game-link_${linkIndex}`}>
-                    <a href={link.value}>{link.label}</a>
+                kickingGame.howToPlay.resources.map((resource, resourceIndex) => 
+                  <li key={`kicking-game-link_${resourceIndex}`}>
+                    <a href={resource.link}>{resource.description}</a>
                   </li>
                 )
               }
             </ul>
           </div>
-          <img src={kickingGame.gifPath} className="footbag-game-gif" />
+          <img src={kickingGame.gif} className="footbag-game-gif" />
         </div>
         <div>
-          { (isSingleColumnView === false && index % 2 == 1) && <img className="footbag-game-icon" src={kickingGame.icon_green} /> }
+          { (isSingleColumnView === false && index % 2 == 1) && <img className="footbag-game-icon" src={kickingGame.icon_withBackground} /> }
         </div>
       </div>
     );
@@ -73,7 +80,7 @@ function KickingGamesPage() {
 
 	return (
 		<div>
-      <FootbagGameHeader footbagGame={kickingGameHeader}>
+      <FootbagGameHeader headerData={kickingGameHeader}>
         <HeaderIcons />
       </FootbagGameHeader>
 			<div>

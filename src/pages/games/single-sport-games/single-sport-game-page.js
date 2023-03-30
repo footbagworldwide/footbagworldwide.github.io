@@ -7,11 +7,12 @@ import SingleSportCompetition from './competition/single-sport-competition';
 
 function SingleSportGamePage(props) {
   const singleSportGame = props.singleSportGame;
+  const headerData = props.headerData;
 
   return (
     <div className='single-sport-page'>
-      <FootbagGameHeader footbagGame={singleSportGame}>
-        <img className="footbag-game-header-icon" src={singleSportGame.icon} />
+      <FootbagGameHeader headerData={headerData}>
+        <img className="footbag-game-header-icon" src={singleSportGame.icon_withBackground} />
       </FootbagGameHeader>
       <AboutSingleSport singleSportGame={singleSportGame} />
       <HowToPlaySingleSport singleSportGame={singleSportGame} />

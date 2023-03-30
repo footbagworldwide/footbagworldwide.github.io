@@ -12,7 +12,7 @@ function SingleSportGamePage(props) {
   return (
     <div className='single-sport-page'>
       <FootbagGameHeader headerData={headerData}>
-        <img className="footbag-game-header-icon" src={singleSportGame.icon_withBackground} />
+        <img className="footbag-game-icon" src={singleSportGame.icon_withBackground} />
       </FootbagGameHeader>
       <AboutSingleSport singleSportGame={singleSportGame} />
       <HowToPlaySingleSport singleSportGame={singleSportGame} />

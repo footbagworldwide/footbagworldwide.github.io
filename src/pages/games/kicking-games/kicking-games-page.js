@@ -34,7 +34,6 @@ function KickingGamesPage() {
             kickingGames.map(kickingGame =>
               <div key={`kicking-game-icon_${kickingGame.title}`}>
                 <img className="footbag-game-icon" src={kickingGame.icon_withBackground} />
-                <h4 className="footbag-game-name">{kickingGame.title}</h4>
               </div>
             )
           }
@@ -50,12 +49,12 @@ function KickingGamesPage() {
     const index = props.index;
 
     return (
-      <div className={`footbag-game-container ${index % 2 == 0 ? 'footbag-game-odd' : 'footbag-game-even'}`}>
+      <div className={`kicking-game-container ${isSingleColumnView === false ? 'footbag-game-section' : ''} ${index % 2 == 0 ? 'kicking-game-odd footbag-game-section-with-background' : 'kicking-game-even'}`}>
         <div>
           { (isSingleColumnView === true || index % 2 == 0) && <img className="footbag-game-icon" src={kickingGame.icon} /> }
         </div>
         <div>
-          <h2 className="footbag-game-name">{kickingGame.title}</h2>
+          <h2 className="footbag-game-section-header">{kickingGame.title}</h2>
           <p>{kickingGame.description.long_html}</p>
           <div>
             <strong>MORE INFO</strong>

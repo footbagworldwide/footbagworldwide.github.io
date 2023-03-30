@@ -19,8 +19,8 @@ function SingleSportCompetition(props) {
   const singleSportGame = props.singleSportGame;
   
   return (
-    <div className="footbag-game-section single-sport-page-section-with-background">
-      <h3 className="single-sport-page-section-title">IS {singleSportGame.title} A HOBBY OR A SPORT?</h3>
+    <div className="footbag-game-section footbag-game-section-with-background">
+      <h3 className="footbag-game-section-header">IS {singleSportGame.title} A HOBBY OR A SPORT?</h3>
       <div className="single-sport-page-centered-container">{singleSportGame.competition.description_html}</div>
       <div className="competitive-event-item-container">
         {

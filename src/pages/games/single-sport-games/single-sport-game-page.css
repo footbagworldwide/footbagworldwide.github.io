@@ -2,13 +2,8 @@
   text-align: center;
 }
 
-.single-sport-page-section-title,
 .highlighted-description {
   color: var(--color-secondary);
-}
-
-.single-sport-page-section-with-background {
-  background-color: var(--color-secondary-light);
 }
 
 .single-sport-page-centered-container {

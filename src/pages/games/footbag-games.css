@@ -1,60 +1,20 @@
+.footbag-game-section {
+  padding: 1rem 0 3rem 0;
+}
+
+.footbag-game-section-with-background {
+  background-color: var(--color-secondary-light);
+}
+
+.footbag-game-section-header {
+	color: var(--color-secondary)
+}
+
 .footbag-game-icon {
-	border-radius: 50%;
 	height: 150px;
 	width: 150px;
 }
 
-@media (min-width: 750px) {
-  .footbag-game-container {
-    padding: 3rem 5rem;
-    display: grid;
-    grid-template-columns: .75fr 1fr .75fr;
-    justify-items: center;
-  }
-
-	.footbag-game-odd {
-		text-align: left;
-	}
-
-	.footbag-game-even {
-		text-align: right;
-	}
-
-  .footbag-game-even li {
-    direction: rtl;
-    margin-right: 1.5rem;
-  }
-}
-
-@media (max-width: 750px) {
-  .footbag-game-container {
-    grid-template-columns: 1fr;
-    padding: 3rem;
-    text-align: center;
-  }
-
-  .footbag-game-container, .footbag-game-odd, .footbag-game-even {
-	  text-align: center;
-  }
-
-  .footbag-game-even li {
-    direction: ltr;
-    margin-right: 0;
-  }
-}
-
-.footbag-game-odd {
-	background-color:var(--color-secondary-light);
-}
-
-.footbag-game-name {
-	color: var(--color-secondary)
-}
-
 .footbag-game-gif {
   width: 100%;
-}
-
-.footbag-game-section {
-  padding: 1rem 0 3rem 0;
 }

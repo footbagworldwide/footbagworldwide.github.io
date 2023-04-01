@@ -1,5 +1,5 @@
 import './footer.css';
-import ifpaLogo from '../../../assets/images/icons/ifpa-logo.svg';
+import ifpaLogo from '../../../assets/images/ifpa-logo.svg';
 import { EmailLink } from '../../../components/links/link-components';
 
 function IfpaSection() {

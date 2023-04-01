@@ -1,5 +1,3 @@
-import './video.css';
-
 const VideoType = {
 	Youtube: 1,
 	Vimeo: 2

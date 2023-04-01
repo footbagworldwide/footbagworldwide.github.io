@@ -17,7 +17,7 @@ footer {
 
 .copyright {
 	color: var(--color-system);
-	font-size: var(--font-size-m);
+	font-size: 0.8rem;
 	text-align: center;
 }
 

@@ -9,35 +9,17 @@ html {
 	--color-secondary-light: #f4fdee;
   --color-tertiary: #F2F2F4;
 	--color-system: #ccc;
-
-	--font-family-primary: 'Montserrat';
-
-	--font-size-m: 0.8rem;
-	--font-size-l: 1rem;
-	--font-size-xl: 1.25rem;
-	--font-size-xxl: 1.563rem;
-	--font-size-xxxl: 1.953rem;
-
-	--font-weight-normal: 300;
-	--font-weight-bold: 700;
-	--font-weight-boldest: 900;
-
-	--space-s: 0.328125rem;
-	--space-m: 0.65625rem;
-	--space-l: 1.3125rem;
-	--space-xl: 2.625rem;
-	--space-xxl: 5.25rem;
 }
 
 body {
 	color: var(--color-primary);
 
-	font-family: var(--font-family-primary);
-	font-weight: var(--font-weight-normal);
+	font-family: 'Montserrat';
+	font-weight: 300;
 	margin: 0 auto;
 
-	font-size: var(--font-size-l);
-	line-height: var(--space-l);
+	font-size: 1rem;
+	line-height: 1.3125rem;
 }
 
 a {

@@ -2,13 +2,13 @@
   background-color: var(--color-primary);
   text-align: center;
   color: white;
-  height: 71vh;
+  height: 100vh;
 }
 
 #not-found-image {
   width: 350px;
   height: 200px;
-  margin-top: 5rem;
+  margin-top: 9rem;
 }
 
 #not-found-description {

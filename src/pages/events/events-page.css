@@ -21,7 +21,7 @@
 
 .events-section-header div {
   display: inline-block;
-  background-color: black;
+  background-color: var(--color-primary);
   width: 200px;
 }
 

@@ -9,6 +9,9 @@ html {
 	--color-secondary-light: #f4fdee;
   --color-tertiary: #F2F2F4;
 	--color-system: #ccc;
+
+  /* keep synced with 'mobileWidth' in display-hook.js */
+  --width-mobile: 750px;
 }
 
 body {

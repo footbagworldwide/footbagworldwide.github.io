@@ -1,3 +1,14 @@
+#about-section-container {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.about-section-desktop-container {
+  display: grid;
+  grid-template-columns: 1.75fr .75fr;
+  grid-gap: 2rem;
+}
+
 #about-history-image {
   height: 250px;
   width: 250px;
@@ -17,14 +28,6 @@
   margin-bottom: 3rem;
 }
 
-#about-section-container {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  display: grid;
-  grid-template-columns: 1.75fr .75fr;
-  grid-gap: 2rem;
-}
-
 #about-section-history-container {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -34,4 +37,12 @@
   margin-top: 0;
   min-height: 185px;
   font-size: large;
+}
+
+.about-section-mobile-history {
+  margin-bottom: 2rem;
+}
+
+.about-history-image-mobile {
+  text-align: center;
 }

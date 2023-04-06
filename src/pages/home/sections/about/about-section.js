@@ -1,6 +1,7 @@
 import './about-section.css';
 import historyImage from '../../../../assets/images/wfc-logos/WFC2018.jpg';
 import { ButtonLink } from '../../../../components/links/link-components';
+import { useDesktopDisplay, useMobileDisplay } from '../../../../hooks/display-hook.js';
 
 function MoreButton() {
   return (
@@ -10,30 +11,53 @@ function MoreButton() {
   );
 }
 
-function FootbagHistory() {
-  return (
-    <div className="about-section-item">
-      <h2 className="about-section-item-header">HISTORY OF FOOTBAG</h2>
+function FootbagHistory(props) {
+
+  const HistoryTitleElement = () => <h2 className="about-section-item-header">HISTORY OF FOOTBAG</h2>;
+  const HistoryImageElement = () => <img id="about-history-image" src={historyImage} />;
+  const HistoryTextElement = () => 
+    <p className="about-section-text">
+      Footbag roots can be found deep in the ancient
+      cultures of Asia and the Americas, with
+      similar games being played as far back as
+      3000 years ago. Its current form was established
+      in North America in the 1970s, and it
+      has spread globally and evolved into many
+      forms since.
+    </p>;
+
+  const HistoryElement_Mobile = () => (
+    <>
+      <HistoryTitleElement />
+      <div className="about-history-image-mobile"><HistoryImageElement /></div>
+      <HistoryTextElement />
+      <MoreButton />
+    </>
+  );
+
+  const HistoryElement_Desktop = () => (
+    <>
+      <HistoryTitleElement />
       <div id="about-section-history-container">
-        <img id="about-history-image" src={historyImage} />
+        <HistoryImageElement />
         <div>
-          <p className="about-section-text">
-            Footbag roots can be found deep in the ancient
-            cultures of Asia and the Americas, with
-            similar games being played as far back as
-            3000 years ago. Its current form was established
-            in North America in the 1970s, and it
-            has spread globally and evolved into many
-            forms since.
-          </p>
+          <HistoryTextElement />
           <MoreButton />
         </div>
       </div>
+    </>
+  );
+
+  return (
+    <div className={`about-section-item ${props.className}`} >
+      { useMobileDisplay() ? <HistoryElement_Mobile /> : <HistoryElement_Desktop /> }
     </div>
   );
 }
 
 function AboutIfpa() {
+  //const 
+
   return (
     <div className="about-section-item">
       <h2 className="about-section-item-header">ABOUT IFPA</h2>
@@ -47,9 +71,12 @@ function AboutIfpa() {
 }
 
 function AboutSection() {
+  const containerClassName = `home-page-section ${useDesktopDisplay() ? 'about-section-desktop-container' : ''}`;
+  const historyClassName = useMobileDisplay() ? 'about-section-mobile-history' : '';
+
   return (
-    <div id="about-section-container" className="home-page-section">
-      <FootbagHistory />
+    <div id="about-section-container" className={containerClassName}>
+      <FootbagHistory className={historyClassName} />
       <AboutIfpa />
     </div>
   );

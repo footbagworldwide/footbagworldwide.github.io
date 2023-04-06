@@ -19,15 +19,18 @@
 }
 
 #footbag-games-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1rem;
 	margin: 2rem;
 	padding-bottom: 2rem;
 }
 
-.footbag-game {
-	min-height: 325px;
+.footbag-games-desktop-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+}
+
+.footbag-games-desktop-container .footbag-game {
+	min-height: 90%;
 }
 
 .footbag-description {

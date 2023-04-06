@@ -2,7 +2,6 @@ nav {
 	background: var(--color-primary);
 	color: white;
 	align-items: center;
-	padding: 2% 2% 2% 5%;
 }
 
 #header-container {
@@ -10,14 +9,23 @@ nav {
 	grid-template-columns: 2fr 1fr .25fr;
 	justify-content: space-between;
   align-content: space-between;
+  padding: 2% 2% 2% 5%;
 }
 
-#logo-image {
-	max-height: 45px;
-	cursor: pointer;
-	color: var(--color-secondary);
-  height: 35;
-  width: 300;
+#mobile-header-container {
+  display: grid;
+  grid-template-columns: .25fr 1fr .25fr;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2% 2% 2% 2%;
+  z-index: 2;
+}
+
+.logo-image {
+  height: 35px;
+  width: 300px;
 }
 
 #email-icon {

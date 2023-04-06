@@ -4,36 +4,44 @@ import { ButtonLink } from '../../../../components/links/link-components';
 import ColumnDivider from '../../../../components/column-divider/column-divider';
 import { useDesktopDisplay } from '../../../../hooks/display-hook';
 
-const latestEvent = events[0];
-const pastEvents = [events[1], events[2], events[3]];
-
 function EventsSectionItem(props) {
   const event = props.event;
 
   return (
-    <div className="events-section-event" key={`previous-event_${event.title}`}>
+    <div className="events-section-event">
       <div className="event-logo-container">
         <img src={event.imagePath} className="event-logo" />
       </div>
-      <h3>{event.title}</h3>
+      <h2>{event.title}</h2>
       <strong>{event.location}</strong>
     </div>
   );
 }
 
-function UpcomingEvents() {
+function EventsSectionContainer(props) {
   return (
     <div className="events-section-event-container">
-      <h3 className="events-section-subheader"><strong>UPCOMING EVENTS</strong></h3>
-      <EventsSectionItem event={latestEvent} />
+      <h2 className="events-section-subheader"><strong>{props.title}</strong></h2>
+      { props.children }
     </div>
   );
 }
 
-function PastEvents() {
+function UpcomingEvents() {
+  const latestEvent = events[0];
+
   return (
-    <div className="events-section-event-container">
-      <h3 className="events-section-subheader"><strong>PAST EVENTS</strong></h3>
+    <EventsSectionContainer title="UPCOMING EVENTS">
+      <EventsSectionItem event={latestEvent} />
+    </EventsSectionContainer>
+  );
+}
+
+function PastEvents() {
+  const pastEvents = [events[1], events[2], events[3]];
+
+  return (
+    <EventsSectionContainer title="PAST EVENTS">
       <div id="events-section-past-events-container">
         <EventsSectionItem event={pastEvents[0]} />
         <ColumnDivider />
@@ -41,16 +49,21 @@ function PastEvents() {
         <ColumnDivider />
         <EventsSectionItem event={pastEvents[2]} />
       </div>
-    </div>
+    </EventsSectionContainer>
   );
 }
 
 function EventsSection() {
+  const containerClassName = useDesktopDisplay() ? 'events-section-events-container_desktop' : '';
+
   return (
     <div className="home-page-section events-section">
-      <h2>EVENTS</h2>
-      <p>Every year the IFPA organizes the World Footbag Championships hosted by local clubs and attended by players around the world.</p>
-      <div id="events-section-events-container">
+      <h1>EVENTS</h1>
+      <p>
+        Every year the IFPA organizes the World Footbag Championships hosted by local clubs
+        and attended by players around the world.
+      </p>
+      <div className={`home-page-subsection events-section-events-container ${containerClassName}`}>
         <UpcomingEvents />
         { useDesktopDisplay() && <PastEvents /> }
       </div>

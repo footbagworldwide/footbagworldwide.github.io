@@ -46,11 +46,12 @@ function SubmenuArrow() {
 
 function RawMenu(props) {
   const submenuContainerClassName = props.submenuContainerClassName;
+  const menuItemsToRender = menuItems.filter(menuItem => props.mobile || !menuItem.mobileOnly);
 
   return (
     <>
       {
-        menuItems.map(menuItem => menuItem.menuItems ?
+        menuItemsToRender.map(menuItem => menuItem.menuItems ?
           <Submenu submenu={menuItem} submenuContainerClassName={submenuContainerClassName} key={`submenu_${menuItem.label}`} />
           : <MenuItem menuItem={menuItem} key={`menu-item_${menuItem.label}`}/>
         )
@@ -62,7 +63,7 @@ function RawMenu(props) {
 function MobileMenu() {
   return (
     <BurgerMenu right>
-      <RawMenu />
+      <RawMenu mobile={true} />
     </BurgerMenu>
   );
 }

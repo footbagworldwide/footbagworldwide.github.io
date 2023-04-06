@@ -1,12 +1,9 @@
-nav {
-	background: var(--color-primary);
-	color: white;
-	align-items: center;
-}
-
 .header-container {
 	display: grid;
   padding: 2rem 0;
+  background: var(--color-primary);
+	color: white;
+	align-items: center;
 }
 
 .header-container_desktop {

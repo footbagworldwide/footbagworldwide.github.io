@@ -1,5 +1,10 @@
 const menuItems = [
   {
+    label: 'HOME',
+    route: '/',
+    mobileOnly: true
+  },
+  {
     label: 'GAMES',
     menuItems: [
       { label: 'Kicking games', route: '/games/kicking' },

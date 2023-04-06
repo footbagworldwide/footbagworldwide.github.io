@@ -1,6 +1,8 @@
 import './menu.css';
 import { Link } from 'react-router-dom';
-import menuItems from './menu-data.js';
+import { slide as BurgerMenu } from 'react-burger-menu'
+import menuItems from './menu-data';
+import { useDesktopDisplay } from '../../../../hooks/display-hook';
 
 function MenuItem(props) {
   const menuItem = props.menuItem;
@@ -14,12 +16,13 @@ function MenuItem(props) {
 
 function Submenu(props) {
   const submenu = props.submenu;
+  const submenuContainerClassName = props.submenuContainerClassName;
 
   return (
     <div>
       <div className="submenu">
         <strong className="menu-item">{submenu.label}</strong> <SubmenuArrow />
-        <div className="submenu-items">
+        <div className={"submenu-item-container " + submenuContainerClassName}>
           {
             submenu.menuItems.map(menuItem =>
               <div className="menu-item submenu-item" key={`menu-item_${menuItem.label}`}>
@@ -41,16 +44,42 @@ function SubmenuArrow() {
   );
 }
 
-function Menu() {
+function RawMenu(props) {
+  const submenuContainerClassName = props.submenuContainerClassName;
+
   return (
-    <div id="menu-container">
+    <>
       {
         menuItems.map(menuItem => menuItem.menuItems ?
-          <Submenu submenu={menuItem} key={`submenu_${menuItem.label}`} />
+          <Submenu submenu={menuItem} submenuContainerClassName={submenuContainerClassName} key={`submenu_${menuItem.label}`} />
           : <MenuItem menuItem={menuItem} key={`menu-item_${menuItem.label}`}/>
         )
       }
+    </>
+  );
+}
+
+function MobileMenu() {
+  return (
+    <BurgerMenu right>
+      <RawMenu />
+    </BurgerMenu>
+  );
+}
+
+function DesktopMenu() {
+  return (
+    <div className="desktop-menu-container">
+      <RawMenu submenuContainerClassName="desktop-submenu-item-container" />
     </div>
+  );
+}
+
+function Menu() {
+  return (
+    <>
+      { useDesktopDisplay() ? <DesktopMenu /> : <MobileMenu /> }
+    </>
   );
 }
 

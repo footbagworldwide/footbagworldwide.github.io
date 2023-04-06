@@ -4,16 +4,18 @@ nav {
 	align-items: center;
 }
 
-#header-container {
+.header-container {
 	display: grid;
-	grid-template-columns: 2fr 1fr .25fr;
-	justify-content: space-between;
-  align-content: space-between;
-  padding: 2% 2% 2% 5%;
+  padding: 2rem 0;
 }
 
-#mobile-header-container {
-  display: grid;
+.header-container_desktop {
+  grid-template-columns: .15fr 2fr 1fr .25fr;
+	justify-content: space-between;
+  align-content: space-between;
+}
+
+.header-container_mobile {
   grid-template-columns: .25fr 1fr .25fr;
   text-align: center;
   position: fixed;

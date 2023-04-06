@@ -1,8 +1,3 @@
-#menu-container {
-  display: grid;
-  grid-auto-flow: column;
-}
-
 .menu-item a {
   color: white;
 }
@@ -23,6 +18,10 @@
   width: 10px;
 }
 
+.submenu:hover {
+  cursor: pointer;
+}
+
 .submenu-arrow-down {
   display: none;
 }
@@ -31,15 +30,13 @@
   cursor: pointer;
 }
 
-.submenu-items {
+.submenu-item-container {
   display: none;
-  position: absolute;
   background-color: var(--color-primary);
   padding: 1rem;
-  z-index: 1;
 }
 
-.submenu:hover .submenu-items {
+.submenu:hover .submenu-item-container {
   display: block;
 }
 
@@ -54,4 +51,80 @@
 .submenu-item {
   padding: 5px 0;
   font-weight: bold;
+}
+
+
+
+/* desktop css */
+
+.desktop-menu-container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.desktop-submenu-item-container {
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+/* mobile css */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 8%;
+  height: 5%;
+  left: initial;
+  right: 4%;
+  top: 1rem;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--color-secondary);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--color-primary);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: white;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

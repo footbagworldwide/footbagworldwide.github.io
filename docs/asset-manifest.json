@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.49b27ab5.css",
-    "main.js": "/static/js/main.2f19386f.js",
+    "main.css": "/static/css/main.460d0c4c.css",
+    "main.js": "/static/js/main.8f8b8eb6.js",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
+    "static/media/WFC2022.png": "/static/media/WFC2022.b1dd5ab5788738326c5d.png",
     "static/media/WFC2017.jpg": "/static/media/WFC2017.d600dabec61712ca2905.jpg",
     "static/media/WFC2019.jpg": "/static/media/WFC2019.fa844641f93b30f7bd0e.jpg",
     "static/media/WFC2018.jpg": "/static/media/WFC2018.a4e7987ae75fd27831e7.jpg",
-    "static/media/WFC2022.png": "/static/media/WFC2022.bc36e0f7c3f39a087a60.png",
     "static/media/WFC2021.png": "/static/media/WFC2021.66486b48ad9d178c132f.png",
     "static/media/WFC2023.jpg": "/static/media/WFC2023.6386db6876a22e5a3032.jpg",
-    "static/media/ifpa-logo.svg": "/static/media/ifpa-logo.28623fe11338a19d48291efc72f2e160.svg",
+    "static/media/ifpa-logo.svg": "/static/media/ifpa-logo.e131fea7cc7489c35e90c3fd87970415.svg",
     "static/media/icon_net_green.svg": "/static/media/icon_net_green.344211148f561ea42a4520e0c35bd08b.svg",
     "static/media/icon_net_white.svg": "/static/media/icon_net_white.af5bacb188d2eaa57a454d3e8cbb29e3.svg",
     "static/media/WFC2020.png": "/static/media/WFC2020.e5dff50883040f22b5c0.png",
@@ -33,11 +33,11 @@
     "static/media/videos.svg": "/static/media/videos.35f7437de3c53f7689844e783f4e5223.svg",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "index.html": "/index.html",
-    "main.49b27ab5.css.map": "/static/css/main.49b27ab5.css.map",
-    "main.2f19386f.js.map": "/static/js/main.2f19386f.js.map"
+    "main.460d0c4c.css.map": "/static/css/main.460d0c4c.css.map",
+    "main.8f8b8eb6.js.map": "/static/js/main.8f8b8eb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.49b27ab5.css",
-    "static/js/main.2f19386f.js"
+    "static/css/main.460d0c4c.css",
+    "static/js/main.8f8b8eb6.js"
   ]
 }

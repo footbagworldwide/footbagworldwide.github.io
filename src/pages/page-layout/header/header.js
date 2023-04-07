@@ -13,7 +13,7 @@ function SiteLogo() {
 }
 
 function Header() {
-  const headerClassName = useDesktopDisplay() ? 'header-container_desktop' : 'header-container_mobile';
+  const headerClassName = useDesktopDisplay() ? 'header-container_desktop' : 'header-container_mobile fixed-header-space';
 
   return (
     <nav

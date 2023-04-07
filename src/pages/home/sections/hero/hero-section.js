@@ -3,9 +3,20 @@ import { Carousel } from 'react-responsive-carousel';
 import './hero-section.css';
 import { videos } from "./hero-data";
 import { Video } from "../../../../components/video/video";
+import { useDesktopDisplay } from "../../../../hooks/display-hook";
 
-function HeroSection() {
-	return (
+function HeroSection_Mobile() {
+  // auto-play videos are not supported on a mobile device
+  
+  return (
+    <div>
+      <img className="hero-gif" src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif" />
+    </div>
+  );
+}
+
+function HeroSection_Desktop() {
+  return (
     <div>
       <Carousel
         showArrows={true}
@@ -22,6 +33,14 @@ function HeroSection() {
         }
       </Carousel>
     </div>		
+	);
+}
+
+function HeroSection() {
+	return (
+    <>
+      { useDesktopDisplay() ? <HeroSection_Desktop /> : <HeroSection_Mobile /> }
+    </>
 	);
 }
 

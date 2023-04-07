@@ -1,8 +1,8 @@
 import './menu.css';
-import { Link } from 'react-router-dom';
-import { slide as BurgerMenu } from 'react-burger-menu'
+import { Link, useLocation } from 'react-router-dom';
 import menuItems from './menu-data';
 import { useDesktopDisplay } from '../../../../hooks/display-hook';
+import { useEffect, useState } from 'react';
 
 function MenuItem(props) {
   const menuItem = props.menuItem;
@@ -61,11 +61,25 @@ function RawMenu(props) {
 }
 
 function MobileMenu() {
-  return (
-    <BurgerMenu right>
+  const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setShowMenu(false);
+  }, [location.pathname]);
+
+  const menu = () => (
+    <div className="mobile-menu-container">
       <RawMenu mobile={true} />
-    </BurgerMenu>
+    </div>
   );
+
+  return (
+    <div className="burger-menu">
+      <i className="fa fa-bars burger-menu-icon" onClick={() => { setShowMenu(!showMenu) }}></i>
+      { showMenu && menu() }
+    </div>
+  )
 }
 
 function DesktopMenu() {

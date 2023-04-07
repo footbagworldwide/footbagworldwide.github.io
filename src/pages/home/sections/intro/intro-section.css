@@ -9,8 +9,35 @@
   margin-top: 0;
 }
 
+.footbag-description {
+	font-size: medium;
+	margin: 2rem 4rem 4rem 4rem;
+}
+
+.footbag-games-container {
+	margin: 2rem;
+	padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footbag-games-container .footbag-game {
+	margin-bottom: 1rem;
+}
+
 .footbag-game-container {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .footbag-game {
+    height: 85%;
+  }
+}
+
+.footbag-game-icon {
+	border-radius: 50%;
 }
 
 .footbag-game-button {
@@ -20,28 +47,4 @@
 
 .footbag-game-button strong {
   color: black;
-}
-
-#footbag-games-container {
-	margin: 2rem;
-	padding-bottom: 2rem;
-}
-
-.footbag-games-desktop-container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 1rem;
-}
-
-.footbag-games-desktop-container .footbag-game {
-	min-height: 90%;
-}
-
-.footbag-description {
-	font-size: medium;
-	margin: 2rem 4rem 4rem 4rem;
-}
-
-.footbag-game-icon {
-	border-radius: 50%;
 }

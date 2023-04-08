@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 // keep synced with '--width-mobile' in App.css */
 const mobileWidth = 750;
 
-const useTouchScreen = () => {
+const useTouchDisplay = () => {
   try{
     document.createEvent('TouchEvent');
     return true;
@@ -25,11 +25,11 @@ const useMobileDisplay = () => {
         }
     }, []);
 
-    return useTouchScreen() || (width <= mobileWidth);
+    return useTouchDisplay() || (width <= mobileWidth);
 }
 
 const useDesktopDisplay = () => {
   return useMobileDisplay() === false;
 }
 
-export { useMobileDisplay, useDesktopDisplay, useTouchScreen };
+export { useMobileDisplay, useDesktopDisplay, useTouchDisplay };

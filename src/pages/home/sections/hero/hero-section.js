@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import './hero-section.css';
 import { videos } from "./hero-data";
 import { Video } from "../../../../components/video/video";
-import { useDesktopDisplay } from "../../../../hooks/display-hook";
+import { useTouchDisplay } from "../../../../hooks/display-hook";
 
 function HeroSection_Mobile() {
   // auto-play videos are not supported on a mobile device
@@ -39,7 +39,7 @@ function HeroSection_Desktop() {
 function HeroSection() {
 	return (
     <>
-      { useDesktopDisplay() ? <HeroSection_Desktop /> : <HeroSection_Mobile /> }
+      { useTouchDisplay() ? <HeroSection_Mobile /> : <HeroSection_Desktop /> }
     </>
 	);
 }

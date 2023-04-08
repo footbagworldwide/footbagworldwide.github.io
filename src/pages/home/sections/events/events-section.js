@@ -19,8 +19,10 @@ function EventsSectionItem(props) {
 }
 
 function EventsSectionContainer(props) {
+  const className = props.className ?? '';
+
   return (
-    <div className="events-section-event-container">
+    <div className={`events-section-event-container ${className}`}>
       <h2 className="events-section-subheader"><strong>{props.title}</strong></h2>
       { props.children }
     </div>
@@ -37,11 +39,11 @@ function UpcomingEvents() {
   );
 }
 
-function PastEvents() {
+function PastEvents(props) {
   const pastEvents = [events[1], events[2], events[3]];
 
   return (
-    <EventsSectionContainer title="PAST EVENTS">
+    <EventsSectionContainer title="PAST EVENTS" className={props.className}>
       <div id="events-section-past-events-container">
         <EventsSectionItem event={pastEvents[0]} />
         <ColumnDivider />
@@ -54,8 +56,6 @@ function PastEvents() {
 }
 
 function EventsSection() {
-  const containerClassName = useDesktopDisplay() ? 'events-section-events-container_desktop' : '';
-
   return (
     <div className="home-page-section events-section">
       <h1>EVENTS</h1>
@@ -63,9 +63,9 @@ function EventsSection() {
         Every year the IFPA organizes the World Footbag Championships hosted by local clubs
         and attended by players around the world.
       </p>
-      <div className={`home-page-subsection events-section-events-container ${containerClassName}`}>
+      <div className='home-page-subsection events-section-events-container'>
         <UpcomingEvents />
-        { useDesktopDisplay() && <PastEvents /> }
+        <PastEvents className="events-section-past-events" />
       </div>
       <ButtonLink route="/events"><strong>SEE ALL EVENTS</strong></ButtonLink>
     </div>

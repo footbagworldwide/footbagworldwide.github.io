@@ -73,6 +73,11 @@
 	row-gap: 1rem;
 }
 
+.event-page-link-icon {
+  height: 25px;
+  width: 25px;
+}
+
 #all-events-button-container {
   text-align: center;
   margin-bottom: 1rem;

@@ -11,6 +11,7 @@ function FootbagGameItem(props) {
         <ImageLink
           route={footbagGame.pageRoute}
           src={footbagGame.icon}
+          alt={`Icon for ${footbagGame.title}`}
           className="footbag-game-icon"
         />
         <h3>{footbagGame.title}</h3>

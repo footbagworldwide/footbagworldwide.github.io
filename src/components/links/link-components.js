@@ -10,7 +10,7 @@ function ButtonLink(props) {
 
   if(external === true) {
     return (
-      <a href={route} target="_blank">
+      <a href={route} target="_blank" rel="noreferrer">
         <button className={className}>
           { props.children }
         </button>
@@ -30,6 +30,7 @@ function ButtonLink(props) {
 function ImageLink(props) {
   const route = props.route;
   const src = props.src;
+  const alt = props.alt;
   const id = props.id;
   const className = props.className;
   const height = props.height;
@@ -37,7 +38,7 @@ function ImageLink(props) {
 
   return (
     <Link to={route}>
-      <img id={id} src={src} className={className} width={width} height={height} />
+      <img id={id} src={src} className={className} width={width} height={height} alt={alt} />
     </Link>
   );
 }

@@ -1,14 +1,16 @@
 import './header.css';
-import { useDesktopDisplay, useMobileDisplay } from '../../../hooks/display-hook';
+import { useDesktopDisplay } from '../../../hooks/display-hook';
 import logo from '../../../assets/images/logo.svg';
 import { EmailLink, ImageLink } from '../../../components/links/link-components.js';
 import Menu from './menu/menu';
 
 function SiteLogo() {
+  const logoAltText = "Logo for footbagworldwide";
+
   if(useDesktopDisplay()) {
-    return <ImageLink className="logo-image" src={logo} route="/" />
+    return <ImageLink className="logo-image" src={logo} alt={logoAltText} route="/" />
   } else {
-    return <img className="logo-image" src={logo} />
+    return <img className="logo-image" src={logo} alt={logoAltText} />
   }
 }
 

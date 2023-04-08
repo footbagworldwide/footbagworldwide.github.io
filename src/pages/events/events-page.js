@@ -6,19 +6,18 @@ import emailIcon from '../../assets/images/icons/envelope.svg';
 import { events } from '../../data/events/events-data';
 import { ButtonLink, EmailLink } from '../../components/links/link-components';
 
-const latestEvent = events[0];
-const pastEvents = events.slice(1);
-
 function PastEventsSection() {
+  const pastEvents = events.slice(1);
+
   return (
     <div id="past-events-container">
       { pastEvents.map((pastEvent, index) =>
           <div 
             key={`event_${pastEvent.title}`}
-            className={ `event ${index % 2 == 0 ? 'event-odd' : ''}` }
+            className={ `event ${index % 2 === 0 ? 'event-odd' : ''}` }
           >
             <div className="event-logo-container">
-              <img src={pastEvent.imagePath} className="event-logo" />
+              <img src={pastEvent.imagePath} alt={`Logo for ${pastEvent.title}`} className="event-logo" />
             </div>
             <h3>{pastEvent.title}</h3>
             <div className="event-icon-container">
@@ -31,43 +30,37 @@ function PastEventsSection() {
   );
 }
 
-function EventIcon(props) {
-  const icon = props.icon;
-
-  return (
-    <img src={icon} width="25" height="25" />
-  );
-}
-
 function PastEventIcons(props) {
   const event = props.event;
 
   return (
     <>
-      <div><EventIcon icon={locationIcon} /></div>
-      <div><EventIcon icon={videosIcon} /></div>
-      <div><EventIcon icon={resultsIcon} /></div>
+      <div><img className="event-page-link-icon" src={locationIcon} alt="Icon for location" /></div>
+      <div><img className="event-page-link-icon" src={videosIcon} alt="Icon for videos" /></div>
+      <div><img className="event-page-link-icon" src={resultsIcon} alt="Icon for results" /></div>
       <div><span>{event.location}</span></div>
-      <div><a className="event-link" href={event.videoLink} target="_blank">Video</a></div>
-      <div><a className="event-link" href={event.resultsLink} target="_blank">Results</a></div>
+      <div><a className="event-link" href={event.videoLink} target="_blank" rel="noreferrer">Video</a></div>
+      <div><a className="event-link" href={event.resultsLink} target="_blank" rel="noreferrer">Results</a></div>
     </>
   );
 }
 
 function LatestEventSection() {
+  const latestEvent = events[0];
+
   return (
     <div id="latest-event-container">
-      <img src={latestEvent.imagePath} id="latest-event-logo" />
+      <img src={latestEvent.imagePath} alt={`Logo for ${latestEvent.title}`} id="latest-event-logo" />
       <div>
         <h3 id="latest-event-title">{latestEvent.title}</h3>
         <p>{latestEvent.description}</p>
         <div id="latest-event-icon-container">
           <div>
-            <EventIcon icon={locationIcon} />
+            <img className="event-page-link-icon" src={locationIcon} alt="Icon for location" />
             <strong className="latest-event-icon">{latestEvent.location}</strong>
           </div>
           <div>
-            <EventIcon icon={emailIcon} />
+            <img className="event-page-link-icon" src={emailIcon} alt="Icon for email" />
             <strong className="latest-event-icon"><EmailLink>Contact for more info</EmailLink></strong>
           </div>
         </div>

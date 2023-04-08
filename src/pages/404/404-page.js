@@ -6,7 +6,7 @@ import { ButtonLink } from '../../components/links/link-components';
 function NotFoundPage() {
   return (
     <div id="not-found-page">
-      <img id="not-found-image" src={notFoundImage} />
+      <img id="not-found-image" src={notFoundImage} alt="404 with footbag" />
       <div><strong>Oooops!</strong></div>
       <div id="not-found-description">
         <div>This page doesn't exist.</div>

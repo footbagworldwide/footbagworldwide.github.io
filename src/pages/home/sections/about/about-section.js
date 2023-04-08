@@ -1,13 +1,15 @@
 import './about-section.css';
 import historyImage from '../../../../assets/images/wfc-logos/WFC2018.jpg';
 import { ButtonLink } from '../../../../components/links/link-components';
-import { useDesktopDisplay, useMobileDisplay } from '../../../../hooks/display-hook.js';
 
 function AboutSectionContainer(props) {
+  const className = props.className ?? '';
+  const containerClassName = props.containerClassName ?? '';
+
   return (
-    <div className={`about-section-item ${props.className}`}>
+    <div className={`about-section-item ${className}`}>
       <h2 className="about-section-item-header">{props.title}</h2>
-      <div className={`about-section-content ${props.containerClassName}`}>
+      <div className={`about-section-content ${containerClassName}`}>
         { props.children }
       </div>
       <div className="about-button-container">
@@ -18,11 +20,11 @@ function AboutSectionContainer(props) {
 }
 
 function FootbagHistory() {
-  const containerClassName = useDesktopDisplay() ? "about-section-content-history" : ""
-
   return (
-    <AboutSectionContainer title="HISTORY OF FOOTBAG" containerClassName={containerClassName}>
-      <div className='about-section-image-container'><img className="about-section-image" src={historyImage} /></div>
+    <AboutSectionContainer title="HISTORY OF FOOTBAG" containerClassName="about-section-content-history">
+      <div className='about-section-image-container'>
+        <img className="about-section-image" src={historyImage} />
+      </div>
       <p className="about-section-text">
         Footbag roots can be found deep in the ancient
         cultures of Asia and the Americas, with
@@ -48,12 +50,10 @@ function AboutIfpa(props) {
 }
 
 function AboutSection() {
-  const containerClassName = useDesktopDisplay() ? 'about-section-container_desktop' : '';
-
   return (
-    <div className={`home-page-section home-page-subsection ${containerClassName}`}>
-      <FootbagHistory/>
-      <AboutIfpa className={useMobileDisplay() ? 'about-section-item_mobile' : ''}/>
+    <div className='home-page-section home-page-subsection about-section-container'>
+      <FootbagHistory />
+      <AboutIfpa className="about-section-container-ifpa" />
     </div>
   );
 }

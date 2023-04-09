@@ -3,16 +3,27 @@ import '../footbag-games.css';
 import { kickingGamesData, hackySackData, twoSquareData, golfData, netData, freestyleData } from '../../../data/games/footbag-games-data.js';
 import FootbagGameHeader from '../header/footbag-game-header';
 
+function FootbagGameIcon(props) {
+  const kickingGame = props.kickingGame;
+  const src = props.withBackground === true ? kickingGame.icon_withBackground : kickingGame.icon;
+  
+  return (
+    <img className="footbag-game-icon kicking-game-icon" src={src} alt={`Icon for ${kickingGame.title}`} />
+  );
+};
+
 function KickingGameItem(props) {
   const kickingGame = props.kickingGame;
-  const index = props.index;
 
-  const isSingleColumnView = false;
+  let withBackground = false;
+  if(props.withBackground) { withBackground = true; }
+
+  const className = withBackground === true ? 'footbag-game-section-with-background kicking-game-odd' : 'kicking-game-even';
 
   return (
-    <div className={`kicking-game-container ${isSingleColumnView === false ? 'footbag-game-section' : ''} ${index % 2 == 0 ? 'kicking-game-odd footbag-game-section-with-background' : 'kicking-game-even'}`}>
+    <div className={`kicking-game-container footbag-game-section ${className}`}>
       <div>
-        { (isSingleColumnView === true || index % 2 == 0) && <img className="footbag-game-icon" src={kickingGame.icon} alt={`Icon for ${kickingGame.title}`} /> }
+        { withBackground && <FootbagGameIcon kickingGame={kickingGame} withBackground={withBackground === false} /> }
       </div>
       <div>
         <h2 className="footbag-game-section-header">{kickingGame.title}</h2>
@@ -29,10 +40,10 @@ function KickingGameItem(props) {
               )
             }
           </ul>
-        </div>          
+        </div>
       </div>
       <div>
-        { (isSingleColumnView === false && index % 2 == 1) && <img className="footbag-game-icon" src={kickingGame.icon_withBackground} alt={`Icon for ${kickingGame.title}`} /> }
+        { !withBackground && <FootbagGameIcon kickingGame={kickingGame} withBackground={withBackground === false} /> }
       </div>
     </div>
   );
@@ -48,9 +59,9 @@ function KickingGamesPage() {
 		<div>
       <FootbagGameHeader headerData={kickingGameHeader} />
 			<div>
-        <KickingGameItem kickingGame={hackySackData} index={0} />
-        <KickingGameItem kickingGame={twoSquareData} index={1} />
-        <KickingGameItem kickingGame={golfData} index={2} />
+        <KickingGameItem kickingGame={hackySackData} withBackground />
+        <KickingGameItem kickingGame={twoSquareData} />
+        <KickingGameItem kickingGame={golfData} withBackground />
 			</div>
 		</div>
 	);

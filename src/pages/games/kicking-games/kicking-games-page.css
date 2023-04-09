@@ -1,48 +1,24 @@
-#kicking-games-header-icons {
-  text-align: center;
+.kicking-game-icon {
+  width: 100%;
+}
+
+.kicking-game-container {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 5rem;
+  grid-template-columns: .75fr 1fr .75fr;
+  justify-items: center;
 }
 
-@media (min-width: 750px) {
-  .kicking-game-container {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
-    display: grid;
-    grid-template-columns: .75fr 1fr .75fr;
-    justify-items: center;
-  }
-
-	.kicking-game-odd {
-		text-align: left;
-	}
-
-	.kicking-game-even {
-		text-align: right;
-	}
-
-  .kicking-game-even li {
-    direction: rtl;
-    margin-right: 1.5rem;
-  }
+.kicking-game-odd {
+  text-align: left;
 }
 
-@media (max-width: 750px) {
-  .kicking-game-container {
-    grid-template-columns: 1fr;
-    padding: 3rem;
-    text-align: center;
-  }
+.kicking-game-even {
+  text-align: right;
+}
 
-  .kicking-game-container,
-  .kicking-game-odd,
-  .kicking-game-even {
-	  text-align: center;
-  }
-
-  .kicking-game-even li {
-    direction: ltr;
-    margin-right: 0;
-  }
+.kicking-game-even li {
+  direction: rtl;
+  margin-right: 1.5rem;
 }

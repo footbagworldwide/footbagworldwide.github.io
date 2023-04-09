@@ -25,7 +25,7 @@ function OtherGame(props) {
     return (
       <div className='footbag-game-section'>
         <div><ImageLink src={otherGame.icon_withBackground} alt={`Icon for ${otherGame.title}`} route={otherGame.pageRoute} className="footbag-game-other-icon" /></div>
-        <OtherGameButton title={otherGame.title} />
+        <OtherGameButton title={`DISCOVER ${otherGame.title}`} />
       </div>
     );
   }

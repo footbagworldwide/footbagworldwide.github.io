@@ -5,7 +5,7 @@ function HowToPlayItem(props) {
   const item = props.item;
 
   return (
-    <div>
+    <div className='how-to-play-itme'>
       <div><img className="how-to-play-icon" src={item.icon} /></div>
       <strong>{item.description}</strong>
     </div>

@@ -1,13 +1,3 @@
-.about-section-container {
-  grid-template-columns: 1.75fr .75fr;
-  gap: 2rem;
-}
-
-.about-section-content-history {
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 1fr;
-}
-
 @media (max-width: 800px) {
   .about-section-container,
   .about-section-content-history {
@@ -20,9 +10,16 @@
 }
 
 @media (min-width: 800px) {
-  .about-section-container,
+  .about-section-container {
+    display: grid;
+    grid-template-columns: 1.75fr .75fr;
+    gap: 2rem;
+  }
+
   .about-section-content-history {
     display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
   }
 
   /* todo: come back and make this properly responsive */

@@ -5,7 +5,7 @@ import { videos } from "./hero-data";
 import { Video } from "../../../../components/video/video";
 import { useTouchDisplay } from "../../../../hooks/display-hook";
 
-function HeroSection_Mobile() {
+function HeroSectionMobile() {
   // auto-play videos are not supported on a mobile device
   
   return (
@@ -15,7 +15,7 @@ function HeroSection_Mobile() {
   );
 }
 
-function HeroSection_Desktop() {
+function HeroSectionDesktop() {
   return (
     <div>
       <Carousel
@@ -39,7 +39,7 @@ function HeroSection_Desktop() {
 function HeroSection() {
 	return (
     <>
-      { useTouchDisplay() ? <HeroSection_Mobile /> : <HeroSection_Desktop /> }
+      { useTouchDisplay() ? <HeroSectionMobile /> : <HeroSectionDesktop /> }
     </>
 	);
 }

@@ -23,7 +23,7 @@ function FootbagHistory() {
   return (
     <AboutSectionContainer title="HISTORY OF FOOTBAG" containerClassName="about-section-content-history">
       <div className='about-section-image-container'>
-        <img className="about-section-image" src={historyImage} alt="Image for footbag history" />
+        <img className="about-section-image" src={historyImage} alt="Footbag history" />
       </div>
       <p className="about-section-text">
         Footbag roots can be found deep in the ancient

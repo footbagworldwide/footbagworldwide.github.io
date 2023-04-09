@@ -2,7 +2,7 @@ import { freestyleData, kickingGamesData, netData } from '../../../data/games/fo
 import SingleSportGamePage from '../single-sport-games/single-sport-game-page.js';
 
 const freestyleHeader = {
-  title: freestyleData.title,
+  game: freestyleData,
   otherGames: [kickingGamesData, netData],
 };
 

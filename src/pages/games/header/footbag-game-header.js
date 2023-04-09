@@ -34,22 +34,40 @@ function OtherGame(props) {
 function FootbagGameHeader(props) {
   const headerData = props.headerData;
 
-  return (
-    <div className="footbag-game-section footbag-game-header">
-      <h1 className="footbag-game-title">{headerData.title}</h1>
+  const HeaderIcon = () => {
+    return (
+      <div><img className="footbag-game-icon" src={headerData.game.icon_withBackground} alt={`Icon for ${headerData.game.title}`} /></div>
+    );
+  }
+
+  const HeaderContainerLong = () => {
+    return (
       <div className="footbag-game-header-container_long">
         <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} />
-        <div>{ props.children }</div>
+        <HeaderIcon />
         <OtherGame otherGame={headerData.otherGames[1]} arrowRight={true} />
       </div>
+    );
+  }
+
+  const HeaderContainerShort = () => {
+    return (
       <div className="footbag-game-header-container_short">
-        <div>{ props.children }</div>
+        <HeaderIcon />
         <h2>DISCOVER OTHER FOOTBAG GAMES</h2>
         <div className="footbag-game-header-discover-others">
           <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} short={true} />
           <OtherGame otherGame={headerData.otherGames[1]} arrowRight={true} short={true} />
         </div>
       </div>
+    );
+  }
+
+  return (
+    <div className="footbag-game-section footbag-game-header">
+      <h1 className="footbag-game-title">{headerData.game.title}</h1>
+      <HeaderContainerLong />
+      <HeaderContainerShort />
     </div>
   );
 }

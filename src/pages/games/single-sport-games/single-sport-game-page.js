@@ -11,9 +11,7 @@ function SingleSportGamePage(props) {
 
   return (
     <div className='single-sport-page'>
-      <FootbagGameHeader headerData={headerData}>
-        <img className="footbag-game-icon" src={singleSportGame.icon_withBackground} alt={`Icon for ${singleSportGame.tititle}`} />
-      </FootbagGameHeader>
+      <FootbagGameHeader headerData={headerData} />
       <AboutSingleSport singleSportGame={singleSportGame} />
       <HowToPlaySingleSport singleSportGame={singleSportGame} />
       <SingleSportCompetition singleSportGame={singleSportGame} />

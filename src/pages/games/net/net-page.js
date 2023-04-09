@@ -2,7 +2,7 @@ import { netData, freestyleData, kickingGamesData } from '../../../data/games/fo
 import SingleSportGamePage from '../single-sport-games/single-sport-game-page.js';
 
 const netHeader = {
-  title: netData.title,
+  game: netData,
   otherGames: [freestyleData, kickingGamesData],
 };
 

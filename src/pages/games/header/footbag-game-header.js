@@ -35,7 +35,7 @@ function FootbagGameHeader(props) {
   const headerData = props.headerData;
 
   return (
-    <div className="footbag-game-section">
+    <div className="footbag-game-section footbag-game-header">
       <h1 className="footbag-game-title">{headerData.title}</h1>
       <div className="footbag-game-header-container_long">
         <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} />

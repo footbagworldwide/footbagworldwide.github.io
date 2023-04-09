@@ -2,7 +2,6 @@ import './events-section.css';
 import { events } from '../../../../data/events/events-data';
 import { ButtonLink } from '../../../../components/links/link-components';
 import ColumnDivider from '../../../../components/column-divider/column-divider';
-import { useDesktopDisplay } from '../../../../hooks/display-hook';
 
 function EventsSectionItem(props) {
   const event = props.event;
@@ -10,7 +9,7 @@ function EventsSectionItem(props) {
   return (
     <div className="events-section-event">
       <div className="event-logo-container">
-        <img src={event.imagePath} className="event-logo" />
+        <img src={event.imagePath} alt={`Logo for ${event.title}`} className="event-logo" />
       </div>
       <h2>{event.title}</h2>
       <strong>{event.location}</strong>

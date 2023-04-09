@@ -6,7 +6,7 @@ function HowToPlayItem(props) {
 
   return (
     <div className='how-to-play-itme'>
-      <div><img className="how-to-play-icon" src={item.icon} /></div>
+      <div><img className="how-to-play-icon" src={item.icon} alt={`Icon for ${item.description}`} /></div>
       <strong>{item.description}</strong>
     </div>
   );

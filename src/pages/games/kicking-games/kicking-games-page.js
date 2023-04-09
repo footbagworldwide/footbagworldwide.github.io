@@ -33,7 +33,7 @@ function KickingGamesPage() {
           {
             kickingGames.map(kickingGame =>
               <div key={`kicking-game-icon_${kickingGame.title}`}>
-                <img className="footbag-game-icon" src={kickingGame.icon_withBackground} />
+                <img className="footbag-game-icon" src={kickingGame.icon_withBackground} alt={`Icon for ${kickingGame.title}`} />
               </div>
             )
           }
@@ -51,11 +51,12 @@ function KickingGamesPage() {
     return (
       <div className={`kicking-game-container ${isSingleColumnView === false ? 'footbag-game-section' : ''} ${index % 2 == 0 ? 'kicking-game-odd footbag-game-section-with-background' : 'kicking-game-even'}`}>
         <div>
-          { (isSingleColumnView === true || index % 2 == 0) && <img className="footbag-game-icon" src={kickingGame.icon} /> }
+          { (isSingleColumnView === true || index % 2 == 0) && <img className="footbag-game-icon" src={kickingGame.icon} alt={`Icon for ${kickingGame.title}`} /> }
         </div>
         <div>
           <h2 className="footbag-game-section-header">{kickingGame.title}</h2>
           <p>{kickingGame.description.long_html}</p>
+          <img src={kickingGame.gif} alt={`Gif of ${kickingGame.title}`} className="footbag-game-gif" />
           <div>
             <strong>MORE INFO</strong>
             <ul>
@@ -67,11 +68,10 @@ function KickingGamesPage() {
                 )
               }
             </ul>
-          </div>
-          <img src={kickingGame.gif} className="footbag-game-gif" />
+          </div>          
         </div>
         <div>
-          { (isSingleColumnView === false && index % 2 == 1) && <img className="footbag-game-icon" src={kickingGame.icon_withBackground} /> }
+          { (isSingleColumnView === false && index % 2 == 1) && <img className="footbag-game-icon" src={kickingGame.icon_withBackground} alt={`Icon for ${kickingGame.title}`} /> }
         </div>
       </div>
     );

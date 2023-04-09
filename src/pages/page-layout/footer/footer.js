@@ -6,7 +6,7 @@ function IfpaSection() {
   return (
     <div>
       <EmailLink className="footer-link">
-        <img src={ifpaLogo} className="ifpa-logo" />
+        <img src={ifpaLogo} className="ifpa-logo" alt="Logo for IFPA" />
       </EmailLink>
     </div>
   );

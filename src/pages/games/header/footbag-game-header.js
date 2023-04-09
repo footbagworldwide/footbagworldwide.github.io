@@ -5,17 +5,30 @@ function OtherGame(props) {
   const otherGame = props.otherGame;
   const arrowLeft = props.arrowLeft === true;
   const arrowRight = props.arrowRight === true;
+  const short = props.short === true;
 
-  const buttonText = `DISCOVER ${otherGame.title}`;
-
-  return (
-    <div className='footbag-game-section'>
-      <div><ImageLink src={otherGame.icon_withBackground} alt={`Icon for ${otherGame.title}`} route={otherGame.pageRoute} className="footbag-game-other-icon" /></div>
+  const OtherGameButton = (buttonProps) => {
+    return (
       <ButtonLink route={otherGame.pageRoute} className="other-game-button">
-        { arrowLeft && <i className="fa-solid fa-chevron-left"></i> } {buttonText} { arrowRight && <i className="fa-solid fa-chevron-right"></i> }
+        { arrowLeft && <i className="fa-solid fa-chevron-left"></i> } {buttonProps.title} { arrowRight && <i className="fa-solid fa-chevron-right"></i> }
       </ButtonLink>
-    </div>
-  );
+    );
+  };
+
+  if(short) {
+    return (
+      <div className='footbag-game-section'>
+        <OtherGameButton title={otherGame.title_short} />
+      </div>
+    );
+  } else {
+    return (
+      <div className='footbag-game-section'>
+        <div><ImageLink src={otherGame.icon_withBackground} alt={`Icon for ${otherGame.title}`} route={otherGame.pageRoute} className="footbag-game-other-icon" /></div>
+        <OtherGameButton title={otherGame.title} />
+      </div>
+    );
+  }
 }
 
 function FootbagGameHeader(props) {
@@ -24,12 +37,18 @@ function FootbagGameHeader(props) {
   return (
     <div className="footbag-game-section">
       <h1 className="footbag-game-title">{headerData.title}</h1>
-      <div className="footbag-game-header-container">
+      <div className="footbag-game-header-container_long">
         <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} />
-        <div>
-          { props.children }
-        </div>
+        <div>{ props.children }</div>
         <OtherGame otherGame={headerData.otherGames[1]} arrowRight={true} />
+      </div>
+      <div className="footbag-game-header-container_short">
+        <div>{ props.children }</div>
+        <h2>DISCOVER OTHER FOOTBAG GAMES</h2>
+        <div className="footbag-game-header-discover-others">
+          <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} short={true} />
+          <OtherGame otherGame={headerData.otherGames[1]} arrowRight={true} short={true} />
+        </div>
       </div>
     </div>
   );

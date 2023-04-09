@@ -1,5 +1,5 @@
 .footbag-game-section {
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .footbag-game-section-with-background {
@@ -11,8 +11,7 @@
 }
 
 .footbag-game-icon {
-	height: 150px;
-	width: 150px;
+	max-width: 200px;
 }
 
 .footbag-game-gif {

@@ -1,8 +1,10 @@
 import './column-divider.css';
 
-function ColumnDivider() {
+function ColumnDivider(props) {
+  const className = props.className ?? null;
+
   return (
-    <div className="column-divider"></div>
+    <div className={`column-divider ${className}`}></div>
   );
 }
 

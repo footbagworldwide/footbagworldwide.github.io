@@ -1,7 +1,26 @@
 .how-to-play-item-container {
-  display: grid;
-  grid-template-columns: 1fr .01fr 1fr .01fr 1fr;
   margin-top: 2rem;
+  grid-template-columns: 1fr .01fr 1fr .01fr 1fr;
+}
+
+@media (max-width: 650px) {
+  .how-to-play-item-container {
+    display: block;
+  }
+
+  .how-to-play-divider {
+    display: none;
+  }
+
+  .how-to-play-description {
+    text-align: left;
+  }
+}
+
+@media (min-width: 650px) {
+  .how-to-play-item-container {
+    display: grid;
+  }
 }
 
 .how-to-play-icon {

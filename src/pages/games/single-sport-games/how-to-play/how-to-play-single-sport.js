@@ -16,14 +16,14 @@ function HowToPlaySingleSport(props) {
   const singleSportGame = props.singleSportGame;
   
   return (
-    <div className="footbag-game-section">
+    <div className="footbag-game-section single-sport-page-container">
       <h3 className="footbag-game-section-header">HOW TO PLAY {singleSportGame.title}</h3>
-      <div className="single-sport-page-centered-container">{ singleSportGame.howToPlay.description_html }</div>
-      <div className="how-to-play-item-container single-sport-page-centered-container">
+      <div className="how-to-play-description">{ singleSportGame.howToPlay.description_html }</div>
+      <div className="how-to-play-item-container">
         <HowToPlayItem item={singleSportGame.howToPlay.resources[0]} />
-        <ColumnDivider />
+        <ColumnDivider className="how-to-play-divider" />
         <HowToPlayItem item={singleSportGame.howToPlay.resources[1]} />
-        <ColumnDivider />
+        <ColumnDivider className="how-to-play-divider" />
         <HowToPlayItem item={singleSportGame.howToPlay.resources[2]} />
       </div>
     </div>

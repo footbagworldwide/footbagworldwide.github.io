@@ -33,6 +33,7 @@ function getCompetitionHtml() {
 
 const netData = {
   title: 'FOOTBAG NET',
+  title_short: 'NET',
   icon: netIcon_white,
   icon_withBackground: netIcon_green,
   pageRoute: '/games/net',

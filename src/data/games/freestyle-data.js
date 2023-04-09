@@ -33,6 +33,7 @@ function getCompetitionHtml() {
 
 const freestyleData = {
   title: 'FREESTYLE FOOTBAG',
+  title_short: 'FREESTYLE',
   icon: freestyleIcon_white,
   icon_withBackground: freestyleIcon_green,
   pageRoute: '/games/freestyle',

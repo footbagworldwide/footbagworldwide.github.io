@@ -1,3 +1,47 @@
+@media (max-width: 500px) {
+  .competitive-event-video-button {
+    display: block;
+  }
+
+  .competitive-event-video-container {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .competitive-event-video-button {
+    display: none;
+  }
+
+  .competitive-event-video-container {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .competitive-event-item-container {
+    display: block;
+  }
+
+  .competitive-event-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .competitive-event-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+}
+
+.competitive-event-item {
+  background-color: white;
+  padding: 1rem;
+}
+
 .competitive-event-video-container {
   height: 400px;
   padding: 1rem;

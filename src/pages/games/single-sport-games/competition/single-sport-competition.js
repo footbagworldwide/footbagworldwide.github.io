@@ -10,6 +10,7 @@ function CompetitiveEvent(props) {
       <h3>{competitiveEvent.title}</h3>
       <p>{competitiveEvent.description}</p>
       <ButtonLink><strong>RULES</strong></ButtonLink>
+      <div className="competitive-event-video-button"><ButtonLink><strong>VIDEO</strong></ButtonLink></div>
       <div className="competitive-event-video-container"><Video video={competitiveEvent.video} className="competitive-event-video" /></div>
     </div>
   );
@@ -19,9 +20,9 @@ function SingleSportCompetition(props) {
   const singleSportGame = props.singleSportGame;
   
   return (
-    <div className="footbag-game-section footbag-game-section-with-background">
+    <div className="footbag-game-section footbag-game-section-with-background single-sport-page-container">
       <h3 className="footbag-game-section-header">IS {singleSportGame.title} A HOBBY OR A SPORT?</h3>
-      <div className="single-sport-page-centered-container">{singleSportGame.competition.description_html}</div>
+      <div className="single-sport-page-container">{singleSportGame.competition.description_html}</div>
       <div className="competitive-event-item-container">
         {
           singleSportGame.competition.events.map((competitiveEvent, index) =>

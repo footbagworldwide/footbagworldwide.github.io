@@ -1,16 +1,23 @@
-.single-sport-about-container {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .single-sport-about-content-container {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
 }
 
-.single-sport-about-gif {
-  text-align: right !important;
+@media (max-width: 850px) {
+  .single-sport-about-content-container {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 850px) {
+  .single-sport-about-content-container {
+    display: grid;
+  }
+
+  .single-sport-about-gif {
+    text-align: right !important;
+  }  
 }
 
 .single-sport-about-description {

@@ -9,6 +9,7 @@ import golfIcon_Green from '../../assets/images/games/icon_golf_green.svg';
 
 const kickingGamesData = {
   title: 'KICKING GAMES',
+  title_short: 'KICKING',
   icon: hackySackIcon_white,
   icon_withBackground: hackySackIcon_green,
   pageRoute: '/games/kicking'
@@ -24,6 +25,7 @@ function getHackySackDescriptionHtml() {
 
 const hackySackData = {
   title: 'HACKY SACK',
+  title_short: 'HACKY SACK',
   icon: hackySackIcon_white,
   icon_withBackground: hackySackIcon_green,
   pageRoute: kickingGamesData.pageRoute,
@@ -60,6 +62,7 @@ function getTwoSquareDescriptionHtml() {
 
 const twoSquareData = {
   title: 'TWO/FOUR SQUARE',
+  title_short: '2 SQUARE',
   icon: twoSquareIcon_White,
   icon_withBackground: twoSquareIcon_Green,
   pageRoute: kickingGamesData.pageRoute,
@@ -95,6 +98,7 @@ function getGolfDescriptionHtml() {
 
 const golfData = {
   title: 'FOOTBAG GOLF',
+  title_short: 'GOLF',
   icon: golfIcon_White,
   icon_withBackground: golfIcon_Green,
   pageRoute: kickingGamesData.pageRoute,

@@ -21,8 +21,8 @@ function KickingGameItem(props) {
   const className = withBackground === true ? 'footbag-game-section-with-background kicking-game-odd' : 'kicking-game-even';
 
   return (
-    <div className={`kicking-game-container footbag-game-section ${className}`}>
-      <div>
+    <div className={`footbag-game-page-container kicking-game-container footbag-game-section ${className}`}>
+      <div className="kicking-game-icon-container">
         { withBackground && <FootbagGameIcon kickingGame={kickingGame} withBackground={withBackground === false} /> }
       </div>
       <div>
@@ -31,18 +31,20 @@ function KickingGameItem(props) {
         <p>{kickingGame.description.long_html}</p>
         <div>
           <strong>MORE INFO</strong>
-          <ul>
-            {
-              kickingGame.howToPlay.resources.map((resource, resourceIndex) => 
-                <li key={`kicking-game-link_${resourceIndex}`}>
-                  <a href={resource.link}>{resource.description}</a>
-                </li>
-              )
-            }
-          </ul>
+          <div>
+            <ul className="kicking-game-more-info-list">
+              {
+                kickingGame.howToPlay.resources.map((resource, resourceIndex) => 
+                  <li key={`kicking-game-link_${resourceIndex}`}>
+                    <a href={resource.link}>{resource.description}</a>
+                  </li>
+                )
+              }
+            </ul>
+          </div>
         </div>
       </div>
-      <div>
+      <div className="kicking-game-icon-container">
         { !withBackground && <FootbagGameIcon kickingGame={kickingGame} withBackground={withBackground === false} /> }
       </div>
     </div>

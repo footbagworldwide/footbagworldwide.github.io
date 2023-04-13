@@ -1,24 +1,47 @@
+.kicking-game-icon-container {
+  text-align: center;
+}
+
 .kicking-game-icon {
-  width: 100%;
+  width: 75%;
 }
 
-.kicking-game-container {
-  padding-left: 5rem !important;
-  padding-right: 5rem !important;
-  display: grid;
-  grid-template-columns: .75fr 1fr .75fr;
-  justify-items: center;
+.kicking-game-more-info-list {
+  display: inline-block;
 }
 
-.kicking-game-odd {
-  text-align: left;
+@media (max-width: 750px) {
+  .kicking-game-container {
+    display: block;
+    text-align: center;
+  }
+
+  .kicking-game-icon-container {
+    display: none;
+  }
 }
 
-.kicking-game-even {
-  text-align: right;
-}
+@media (min-width: 750px) {
+  .kicking-game-container {
+    display: grid;
+    grid-template-columns: .75fr 1fr .75fr;
+    justify-items: center;
+  }
 
-.kicking-game-even li {
-  direction: rtl;
-  margin-right: 1.5rem;
+  .kicking-game-icon-container {
+    display: block;
+  }
+
+  .kicking-game-odd {
+    text-align: left;
+  }
+  
+  .kicking-game-even {
+    text-align: right;
+  }
+  
+  .kicking-game-even li {
+    direction: rtl;
+    margin-right: 1.5rem;
+  }
 }

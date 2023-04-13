@@ -20,9 +20,9 @@ function SingleSportCompetition(props) {
   const singleSportGame = props.singleSportGame;
   
   return (
-    <div className="footbag-game-section footbag-game-section-with-background single-sport-page-container">
+    <div className="footbag-game-section footbag-game-section-with-background footbag-game-page-container">
       <h3 className="footbag-game-section-header">IS {singleSportGame.title} A HOBBY OR A SPORT?</h3>
-      <div className="single-sport-page-container">{singleSportGame.competition.description_html}</div>
+      <div>{singleSportGame.competition.description_html}</div>
       <div className="competitive-event-item-container">
         {
           singleSportGame.competition.events.map((competitiveEvent, index) =>

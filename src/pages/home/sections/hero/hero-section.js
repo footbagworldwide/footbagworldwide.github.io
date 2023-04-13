@@ -15,7 +15,7 @@ function HeroSectionMobile() {
   );
 }
 
-function HeroSectionDesktop() {
+function HeroSectionDesktop_MultiVid() {
   return (
     <div>
       <Carousel
@@ -34,6 +34,26 @@ function HeroSectionDesktop() {
       </Carousel>
     </div>		
 	);
+}
+
+function HeroSectionDesktop_SingleVid() {
+  const video = videos[0];
+
+  return (
+    <div className="hero-video-container">
+      <Video video={video} className={video.className} />
+    </div>
+	);
+}
+
+function HeroSectionDesktop() {
+  const useMultiVid = false;
+
+  if(useMultiVid) {
+    return <HeroSectionDesktop_MultiVid />;
+  } else {
+    return <HeroSectionDesktop_SingleVid />;
+  }
 }
 
 function HeroSection() {

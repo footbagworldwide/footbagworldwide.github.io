@@ -54,7 +54,7 @@ const events = [
 	},
 	{
 		title: "WFC 2017",
-		location: "Portland, Oregon, USA",
+		location: "Portland, USA",
 		resultsLink: "http://www.footbag.org/events/show/1471686537",
 		videoLink: "https://www.google.com",
 		imagePath: logo_2017

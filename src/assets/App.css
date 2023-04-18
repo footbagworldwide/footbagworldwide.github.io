@@ -25,6 +25,10 @@ body {
 	line-height: 1.3125rem;
 }
 
+button {
+  font-family : inherit;
+}
+
 a {
 	text-decoration: none;
 }

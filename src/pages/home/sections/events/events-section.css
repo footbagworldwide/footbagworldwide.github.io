@@ -56,6 +56,7 @@
 .events-section-event-container {
   background-color: white;
   padding: 1rem;
+  padding-bottom: 2rem;
 }
 
 .events-section-event {

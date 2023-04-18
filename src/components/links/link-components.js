@@ -12,7 +12,7 @@ function ButtonLink(props) {
     return (
       <a href={route} target="_blank" rel="noreferrer">
         <button className={className}>
-          { props.children }
+          <strong>{ props.children }</strong>
         </button>
       </a>
     );
@@ -20,7 +20,7 @@ function ButtonLink(props) {
     return (
       <Link to={route}>
         <button className={className}>
-          { props.children }
+          <strong>{ props.children }</strong>
         </button>
       </Link>
     );

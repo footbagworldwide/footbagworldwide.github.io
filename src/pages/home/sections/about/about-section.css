@@ -39,7 +39,8 @@
 
 .about-section-item {
   background-color: var(--color-tertiary);
-  padding: 1rem;
+  padding: 8%;
+  text-align: center;
 }
 
 .about-section-item-header,
@@ -53,5 +54,4 @@
 
 .about-section-text {
   margin-top: 0;
-  font-size: large;
 }

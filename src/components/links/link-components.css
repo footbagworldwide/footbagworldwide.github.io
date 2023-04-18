@@ -1,5 +1,5 @@
 .button-link {
-  color: black;
+  color: var(--color-primary);
 	background-color: var(--color-secondary);
 }
 

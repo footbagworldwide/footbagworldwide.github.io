@@ -11,7 +11,7 @@ function EventsSectionItem(props) {
       <div className="event-logo-container">
         <img src={event.imagePath} alt={`Logo for ${event.title}`} className="event-logo" />
       </div>
-      <h2>{event.title}</h2>
+      <h3>{event.title}</h3>
       <strong>{event.location}</strong>
     </div>
   );
@@ -56,17 +56,17 @@ function PastEvents(props) {
 
 function EventsSection() {
   return (
-    <div className="home-page-section events-section">
-      <h1>EVENTS</h1>
+    <div className="page-subsection home-page-section events-section">
+      <h2>EVENTS</h2>
       <p>
         Every year the IFPA organizes the World Footbag Championships hosted by local clubs
         and attended by players around the world.
       </p>
-      <div className='home-page-subsection events-section-events-container'>
+      <div className='page-subsection events-section-events-container'>
         <UpcomingEvents />
         <PastEvents className="events-section-past-events" />
       </div>
-      <ButtonLink route="/events"><strong>SEE ALL EVENTS</strong></ButtonLink>
+      <ButtonLink route="/events">SEE ALL EVENTS</ButtonLink>
     </div>
   );
 }

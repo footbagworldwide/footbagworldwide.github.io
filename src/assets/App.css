@@ -50,3 +50,8 @@ img {
 	height: 150px;
 	line-height: 150px;
 }
+
+.page-subsection {
+  padding-left: 5%;
+  padding-right: 5%;
+}

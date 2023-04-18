@@ -80,9 +80,9 @@ function EventsPage() {
           displays of skills, but most of all, fun times for all!
         </p>
 			</div>
-      <h3 className="events-section-header"><div>UPCOMING EVENTS</div></h3>
+      <h2 className="events-section-header"><div>UPCOMING EVENTS</div></h2>
       <LatestEventSection />
-      <h3 className="events-section-header"><div>PAST EVENTS</div></h3>
+      <h2 className="events-section-header"><div>PAST EVENTS</div></h2>
 			<PastEventsSection />
       <div id="all-events-button-container">
         <ButtonLink external={true} route="http://footbag.org/events/list">SEE ALL EVENTS ON FOOTBAG.ORG</ButtonLink>

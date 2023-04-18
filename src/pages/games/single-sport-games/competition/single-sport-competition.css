@@ -32,14 +32,13 @@
   .competitive-event-item-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 2rem;
+    gap: 4%;
   }
 }
 
 .competitive-event-item {
   background-color: white;
-  padding: 1rem;
+  padding: 5%;
 }
 
 .competitive-event-video-container {

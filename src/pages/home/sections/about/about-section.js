@@ -13,7 +13,7 @@ function AboutSectionContainer(props) {
         { props.children }
       </div>
       <div className="about-button-container">
-        <ButtonLink route="/about"><strong>MORE</strong></ButtonLink>
+        <ButtonLink route="/about">MORE</ButtonLink>
       </div>
     </div>
   );
@@ -21,7 +21,7 @@ function AboutSectionContainer(props) {
 
 function FootbagHistory() {
   return (
-    <AboutSectionContainer title="HISTORY OF FOOTBAG" containerClassName="about-section-content-history">
+    <AboutSectionContainer title="HISTORY OF FOOTBAG" >
       <div className='about-section-image-container'>
         <img className="about-section-image" src={historyImage} alt="Footbag history" />
       </div>
@@ -40,7 +40,10 @@ function FootbagHistory() {
 
 function AboutIfpa(props) {
   return (
-    <AboutSectionContainer title="About IFPA" className={props.className}>
+    <AboutSectionContainer title="ABOUT IFPA" className={props.className}>
+      <div className='about-section-image-container'>
+        <img className="about-section-image" src={historyImage} alt="Footbag history" />
+      </div>
       <p className="about-section-text">
         IFPA (International Footbag Players' Association, Inc.) is a volunteer-run, charitable non-profit corporation,
         dedicated to the growth of footbag play world-wide as lifetime recreation and as an amateur, competitive sport.
@@ -51,7 +54,7 @@ function AboutIfpa(props) {
 
 function AboutSection() {
   return (
-    <div className='home-page-section home-page-subsection about-section-container'>
+    <div className='home-page-section page-subsection about-section-container'>
       <FootbagHistory />
       <AboutIfpa className="about-section-container-ifpa" />
     </div>

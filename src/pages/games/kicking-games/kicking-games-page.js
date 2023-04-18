@@ -21,7 +21,7 @@ function KickingGameItem(props) {
   const className = withBackground === true ? 'footbag-game-section-with-background kicking-game-odd' : 'kicking-game-even';
 
   return (
-    <div className={`footbag-game-page-container kicking-game-container footbag-game-section ${className}`}>
+    <div className={`page-subsection kicking-game-container footbag-game-section ${className}`}>
       <div className="kicking-game-icon-container">
         { withBackground && <FootbagGameIcon kickingGame={kickingGame} withBackground={withBackground === false} /> }
       </div>

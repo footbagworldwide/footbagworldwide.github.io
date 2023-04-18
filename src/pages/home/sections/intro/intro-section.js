@@ -17,14 +17,14 @@ function FootbagGameItem(props) {
         <h3>{footbagGame.title}</h3>
         <div>{footbagGame.description.short}</div>
       </div>
-      <ButtonLink route={footbagGame.pageRoute}><strong>MORE</strong></ButtonLink>
+      <ButtonLink route={footbagGame.pageRoute}>MORE</ButtonLink>
     </div>
   );
 }
 
 function IntroSection() {
 	return (
-		<div className="intro-container home-page-section">
+		<div className="intro-container home-page-section page-subsection">
 			<div className="intro-header">
         <h1>FOOTBAG</h1>
         <h2>RECREATIONAL AND COMPETITIVE SPORTS</h2>

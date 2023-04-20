@@ -10,9 +10,13 @@ function BackToTop() {
     setShowBackToTop(document.documentElement.scrollTop > 0);
   });
 
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
   if(showBackToTop) {
     return (
-      <div className="back-to-top" onClick={() => { window.scrollTo(0, 0) }}>
+      <div className="back-to-top" onClick={scrollToTop}>
         <i className="fa-solid fa-chevron-up"></i>
       </div>
     )

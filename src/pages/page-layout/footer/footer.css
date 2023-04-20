@@ -47,12 +47,15 @@ footer {
 }
 
 .back-to-top {
+  z-index: 99;
   border-radius: 50%;
+  border: none;
+  outline: none;
   position: fixed;
-  right: 2%;
-  bottom: 2%;
-  height: 2rem;
-  width: 2rem;
+  right: 4%;
+  bottom: 5%;
+  height: 3rem;
+  width: 3rem;
   cursor: pointer;
   background-color: var(--color-secondary);
   color: var(--color-primary);

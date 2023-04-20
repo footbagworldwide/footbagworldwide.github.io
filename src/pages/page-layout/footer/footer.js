@@ -1,6 +1,25 @@
 import './footer.css';
 import ifpaLogo from '../../../assets/images/ifpa-logo.svg';
 import { EmailLink } from '../../../components/links/link-components';
+import { useState } from 'react';
+
+function BackToTop() {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  window.addEventListener('scroll', () => {
+    setShowBackToTop(document.documentElement.scrollTop > 0);
+  });
+
+  if(showBackToTop) {
+    return (
+      <div className="back-to-top" onClick={() => { window.scrollTo(0, 0) }}>
+        <i className="fa-solid fa-chevron-up"></i>
+      </div>
+    )
+  } else {
+    return null;
+  }
+}
 
 function IfpaSection() {
   return (
@@ -34,15 +53,18 @@ function DonateSection() {
 
 function Footer() {
 	return (
-		<footer>
-			<div id="footer-container">
-				<IfpaSection />
-				<SocialSection />
-        <DonateSection />				
-			</div>
+    <>
+      <BackToTop />
+      <footer>
+        <div id="footer-container">
+          <IfpaSection />
+          <SocialSection />
+          <DonateSection />
+        </div>
 
-			<div className="copyright">Footbag.org 2023, International Footbag Players' Association, Inc. (a non-profit corporation)</div>
-		</footer>
+        <div className="copyright">Footbag.org 2023, International Footbag Players' Association, Inc. (a non-profit corporation)</div>
+      </footer>
+    </>
 	);
 }
 

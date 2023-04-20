@@ -45,3 +45,19 @@ footer {
 #donate-container {
   margin-top: .5rem;
 }
+
+.back-to-top {
+  border-radius: 50%;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-auto-flow: row;
+}

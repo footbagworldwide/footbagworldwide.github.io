@@ -63,4 +63,5 @@ footer {
   align-items: center;
   display: grid;
   grid-auto-flow: row;
+  -webkit-tap-highlight-color: transparent;
 }

@@ -49,8 +49,10 @@ function LatestEventSection() {
   const latestEvent = events[0];
 
   return (
-    <div id="latest-event-container">
-      <img src={latestEvent.imagePath} alt={`Logo for ${latestEvent.title}`} id="latest-event-logo" />
+    <div id="latest-event-container" className="page-subsection">
+      <div id="latest-event-logo-container">
+        <img src={latestEvent.imagePath} alt={`Logo for ${latestEvent.title}`} id="latest-event-logo" className='event-logo' />
+      </div>
       <div>
         <h3 id="latest-event-title">{latestEvent.title}</h3>
         <p>{latestEvent.description}</p>
@@ -72,7 +74,7 @@ function LatestEventSection() {
 function EventsPage() {
 	return (
 		<div id="events-page">
-			<div id="events-page-header">
+			<div id="events-page-header" className='page-subsection'>
 				<h1 id="events-title">EVENTS</h1>
 				<p>
           Footbag events are where players, competitors, and friends gather to celebrate their love of footbag. The World

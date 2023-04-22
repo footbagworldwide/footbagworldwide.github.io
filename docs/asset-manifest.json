@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bd253af.css",
-    "main.js": "/static/js/main.70b4700c.js",
+    "main.css": "/static/css/main.91cae28a.css",
+    "main.js": "/static/js/main.8926d2a0.js",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
     "static/media/WFC2022.png": "/static/media/WFC2022.b1dd5ab5788738326c5d.png",
     "static/media/WFC2017.jpg": "/static/media/WFC2017.d600dabec61712ca2905.jpg",
@@ -33,11 +33,11 @@
     "static/media/videos.svg": "/static/media/videos.35f7437de3c53f7689844e783f4e5223.svg",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "index.html": "/index.html",
-    "main.0bd253af.css.map": "/static/css/main.0bd253af.css.map",
-    "main.70b4700c.js.map": "/static/js/main.70b4700c.js.map"
+    "main.91cae28a.css.map": "/static/css/main.91cae28a.css.map",
+    "main.8926d2a0.js.map": "/static/js/main.8926d2a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bd253af.css",
-    "static/js/main.70b4700c.js"
+    "static/css/main.91cae28a.css",
+    "static/js/main.8926d2a0.js"
   ]
 }

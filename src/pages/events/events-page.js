@@ -11,10 +11,10 @@ function PastEventsSection() {
 
   return (
     <div id="past-events-container">
-      { pastEvents.map((pastEvent, index) =>
+      { pastEvents.map((pastEvent) =>
           <div 
             key={`event_${pastEvent.title}`}
-            className={ `event ${index % 2 === 0 ? 'event-odd' : ''}` }
+            className='event'
           >
             <div className="event-logo-container">
               <img src={pastEvent.imagePath} alt={`Logo for ${pastEvent.title}`} className="event-logo" />
@@ -82,9 +82,9 @@ function EventsPage() {
           displays of skills, but most of all, fun times for all!
         </p>
 			</div>
-      <h2 className="events-section-header"><div>UPCOMING EVENTS</div></h2>
+      <h3 className="events-section-header"><div>UPCOMING EVENTS</div></h3>
       <LatestEventSection />
-      <h2 className="events-section-header"><div>PAST EVENTS</div></h2>
+      <h3 className="events-section-header"><div>PAST EVENTS</div></h3>
 			<PastEventsSection />
       <div id="all-events-button-container">
         <ButtonLink external={true} route="http://footbag.org/events/list">SEE ALL EVENTS ON FOOTBAG.ORG</ButtonLink>

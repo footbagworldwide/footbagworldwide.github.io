@@ -27,6 +27,5 @@
 }
 
 #email-icon {
-	color: var(--color-secondary);
-  font-size: large;
+	width: 1.5rem;
 }

@@ -3,6 +3,7 @@ import { useDesktopDisplay } from '../../../hooks/display-hook';
 import logo from '../../../assets/images/logo.svg';
 import { EmailLink, ImageLink } from '../../../components/links/link-components.js';
 import Menu from './menu/menu';
+import emailIcon from '../../../assets/images/icons/envelope.svg';
 
 function SiteLogo() {
   const logoAltText = "Logo for footbagworldwide";
@@ -24,7 +25,7 @@ function Header() {
       <div></div>
       <div><SiteLogo /></div>
       <Menu />
-      { useDesktopDisplay() && <div><EmailLink><i id='email-icon' className="fa-regular fa-envelope"></i></EmailLink></div> }
+      { useDesktopDisplay() && <div><EmailLink><img id='email-icon' src={emailIcon} /></EmailLink></div> }
     </nav>
   );
 }

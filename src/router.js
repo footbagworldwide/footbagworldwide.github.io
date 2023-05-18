@@ -36,7 +36,8 @@ function AppRoutes() {
         <Route path="/games/kicking" element={<KickingGamesPage />} />
         <Route path="/games/freestyle" element={<FreestylePage />} />
         <Route path="/games/net" element={<NetPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        {/* remove About page until the design is finalized */}
+        {/* <Route path="/about" element={<AboutPage />} /> */}
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Routes>

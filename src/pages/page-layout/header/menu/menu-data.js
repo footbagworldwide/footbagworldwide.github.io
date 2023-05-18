@@ -16,10 +16,11 @@ const menuItems = [
     label: 'EVENTS',
     route: '/events'
   },
-  {
-    label: 'ABOUT',
-    route: '/about'
-  }
+  // remove About page until the design is finalized
+  // {
+  //   label: 'ABOUT',
+  //   route: '/about'
+  // }
 ];
 
 export default menuItems;

@@ -17,9 +17,10 @@ function AboutSectionItem(props) {
         </div>
         <p className="about-section-text">{description}</p>
       </div>
-      <div className="about-button-container">
+      {/* removing button to About page until design is finalized */}
+      {/* <div className="about-button-container">
         <ButtonLink route="/about">MORE</ButtonLink>
-      </div>
+      </div> */}
     </div>
   );
 }

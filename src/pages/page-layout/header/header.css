@@ -6,7 +6,9 @@
 }
 
 .header-container_desktop {
-  grid-template-columns: .15fr 2fr 1fr .25fr;
+  grid-template-columns: .15fr 2fr .75fr .25fr;
+  /* active spacing is for 2 menu items, commented is for 3 */
+  /* grid-template-columns: .15fr 2fr 1fr .25fr; */
 	justify-content: space-between;
   align-content: space-between;
   padding: 2rem 0;

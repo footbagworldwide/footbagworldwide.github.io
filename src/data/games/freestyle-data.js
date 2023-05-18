@@ -8,7 +8,15 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Freestyle Footbag is a footbag sport where players demonstrate their abilities by performing <strong className="highlighted-description">sequences of acrobatic tricks</strong>. The ending position of the bag on one trick becomes the starting position of the bag on the next trick. Tricks are created by combining different components between contacts (stalls or kicks, usually stalls). Components can be <strong className="highlighted-description">spins</strong>, <strong className="highlighted-description">dexterities</strong> (wrapping a leg around the bag in mid-air), or ducks (letting the bag pass a few inches above the neck). Contacts are usually on the inside of the foot behind the opposite support leg (clipper stall) or on the toe, however many inventive possibilities remain and are used to create a near-endless list of tricks.
+      Freestyle Footbag is a footbag sport where players demonstrate their abilities by performing
+      <strong className="highlighted-description"> sequences of acrobatic tricks</strong>. Tricks flow
+      naturally from one to the next, creating flowing and free-form strings and combos. Tricks
+      are created by combining different components between moments when the bag touches the body, such as
+      <strong className="highlighted-description"> spins</strong>,
+      <strong className="highlighted-description"> dexterities</strong> (circling the bag with a leg),
+      or <strong className="highlighted-description">ducking</strong> the bag with the head and neck.
+      The list of tricks is nearly endless and can be combined in any order, leading to a limitless
+      variety of combos and styles.
     </>
   );
 }
@@ -16,8 +24,14 @@ function getDescriptionHtml() {
 function getHowToPlayHtml() {
   return (
     <>
-      <p>Practicing freestyle footbag is like having a GYM in your pocket! For basic tricks and a first approach to the sport, you can wear casual clothers and shoes and a FOOTBAG!</p>
-      <p>Once you gain experience and the tricks you aim are harder, you should purchase a professional footbag and wear sportif clothes. There are also shoes more suitable for footbag practice.</p>
+      <p>
+        Practicing freestyle footbag is like having a GYM in your pocket! When first learning the basics of the sport
+        all you is some casual clothes, shoes, and a FOOTBAG!
+      </p>
+      <p>
+        Once you gain experience and begin to learn more difficult tricks, you will need equipment suited for the sport. 
+        You should wear athletic clothes, and purchase a professional footbag and shoes that will help you play your best.
+      </p>
     </>
   );
 }
@@ -25,8 +39,13 @@ function getHowToPlayHtml() {
 function getCompetitionHtml() {
   return (
     <>
-      <p>Freestyle footbag is a great way to esercise due to its versability. You can practice it everywhere in any time. However, it is not only a hobby. Footbag is a competitive Sport since 1979, when the first World Footbag Championships where held in Oregon (USA). There are many competitive categories during a freestyle championships.</p>
-      <p>Here there are some examples:</p>
+      <p>
+        Freestyle footbag is a great way to esercise due to its versability and can be practiced anywhere and anytime.
+        However, freestyle footbag is not only a hobby, but has been a competitive Sport since 1979, when the first
+        World Footbag Championships where held in Portland, Oregon (USA). During a freestyle footbag event, there are
+        many competitive categories that are held.
+      </p>
+      <p>Here are some examples:</p>
     </>
   );
 }
@@ -64,38 +83,38 @@ const freestyleData = {
     events: [
       {
         title: 'ROUTINE',
-        description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
+        description: 'Routine is a timed event in which players choreograph a freestyle footbag performance to music. Competitors are judged on both competitors\' artistic and technical abilities.',
         video:  {
-          // worlds 2022
+          // worlds 2020 Yosshi qualify routine
           type: VideoType.Youtube,
-          id: 'SzroZ78NKQs'
+          id: 'Z-KkyOpoBhM'
         }
       },
       {
         title: 'CIRCLE',
-        description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
+        description: 'Circle takes the traditional way that freestyle footbag is played with a group a puts a competitive spin on it. Players take turns with the bag to show off their technical skills in direct competition with each other.',
         video:  {
-          // worlds 2022
+          // worlds 2017 circle final
           type: VideoType.Youtube,
-          id: 'SzroZ78NKQs'
+          id: 'aMr5e5wlgeE'
         }
       },
       {
         title: 'SICK 3',
-        description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
+        description: 'Sick 3 is freestyle footbag\'s version of a best trick competition. Players combine their three best tricks and are judged on their difficulty, variety, and execution.',
         video:  {
-          // worlds 2022
+          // worlds 2022 sick 3 final
           type: VideoType.Youtube,
-          id: 'SzroZ78NKQs'
+          id: 'h6F0aPIpC1o'
         }
       },
       {
         title: 'SHRED 30',
-        description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
+        description: 'Shred 30 is a short, timed, and scored event which tests competitor\s abilities to quickly link together as many difficult tricks as they can before their time is up.',
         video:  {
-          // worlds 2022
+          // worlds 2019 Taishi shred 30
           type: VideoType.Youtube,
-          id: 'SzroZ78NKQs'
+          id: 'U2wuykwGbQQ'
         }
       }
     ]

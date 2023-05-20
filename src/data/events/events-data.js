@@ -15,7 +15,11 @@ const events = [
 		title: "WFC 2023",
 		location: "Medellin, COLOMBIA",
 		imagePath: logo_2023,
-    description: "Am sitas a et quatasi nciundae parum nam vero cum faccumquid quod quiandissin por animinctia volorem dolorep rorpor aligniam facestis cum quam, velisti apienih itionsequis eum que ilit reribus re veliquam inus ad mincto bea qui blatatquo maximpo stioribus, sequodia sitem volupta tiandandelis eium."
+    description:
+      "Delayed by the COVID-19 pandemic, Worlds 2023 in Colombia is the first time " +
+      "the event will be held in South America. Players from all over the world will " +
+      "travel to Medellin to put their skills to the test, reunite with friends, " +
+      "and have a fun vacation centered around their unique passion."
 	},
 	{
 		title: "WFC 2022",

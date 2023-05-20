@@ -18,7 +18,10 @@ const kickingGamesData = {
 function getHackySackDescriptionHtml() {
   return (
     <>
-      Odit dolupti sitatias destio eaquiandunde pre mosam iasinctem. Expla vitate nis doluptas aceria exeriorumet occullant. Idestoris duciaes tioratiati odipita siti bearum et int. Soluptasi unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.
+      Circle kicking, or more commonly known as "hacky sack" is a fun and casual footbag game
+      typically played with a group. The main goal is to keep the footbag off the ground without
+      using your hands, passing to other players in the circle, and trying to get everyone together
+      kick the bag before it drops. 
     </>
   );
 }
@@ -55,7 +58,9 @@ const hackySackData = {
 function getTwoSquareDescriptionHtml() {
   return (
     <>
-      Odit dolupti sitatias destio eaquiandunde pre mosam iasinctem. Expla vitate nis doluptas aceria exeriorumet occullant. Idestoris duciaes tioratiati odipita siti bearum et int. Soluptasi unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.
+      Two or four (or any number) square takes the classic schoolyard game and combines it
+      with footbag. Score points against your opponents by making the bag drop in their square
+      and trying to stop it from dropping in your square.
     </>
   );
 }
@@ -91,7 +96,9 @@ const twoSquareData = {
 function getGolfDescriptionHtml() {
   return (
     <>
-      Odit dolupti sitatias destio eaquiandunde pre mosam iasinctem. Expla vitate nis doluptas aceria exeriorumet occullant. Idestoris duciaes tioratiati odipita siti bearum et int. Soluptasi unte sectoremodit vellupt iorrorero et faceaquatia voloreperro tenihit eicid.
+      In the same way disc golf combines traditional golf with disc throwing, this game does the same with 
+      footbag. Set up a small course with obstacles and attempt to kick the footbag into the hole in as
+      few shots as possible.
     </>
   );
 }

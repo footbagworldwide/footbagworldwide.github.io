@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e3bdc1d4.css",
-    "main.js": "/static/js/main.9987a03e.js",
+    "main.js": "/static/js/main.34fa62d6.js",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
     "static/media/WFC2022.png": "/static/media/WFC2022.b1dd5ab5788738326c5d.png",
     "static/media/WFC2017.jpg": "/static/media/WFC2017.d600dabec61712ca2905.jpg",
@@ -34,10 +34,10 @@
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "index.html": "/index.html",
     "main.e3bdc1d4.css.map": "/static/css/main.e3bdc1d4.css.map",
-    "main.9987a03e.js.map": "/static/js/main.9987a03e.js.map"
+    "main.34fa62d6.js.map": "/static/js/main.34fa62d6.js.map"
   },
   "entrypoints": [
     "static/css/main.e3bdc1d4.css",
-    "static/js/main.9987a03e.js"
+    "static/js/main.34fa62d6.js"
   ]
 }

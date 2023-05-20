@@ -29,26 +29,38 @@ function KickingGameItem(props) {
         <h2 className="footbag-game-section-header">{kickingGame.title}</h2>
         <img src={kickingGame.gif} alt={`Gif of ${kickingGame.title}`} className="footbag-game-gif" />
         <p>{kickingGame.description.long_html}</p>
-        <div>
-          <strong>MORE INFO</strong>
-          <div>
-            <ul className="kicking-game-more-info-list">
-              {
-                kickingGame.howToPlay.resources.map((resource, resourceIndex) => 
-                  <li key={`kicking-game-link_${resourceIndex}`}>
-                    <a href={resource.link}>{resource.description}</a>
-                  </li>
-                )
-              }
-            </ul>
-          </div>
-        </div>
+        <KickingGameMoreInfo kickingGame={kickingGame} />
       </div>
       <div className="kicking-game-icon-container">
         { !withBackground && <FootbagGameIcon kickingGame={kickingGame} withBackground={withBackground === false} /> }
       </div>
     </div>
   );
+}
+
+function KickingGameMoreInfo(props) {
+  const kickingGame = props.kickingGame;
+
+  if(kickingGame.howToPlay && kickingGame.howToPlay.resources && kickingGame.howToPlay.resources.length > 0) {
+    return (
+      <div>
+        <strong>MORE INFO</strong>
+        <div>
+          <ul className="kicking-game-more-info-list">
+            {
+              kickingGame.howToPlay.resources.map((resource, resourceIndex) => 
+                <li key={`kicking-game-link_${resourceIndex}`}>
+                  <a href={resource.link} target="_blank">{resource.description}</a>
+                </li>
+              )
+            }
+          </ul>
+        </div>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }
 
 function KickingGamesPage() {

@@ -36,22 +36,6 @@ const hackySackData = {
   description: {
     short: "Hacky sack is the original and most well-known footbag game. Fun and easy to pick-up; grab a bag with some friends, and keep it off the ground together.",
     long_html: getHackySackDescriptionHtml()
-  },
-  howToPlay: {
-    resources: [
-      {
-        description: 'more info 1',
-        link: 'https://www.google.com'
-      },
-      {
-        description: 'more info 2',
-        link: 'https://www.google.com'
-      },
-      {
-        description: 'more info 3',
-        link: 'https://www.google.com'
-      }
-    ]
   }
 };
 
@@ -78,16 +62,12 @@ const twoSquareData = {
   howToPlay: {
     resources: [
       {
-        description: 'more info 1',
+        description: 'Rules',
         link: 'https://www.google.com'
       },
       {
-        description: 'more info 2',
-        link: 'https://www.google.com'
-      },
-      {
-        description: 'more info 3',
-        link: 'https://www.google.com'
+        description: 'Four Square Tutorial',
+        link: 'https://www.youtube.com/watch?v=Q469SW9snoI'
       }
     ]
   }
@@ -116,15 +96,7 @@ const golfData = {
   howToPlay: {
     resources: [
       {
-        description: 'more info 1',
-        link: 'https://www.google.com'
-      },
-      {
-        description: 'more info 2',
-        link: 'https://www.google.com'
-      },
-      {
-        description: 'more info 3',
+        description: 'Rules',
         link: 'https://www.google.com'
       }
     ]

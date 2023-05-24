@@ -88,7 +88,7 @@ const events = [
 		title: "WFC 2013",
 		location: "Montreal, CANADA",
 		resultsLink: "http://www.footbag.org/events/show/1361207019",
-		videoLink: "https://www.google.com",
+		videoLink: "https://www.youtube.com/playlist?list=PLxP76n1rTXfFeoIdRh6ReWZXN0FjGp1KV",
 		imagePath: logo_2013
 	}
 ];

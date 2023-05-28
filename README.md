@@ -1,6 +1,6 @@
 # Footbag Worldwide
 
-This is the public repository for the website Footbag Worldwide. The website can be viewed at http://www.footbagworldwide.com. Please feel free to contribute changes to fix bugs, update media, create features, etc.
+This is the public repository for the website Footbag Worldwide. The website can be viewed at http://www.footbagworldwide.com. Please feel free to submit a pull request to fix bugs, update media, create features, etc.
 
 For more information, contact info@footbagworldwide.com.
 

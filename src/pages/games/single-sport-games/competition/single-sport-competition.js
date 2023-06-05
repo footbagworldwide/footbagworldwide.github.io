@@ -9,7 +9,7 @@ function CompetitiveEvent(props) {
     <div key={`single-sport-competitive-event_${competitiveEvent.title}`} className="competitive-event-item">
       <h3>{competitiveEvent.title}</h3>
       <p>{competitiveEvent.description}</p>
-      <ButtonLink>RULES</ButtonLink>
+      <ButtonLink external route={competitiveEvent.rulesLink}>RULES</ButtonLink>
       <div className="competitive-event-video-button"><ButtonLink>VIDEO</ButtonLink></div>
       <div className="competitive-event-video-container"><Video video={competitiveEvent.video} className="competitive-event-video" /></div>
     </div>

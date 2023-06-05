@@ -83,12 +83,13 @@ const freestyleData = {
     events: [
       {
         title: 'ROUTINE',
-        description: 'Routine is a timed event in which players choreograph a freestyle footbag performance to music. Competitors are judged on both competitors\' artistic and technical abilities.',
+        description: 'Routine is a timed event in which players choreograph a freestyle footbag performance to music. Competitors are judged on both their artistic and technical abilities.',
         video:  {
           // worlds 2020 Yosshi qualify routine
           type: VideoType.Youtube,
           id: 'Z-KkyOpoBhM'
-        }
+        },
+        rulesLink: "https://docs.google.com/document/d/1I1R08D9Dxh7Akyv75S5bqGsEcbf8MWUQrufwhrGs1GM/edit?usp=drive_link"
       },
       {
         title: 'CIRCLE',
@@ -106,7 +107,8 @@ const freestyleData = {
           // worlds 2022 sick 3 final
           type: VideoType.Youtube,
           id: 'h6F0aPIpC1o'
-        }
+        },
+        rulesLink: "https://docs.google.com/document/d/1STzVruVdKn-YHXLM9KcT5fRMr4htuBA5ru7_TcBAiMM/edit?usp=drive_link"
       },
       {
         title: 'SHRED 30',
@@ -115,7 +117,8 @@ const freestyleData = {
           // worlds 2019 Taishi shred 30
           type: VideoType.Youtube,
           id: 'U2wuykwGbQQ'
-        }
+        },
+        rulesLink: "https://docs.google.com/document/d/1TulSRHHuCiZx15-_Kwf_0pl631EpS9lo0dUfFru24wo/edit?usp=drive_link"
       }
     ]
   }

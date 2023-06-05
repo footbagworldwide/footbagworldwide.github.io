@@ -62,11 +62,15 @@ const twoSquareData = {
   howToPlay: {
     resources: [
       {
-        description: 'Rules',
-        link: 'https://www.google.com'
+        description: 'Two Square Rules',
+        link: 'https://docs.google.com/document/d/1yaIKMSnp1gHA5vJmYUeqq5K4kQkqQseS9Y9LPHFFz7U/edit'
       },
       {
-        description: 'Four Square Tutorial',
+        description: 'Four Square Rules',
+        link: 'https://docs.google.com/document/d/1uvsuTLSKnEsdDmUeQYuvvKFBp-UDos3dnBl9kctFYHY/edit'
+      },
+      {
+        description: 'Four Square Video Tutorial',
         link: 'https://www.youtube.com/watch?v=Q469SW9snoI'
       }
     ]

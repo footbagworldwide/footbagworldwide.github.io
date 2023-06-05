@@ -1,6 +1,5 @@
 import './about-section.css';
 import historyImage from '../../../../assets/images/wfc-logos/WFC2018.jpg';
-import { ButtonLink } from '../../../../components/links/link-components';
 
 function AboutSectionItem(props) {
   const title = props.title;

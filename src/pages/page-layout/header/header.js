@@ -25,7 +25,7 @@ function Header() {
       <div></div>
       <div><SiteLogo /></div>
       <Menu />
-      { useDesktopDisplay() && <div><EmailLink><img id='email-icon' src={emailIcon} /></EmailLink></div> }
+      { useDesktopDisplay() && <div><EmailLink><img id='email-icon' src={emailIcon} alt="Envelope icon" /></EmailLink></div> }
     </nav>
   );
 }

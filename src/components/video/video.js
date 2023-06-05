@@ -5,7 +5,8 @@ const VideoType = {
 
 function getVideoLink(video) {
   switch(video.type) {
-    case VideoType.Youtube: {
+    case VideoType.Youtube:
+    default: {
       return `https://www.youtube.com/embed/` +
         `${video.id}` +
         `?playlist=${video.id}` +
@@ -22,13 +23,17 @@ function Video(props) {
   const video = props.video;
   const className = props.className;
 
+  const src = getVideoLink(video);
+  const title = `iframe_${src}`;
+
   return (
     <iframe
       className={className}
-      src={getVideoLink(video)}
+      src={src}
       allow="accelerometer; autoplay; encrypted-media; gyroscope;"
       allowFullScreen
       loading="lazy"
+      title={title}
     ></iframe>
   );
 }

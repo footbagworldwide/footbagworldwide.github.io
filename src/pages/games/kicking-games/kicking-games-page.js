@@ -50,7 +50,7 @@ function KickingGameMoreInfo(props) {
             {
               kickingGame.howToPlay.resources.map((resource, resourceIndex) => 
                 <li key={`kicking-game-link_${resourceIndex}`}>
-                  <a href={resource.link} target="_blank">{resource.description}</a>
+                  <a href={resource.link} target="_blank" rel="noreferrer">{resource.description}</a>
                 </li>
               )
             }

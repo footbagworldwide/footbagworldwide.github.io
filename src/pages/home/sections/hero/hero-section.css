@@ -15,20 +15,6 @@
 }
 
 .hero-video {
-	width: 100%;
-	pointer-events: none;
-}
-
-.hero-video_default {
-	aspect-ratio: 16 / 9;
-	margin-top: -15% !important;
-}
-
-.hero-video_last-shred {
-	aspect-ratio: 2.35 / 1;
-}
-
-.hero-video_worlds2022 {
 	aspect-ratio: 16 / 9;
 	margin-top: -10% !important;
 }
@@ -36,10 +22,4 @@
 .hero-gif {
   width: 100%;
   max-height: 400px;
-}
-
-.carousel .slide iframe {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
 }

@@ -1,8 +1,5 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 import './hero-section.css';
-import { videos } from "./hero-data";
-import { Video } from "../../../../components/video/video";
+import { Video, VideoType } from "../../../../components/video/video";
 import { useTouchDisplay } from "../../../../hooks/display-hook";
 
 function HeroSectionMobile() {
@@ -15,45 +12,19 @@ function HeroSectionMobile() {
   );
 }
 
-function HeroSectionDesktopMultiVid() {
-  return (
-    <div>
-      <Carousel
-        showArrows={true}
-        infiniteLoop={true}
-        showStatus={false}
-        showThumbs={false}
-      >
-        {
-          videos.map((video, index) => 
-            <div className="hero-video-container" key={`hero-video_${index}`}>
-              <Video video={video} className={video.className} />
-            </div>
-          )
-        }
-      </Carousel>
-    </div>		
-	);
-}
-
-function HeroSectionDesktopSingleVid() {
-  const video = videos[0];
+function HeroSectionDesktop() {
+  const video = {
+    type: VideoType.Youtube,
+    // worlds 2022
+    id: 'SzroZ78NKQs',
+    viewOnly: true
+  };
 
   return (
     <div className="hero-video-container">
-      <Video video={video} className={video.className} />
+      <Video video={video} className="hero-video" />
     </div>
 	);
-}
-
-function HeroSectionDesktop() {
-  const useMultiVid = false;
-
-  if(useMultiVid) {
-    return <HeroSectionDesktopMultiVid />;
-  } else {
-    return <HeroSectionDesktopSingleVid />;
-  }
 }
 
 function HeroSection() {

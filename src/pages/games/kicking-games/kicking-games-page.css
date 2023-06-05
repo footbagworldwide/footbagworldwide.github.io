@@ -23,6 +23,10 @@
   .kicking-game-icon-container {
     display: none;
   }
+
+  .kicking-game-more-info-list {
+    text-align: left;
+  }
 }
 
 @media (min-width: 750px) {

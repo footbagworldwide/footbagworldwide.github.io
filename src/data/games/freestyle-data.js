@@ -1,5 +1,6 @@
 import freestyleIcon_green from '../../assets/images/games/icon_freestyle_green.svg';
 import freestyleIcon_white from '../../assets/images/games/icon_freestyle_white.svg';
+import freestyleGif from '../../assets/images/games/gif_freestyle.gif';
 import bagIcon from '../../assets/images/icons/freestyle-page/freestyle-bag.svg';
 import shoeIcon from '../../assets/images/icons/freestyle-page/freestyle-shoe.svg';
 import listIcon from '../../assets/images/icons/freestyle-page/trick-list.svg';
@@ -56,7 +57,7 @@ const freestyleData = {
   icon: freestyleIcon_white,
   icon_withBackground: freestyleIcon_green,
   pageRoute: '/games/freestyle',
-  gif: "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif",
+  gif: freestyleGif,
   description: {
     short: "Freestyle footbag is a fast-paced, creative, and technical sport centered around doing tricks with a footbag and your legs. Great for exercising the body and the mind.",
     long_html: getDescriptionHtml()

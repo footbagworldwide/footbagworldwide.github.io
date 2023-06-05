@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dae50b4b.css",
-    "main.js": "/static/js/main.3b319e76.js",
+    "main.css": "/static/css/main.2a4156a0.css",
+    "main.js": "/static/js/main.18913ef6.js",
     "static/media/gif_freestyle.gif": "/static/media/gif_freestyle.ee805d3842238e7a30c0.gif",
     "static/media/gif_twosquare.gif": "/static/media/gif_twosquare.41f2b3c8b57cd643fcc6.gif",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
@@ -35,11 +35,11 @@
     "static/media/videos.svg": "/static/media/videos.35f7437de3c53f7689844e783f4e5223.svg",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "index.html": "/index.html",
-    "main.dae50b4b.css.map": "/static/css/main.dae50b4b.css.map",
-    "main.3b319e76.js.map": "/static/js/main.3b319e76.js.map"
+    "main.2a4156a0.css.map": "/static/css/main.2a4156a0.css.map",
+    "main.18913ef6.js.map": "/static/js/main.18913ef6.js.map"
   },
   "entrypoints": [
-    "static/css/main.dae50b4b.css",
-    "static/js/main.3b319e76.js"
+    "static/css/main.2a4156a0.css",
+    "static/js/main.18913ef6.js"
   ]
 }

@@ -22,30 +22,13 @@
   cursor: pointer;
 }
 
-.submenu-arrow-down {
-  display: none;
-}
-
 .submenu .menu-item {
   cursor: pointer;
 }
 
 .submenu-item-container {
-  display: none;
   background-color: var(--color-primary);
   padding: 1rem;
-}
-
-.submenu:hover .submenu-item-container {
-  display: block;
-}
-
-.submenu:hover .submenu-arrow-right {
-  display: none;
-}
-
-.submenu:hover .submenu-arrow-down {
-  display: inline;
 }
 
 .submenu-item {
@@ -77,4 +60,3 @@
   z-index: 2;
   background-color: var(--color-primary);
 }
-

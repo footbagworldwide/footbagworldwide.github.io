@@ -15,13 +15,13 @@ For more information, contact info@footbagworldwide.com.
 
 ## Deploying Changes
 
-Footbag Worldwide is currently hosted using GitHub Pages. The site is deployed to the `master` branch and is pulled from the `docs` folder.
+Footbag Worldwide is currently hosted using GitHub Pages. The site is deployed to the `master` branch and is pulled from the `docs` folder. The `build` command automatically puts the build output into the `docs` folder.
 
 To deploy a new version of the site:
 
 <ol>
+  <li>Set branch to "master"</li>
   <li>Run "npm run build"</li>
-  <li>Delete the "docs" folder</li>
-  <li>Rename the "build" folder to "docs"</li>
-  <li>Push the changes to "master"</li>
+  <li>Push the changes</li>
+  <li>Wait for GitHub Pages to pick up the deployment (usually only takes a minute or two)</li>
 </ol>

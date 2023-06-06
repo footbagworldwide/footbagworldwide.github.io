@@ -3,7 +3,7 @@ const VideoType = {
 	Vimeo: 2
 };
 
-function getVideoLink(video) {
+function getEmbedVideoLink(video) {
   switch(video.type) {
     case VideoType.Youtube:
     default: {
@@ -19,11 +19,20 @@ function getVideoLink(video) {
   }
 }
 
+function getExternalVideoLink(video) {
+  switch(video.type) {
+    case VideoType.Youtube:
+      default: {
+        return `https://www.youtube.com/watch?v=${video.id}`;
+      }
+  }
+}
+
 function Video(props) {
   const video = props.video;
   const className = props.className;
 
-  const src = getVideoLink(video);
+  const src = getEmbedVideoLink(video);
   const title = `iframe_${src}`;
 
   return (
@@ -38,4 +47,4 @@ function Video(props) {
   );
 }
 
-export { Video, VideoType };
+export { Video, VideoType, getExternalVideoLink };

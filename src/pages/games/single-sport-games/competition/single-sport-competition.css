@@ -1,4 +1,10 @@
 @media (max-width: 500px) {
+  .competitive-event-buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20%;
+  }
+
   .competitive-event-video-button {
     display: block;
   }

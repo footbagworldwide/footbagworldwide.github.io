@@ -1,5 +1,5 @@
 import { ButtonLink } from '../../../../components/links/link-components';
-import { Video } from '../../../../components/video/video';
+import { Video, getExternalVideoLink } from '../../../../components/video/video';
 import './single-sport-competition.css';
 
 function CompetitiveEvent(props) {
@@ -9,8 +9,10 @@ function CompetitiveEvent(props) {
     <div key={`single-sport-competitive-event_${competitiveEvent.title}`} className="competitive-event-item">
       <h3>{competitiveEvent.title}</h3>
       <p>{competitiveEvent.description}</p>
-      <ButtonLink external route={competitiveEvent.rulesLink}>RULES</ButtonLink>
-      <div className="competitive-event-video-button"><ButtonLink>VIDEO</ButtonLink></div>
+      <div className="competitive-event-buttons-container">
+        <ButtonLink external route={competitiveEvent.rulesLink}>RULES</ButtonLink>
+        <div className="competitive-event-video-button"><ButtonLink external route={getExternalVideoLink(competitiveEvent.video)}>VIDEO</ButtonLink></div>
+      </div>
       <div className="competitive-event-video-container"><Video video={competitiveEvent.video} className="competitive-event-video" /></div>
     </div>
   );

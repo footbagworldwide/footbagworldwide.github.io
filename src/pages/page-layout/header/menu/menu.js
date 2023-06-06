@@ -34,7 +34,7 @@ function Submenu(props) {
   const [showSubmenu, setShowSubmenu] = useState(false);
 
   const submenu = props.submenu;
-  const submenuContainerClassName = props.submenuContainerClassName;
+  const submenuContainerClassName = props.submenuContainerClassName ?? '';
 
   const toggleSubmenuRef = useRef();
   const submenuRef = useRef();

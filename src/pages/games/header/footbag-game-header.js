@@ -54,7 +54,7 @@ function FootbagGameHeader(props) {
     return (
       <div className="footbag-game-header-container_short">
         <HeaderIcon />
-        <h2>DISCOVER OTHER FOOTBAG GAMES</h2>
+        <h3>DISCOVER OTHER FOOTBAG GAMES</h3>
         <div className="footbag-game-header-discover-others">
           <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} short={true} />
           <OtherGame otherGame={headerData.otherGames[1]} arrowRight={true} short={true} />

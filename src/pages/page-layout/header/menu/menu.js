@@ -14,8 +14,14 @@ function MenuItem(props) {
   );
 }
 
-function closeOnOutsideClick(menuRef, menuVisible, setMenuVisible) {
+function closeOnOutsideClick(toggleMenuRef, menuRef, menuVisible, setMenuVisible) {
   const closeOpenMenu = (e) => {
+    // don't fire this event if the user clicked on the element that toggles the menu
+    if(toggleMenuRef.current && toggleMenuRef.current.contains(e.target)) {
+      return;
+    }
+
+    // if the user clicked off of the menu, close it
     if (menuRef.current && menuVisible && !menuRef.current.contains(e.target)){
       setMenuVisible(false)
     }
@@ -30,8 +36,9 @@ function Submenu(props) {
   const submenu = props.submenu;
   const submenuContainerClassName = props.submenuContainerClassName;
 
+  const toggleSubmenuRef = useRef();
   const submenuRef = useRef();
-  closeOnOutsideClick(submenuRef, showSubmenu, setShowSubmenu);
+  closeOnOutsideClick(toggleSubmenuRef, submenuRef, showSubmenu, setShowSubmenu);
 
   const SubmenuContainer = () => {
     if(showSubmenu) {
@@ -68,12 +75,13 @@ function Submenu(props) {
   }
 
   return (
-    <div ref={submenuRef}>
+    <div ref={submenuRef} className='menu-item'> 
       <div
         className={`submenu ${showSubmenu ? "submenu-active" : ""}`}
+        ref={toggleSubmenuRef}
         onClick={() => { setShowSubmenu(!showSubmenu) }}
       >
-        <strong className="menu-item">{submenu.label}</strong> <SubmenuArrow />
+        <strong>{submenu.label}</strong> <SubmenuArrow />
         <SubmenuContainer />
       </div>
     </div>
@@ -105,8 +113,9 @@ function MobileMenu() {
     setShowMenu(false);
   }, [location.pathname]);
 
+  const toggleMobileMenuRef = useRef();
   const mobileMenuRef = useRef();
-  closeOnOutsideClick(mobileMenuRef, showMenu, setShowMenu);
+  closeOnOutsideClick(toggleMobileMenuRef, mobileMenuRef, showMenu, setShowMenu);
 
   const menu = () => (
     <div ref={mobileMenuRef} className="mobile-menu-container">
@@ -116,7 +125,7 @@ function MobileMenu() {
 
   return (
     <div className="burger-menu">
-      <i className="fa fa-bars burger-menu-icon" onClick={() => { setShowMenu(!showMenu) }}></i>
+      <i className="fa fa-bars burger-menu-icon" ref={toggleMobileMenuRef} onClick={(e) => { setShowMenu(!showMenu); e.stopPropagation(); }}></i>
       { showMenu && menu() }
     </div>
   )

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+/* global element styles */
 html {
 	background: white;
 
@@ -37,6 +38,11 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.45;
+}
+
+/* global class styles */
 .fixed-header-space {
   height: 3rem;
   padding-top: 2%;

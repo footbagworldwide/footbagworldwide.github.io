@@ -115,9 +115,9 @@ const freestyleData = {
         title: 'SHRED 30',
         description: 'Shred 30 is a short, timed, and scored event which tests competitors\' abilities to quickly link together as many difficult tricks as they can before their time is up.',
         video:  {
-          // worlds 2019 Taishi shred 30
+          // worlds 2020 Taishi shred 30
           type: VideoType.Youtube,
-          id: 'U2wuykwGbQQ'
+          id: 'wb75xzvAs68'
         },
         rulesLink: "https://docs.google.com/document/d/1TulSRHHuCiZx15-_Kwf_0pl631EpS9lo0dUfFru24wo/edit?usp=drive_link"
       }

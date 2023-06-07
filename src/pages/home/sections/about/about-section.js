@@ -1,5 +1,6 @@
 import './about-section.css';
-import historyImage from '../../../../assets/images/wfc-logos/WFC2018.jpg';
+import historyImage from '../../../../assets/images/footbag-history.jpg';
+import ifpaImage from '../../../../assets/images/ifpa-community.jpg';
 
 function AboutSectionItem(props) {
   const title = props.title;
@@ -31,12 +32,12 @@ function AboutSection() {
         title="HISTORY OF FOOTBAG"
         description="Footbag roots can be found deep in the ancient cultures of Asia and the Americas, with similar games being played as far back as 3000 years ago. Its current form was established in North America in the 1970s, and it has spread globally and evolved into many forms since."
         imageSrc={historyImage}
-        imageAlt="Footbag history"
+        imageAlt="Vintage picture of footbag player"
       />
       <AboutSectionItem
         title="ABOUT IFPA"
         description="IFPA (International Footbag Players' Association, Inc.) is a volunteer-run, charitable non-profit corporation, dedicated to the growth of footbag play world-wide as lifetime recreation and as an amateur, competitive sport."
-        imageSrc={historyImage}
+        imageSrc={ifpaImage}
         imageAlt="Footbag history"
       />
     </div>

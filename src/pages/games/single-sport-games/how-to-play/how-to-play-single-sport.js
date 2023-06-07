@@ -1,4 +1,5 @@
 import ColumnDivider from '../../../../components/column-divider/column-divider';
+import { ImageLink } from '../../../../components/links/link-components';
 import './how-to-play-single-sport.css';
 
 function HowToPlayItem(props) {
@@ -6,7 +7,15 @@ function HowToPlayItem(props) {
 
   return (
     <div className='how-to-play-itme'>
-      <div><img className="how-to-play-icon" src={item.icon} alt={`Icon for ${item.description}`} /></div>
+      <div>
+        <ImageLink
+          className="how-to-play-icon"
+          src={item.icon}
+          alt={`Icon for ${item.description}`}
+          external
+          route={item.link}
+        />
+      </div>
       <strong>{item.description}</strong>
     </div>
   );

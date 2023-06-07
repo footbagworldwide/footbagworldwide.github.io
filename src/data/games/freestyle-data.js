@@ -71,7 +71,8 @@ const freestyleData = {
       },
       {
         icon: shoeIcon,
-        description: 'Where to buy footbag shoes'
+        description: 'Where to buy footbag shoes',
+        link: "https://docs.google.com/spreadsheets/d/11sJNAUOd8lOjcqc0l76r4wlP3mwc7ODS0G55nhdApws/edit#gid=0"
       },
       {
         icon: listIcon,
@@ -99,7 +100,8 @@ const freestyleData = {
           // worlds 2017 circle final
           type: VideoType.Youtube,
           id: 'aMr5e5wlgeE'
-        }
+        },
+        rulesLink: "http://footbag.org/rules/chapter/500#507"
       },
       {
         title: 'SICK 3',

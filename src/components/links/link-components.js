@@ -1,34 +1,39 @@
-import { Link } from "react-router-dom";
 import './link-components.css';
+import { Link } from "react-router-dom";
 
-function ButtonLink(props) {
-  let className = props.className ? props.className : 'button-link';
-  const route = props.route;
+function LinkWrapper(props) {
   const external = props.external === true;
+  const route = props.route;
 
-  className += ' button-link_base';
-
-  if(external === true) {
+  if(external) {
     return (
       <a href={route} target="_blank" rel="noreferrer">
-        <button className={className}>
-          <strong>{ props.children }</strong>
-        </button>
+        { props.children }
       </a>
     );
   } else {
     return (
       <Link to={route}>
-        <button className={className}>
-          <strong>{ props.children }</strong>
-        </button>
+        { props.children }
       </Link>
     );
-  }  
+  }
+}
+
+function ButtonLink(props) {
+  let className = props.className ? props.className : 'button-link';
+  className += ' button-link_base';
+
+  return (
+    <LinkWrapper external={props.external} route={props.route}>
+      <button className={className}>
+        <strong>{ props.children }</strong>
+      </button>
+    </LinkWrapper>
+  );
 }
 
 function ImageLink(props) {
-  const route = props.route;
   const src = props.src;
   const alt = props.alt;
   const id = props.id;
@@ -37,9 +42,9 @@ function ImageLink(props) {
   const width = props.width;
 
   return (
-    <Link to={route}>
+    <LinkWrapper external={props.external} route={props.route}>
       <img id={id} src={src} className={className} width={width} height={height} alt={alt} />
-    </Link>
+    </LinkWrapper>
   );
 }
 

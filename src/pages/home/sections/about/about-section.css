@@ -15,5 +15,10 @@
 }
 
 .about-section-image {
-  width: 50%;
+  max-height: 250px;
+}
+
+/* generate filter based on hex (converted from black): https://codepen.io/sosuke/pen/Pjoqqp */
+.about-ifpa-logo {
+  filter: invert(95%) sepia(95%) saturate(21%) hue-rotate(320deg) brightness(105%) contrast(105%);
 }

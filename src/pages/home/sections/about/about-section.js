@@ -1,19 +1,20 @@
 import './about-section.css';
-import historyImage from '../../../../assets/images/footbag-history.jpg';
-import ifpaImage from '../../../../assets/images/ifpa-community.jpg';
+import historyImage from '../../../../assets/images/wfc-logos/WFC2018.jpg';
+import ifpaImage from '../../../../assets/images/ifpa-logo.svg';
 
 function AboutSectionItem(props) {
   const title = props.title;
   const description = props.description;
   const imageSrc = props.imageSrc;
   const imageAlt = props.imageAlt;
+  const className = props.className ?? '';
 
   return (
     <div className="about-section-item">
       <h2>{title}</h2>
       <div className="about-section-content">
         <div className='about-section-image-container'>
-          <img className="about-section-image" src={imageSrc} alt={imageAlt} />
+          <img className={`about-section-image ${className}`} src={imageSrc} alt={imageAlt} />
         </div>
         <p className="about-section-text">{description}</p>
       </div>
@@ -38,7 +39,8 @@ function AboutSection() {
         title="ABOUT IFPA"
         description="IFPA (International Footbag Players' Association, Inc.) is a volunteer-run, charitable non-profit corporation, dedicated to the growth of footbag play world-wide as lifetime recreation and as an amateur, competitive sport."
         imageSrc={ifpaImage}
-        imageAlt="Footbag history"
+        imageAlt="IFPA logo"
+        className="about-ifpa-logo"
       />
     </div>
   );

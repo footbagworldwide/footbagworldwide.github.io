@@ -40,11 +40,12 @@ function getCompetitionHtml() {
     <>
       <p>Footbag Net can be played singles (1 vs 1), doubles (2 vs 2) or mixed doubles.</p>
 
+      <p>There are 2 scoring systems:</p>
+      <p>1. Rally scoring: the winner of every rally will be awarded 1 point.</p>
+      <p>2. Sideout scoring: a player/team must be serving to score (similar to the old scoring system in volleyball).</p>
       <p>
-        There are 2 scoring systems:
-        <p>1. Rally scoring: the winner of every rally will be awarded 1 point.</p>
-        <p>2. Sideout scoring: a player/team must be serving to score (similar to the old scoring system in volleyball).</p>
-        Footbag net games can be played to 11, 15 or 21 points and usually matches are played best of 3 or 5 games. Each game must be won with at least 2 points difference.
+        Footbag net games can be played to 11, 15 or 21 points and usually matches are played best of 3 or 5 games.
+        Each game must be won with at least 2 points difference.
       </p>
     </>
   );

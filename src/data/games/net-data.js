@@ -8,7 +8,19 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Freestyle Footbag is a footbag sport where players demonstrate their abilities by performing <strong className="highlighted-description">sequences of acrobatic tricks</strong>. The ending position of the bag on one trick becomes the starting position of the bag on the next trick. Tricks are created by combining different components between contacts (stalls or kicks, usually stalls). Components can be <strong className="highlighted-description">spins</strong>, <strong className="highlighted-description">dexterities</strong> (wrapping a leg around the bag in mid-air), or ducks (letting the bag pass a few inches above the neck). Contacts are usually on the inside of the foot behind the opposite support leg (clipper stall) or on the toe, however many inventive possibilities remain and are used to create a near-endless list of tricks.
+      <p>
+        Footbag Net is played on a badminton court over a 5 feet high net. Players volley the footbag back and forth over the net using only their feet
+        or any part of their lower leg (i.e. below the knee). Footbag Net combines the court strategy of beach-volleyball, jumping and kicking skills
+        from martial arts and elements from tennis as serves must be diagonal. Players demonstrate remarkable agility by spiking the footbag over the net,
+        using any part of the foot (toe, sole, inside or outside). Defending spikes can be done either by digging shots before the footbag hits the ground
+        or blocking spikes in the air with amazing foot-to-foot battles over the net.
+      </p>
+
+      <p>
+        Footbag Net is a recreational activity and a competitive sport. Competitions are held throughout the year almost all over the world. Play in Footbag
+        Net is very similar to <a href="https://en.wikipedia.org/wiki/Sepak_Takraw" target="_blank" rel="noreferrer">Sepak Takraw</a> and shuttlecock. However,
+        in Footbag Net, it is an "upper-body foul" if the footbag touches any part of a player's body above the shin.
+      </p>
     </>
   );
 }
@@ -16,8 +28,9 @@ function getDescriptionHtml() {
 function getHowToPlayHtml() {
   return (
     <>
-      <p>Practicing freestyle footbag is like having a GYM in your pocket! For basic tricks and a first approach to the sport, you can wear casual clothers and shoes and a FOOTBAG!</p>
-      <p>Once you gain experience and the tricks you aim are harder, you should purchase a professional footbag and wear sportif clothes. There are also shoes more suitable for footbag practice.</p>
+      Footbag Net is a great way to exercise due to the countless kicking drills. All you need is a footbag net bag and a mostly plane surface. For basic
+      kicks and a first approach to the sport you can wear casual clothes, shoes with flat surfaces and all you need is a footbag net bag. It\'s much more
+      fun to practice your basic kicks with at least one partner as you can attempt countless kicking drills.
     </>
   );
 }
@@ -25,8 +38,14 @@ function getHowToPlayHtml() {
 function getCompetitionHtml() {
   return (
     <>
-      <p>Freestyle footbag is a great way to esercise due to its versability. You can practice it everywhere in any time. However, it is not only a hobby. Footbag is a competitive Sport since 1979, when the first World Footbag Championships where held in Oregon (USA). There are many competitive categories during a freestyle championships.</p>
-      <p>Here there are some examples:</p>
+      <p>Footbag Net can be played singles (1 vs 1), doubles (2 vs 2) or mixed doubles.</p>
+
+      <p>
+        There are 2 scoring systems:
+        <p>1. Rally scoring: the winner of every rally will be awarded 1 point.</p>
+        <p>2. Sideout scoring: a player/team must be serving to score (similar to the old scoring system in volleyball).</p>
+        Footbag net games can be played to 11, 15 or 21 points and usually matches are played best of 3 or 5 games. Each game must be won with at least 2 points difference.
+      </p>
     </>
   );
 }
@@ -64,7 +83,7 @@ const netData = {
     events: [
       {
         title: 'SINGLES',
-        description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
+        description: 'In singles, each player has a maximum of 2 kicks to return the footbag over the net into the opponent\'s side of the court. The best-case scenario is that a player uses his 1st kick as a set to spike the footbag with his 2nd kick into the opponent\'s court, or he chooses to return the footbag with his 1st kick. Frequently players are chasing the footbag and using their 2 kicks to return the footbag.',
         video:  {
           // worlds 2022
           type: VideoType.Youtube,
@@ -73,7 +92,7 @@ const netData = {
       },
       {
         title: 'DOUBLES',
-        description: 'Odit dolupti sitatias destio eaquiandunde pre mosam. Expla aceria exeriorumet occullant. Et ommodigenis eatet officid et auditem repuda doluptae num cus, quaspis es atate. Conseque magnihi llaboriberit et laut auditat acepudi ra vid quo coreprehenis dolorehenim doloriberio odi voluptas dellectur.',
+        description: 'In doubles, teams of two players on opposing sides of the net have a total of three kicks to return the footbag to the opposite side. In addition, each team must alternate kicks, meaning the same player may not kick the footbag twice in a row before returning the footbag to the opposite side. It is not necessary for a team to use all three kicks to return the footbag to the opposite side of the net (they may return in one, two, or three kicks; so long as they alternate).',
         video:  {
           // worlds 2022
           type: VideoType.Youtube,

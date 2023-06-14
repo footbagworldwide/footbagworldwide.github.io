@@ -1,5 +1,6 @@
 import netIcon_green from '../../assets/images/games/icon_net_green.svg';
 import netIcon_white from '../../assets/images/games/icon_net_white.svg';
+import netGif from '../../assets/images/games/gif_net.gif';
 import bagIcon from '../../assets/images/icons/freestyle-page/freestyle-bag.svg';
 import shoeIcon from '../../assets/images/icons/freestyle-page/freestyle-shoe.svg';
 import listIcon from '../../assets/images/icons/freestyle-page/trick-list.svg';
@@ -8,19 +9,16 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      <p>
-        Footbag Net is played on a badminton court over a 5 feet high net. Players volley the footbag back and forth over the net using only their feet
-        or any part of their lower leg (i.e. below the knee). Footbag Net combines the court strategy of beach-volleyball, jumping and kicking skills
-        from martial arts and elements from tennis as serves must be diagonal. Players demonstrate remarkable agility by spiking the footbag over the net,
-        using any part of the foot (toe, sole, inside or outside). Defending spikes can be done either by digging shots before the footbag hits the ground
-        or blocking spikes in the air with amazing foot-to-foot battles over the net.
-      </p>
-
-      <p>
-        Footbag Net is a recreational activity and a competitive sport. Competitions are held throughout the year almost all over the world. Play in Footbag
-        Net is very similar to <a href="https://en.wikipedia.org/wiki/Sepak_Takraw" target="_blank" rel="noreferrer">Sepak Takraw</a> and shuttlecock. However,
-        in Footbag Net, it is an "upper-body foul" if the footbag touches any part of a player's body above the shin.
-      </p>
+      Footbag Net is played on a badminton court over a 5 feet high net. Players volley the footbag back and forth over the net using only their feet
+      or any part of their lower leg (i.e. below the knee). Footbag Net combines the court strategy of beach-volleyball, jumping and kicking skills
+      from martial arts and elements from tennis as serves must be diagonal. Players demonstrate remarkable agility by spiking the footbag over the net,
+      using any part of the foot (toe, sole, inside or outside). Defending spikes can be done either by digging shots before the footbag hits the ground
+      or blocking spikes in the air with amazing foot-to-foot battles over the net.
+      <br/>
+      <br/>
+      Footbag Net is a recreational activity and a competitive sport. Competitions are held throughout the year almost all over the world. Play in Footbag
+      Net is very similar to <a href="https://en.wikipedia.org/wiki/Sepak_Takraw" target="_blank" rel="noreferrer">Sepak Takraw</a> and shuttlecock. However,
+      in Footbag Net, it is an "upper-body foul" if the footbag touches any part of a player's body above the shin.
     </>
   );
 }
@@ -57,7 +55,7 @@ const netData = {
   icon: netIcon_white,
   icon_withBackground: netIcon_green,
   pageRoute: '/games/net',
-  gif: "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif",
+  gif: netGif,
   description: {
     short: "Footbag net is an acrobatic sport played over a net and using only your feet. Play solo or with a partner for an intense competitive experience.",
     long_html: getDescriptionHtml()

@@ -1,5 +1,5 @@
 import './about-section.css';
-import historyImage from '../../../../assets/images/wfc-logos/WFC2018.jpg';
+import historyImage from '../../../../assets/images/icons/history.svg';
 import ifpaImage from '../../../../assets/images/ifpa-logo.svg';
 
 function AboutSectionItem(props) {
@@ -11,11 +11,11 @@ function AboutSectionItem(props) {
 
   return (
     <div className="about-section-item">
-      <h2>{title}</h2>
       <div className="about-section-content">
         <div className='about-section-image-container'>
           <img className={`about-section-image ${className}`} src={imageSrc} alt={imageAlt} />
         </div>
+        <h2>{title}</h2>
         <p className="about-section-text">{description}</p>
       </div>
       {/* removing button to About page until design is finalized */}

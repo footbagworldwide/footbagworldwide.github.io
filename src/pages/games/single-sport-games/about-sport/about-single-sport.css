@@ -1,3 +1,7 @@
+.single-sport-about-gif img {
+  max-width: 450px;
+}
+
 @media (max-width: 850px) {
   .single-sport-about-content-container {
     display: block;

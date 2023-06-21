@@ -7,6 +7,7 @@ import twoSquareGif from '../../assets/images/games/gif_twosquare.gif';
 
 import golfIcon_White from '../../assets/images/games/icon_golf_white.svg';
 import golfIcon_Green from '../../assets/images/games/icon_golf_green.svg';
+import golfGif from '../../assets/images/games/gif_golf.gif'
 
 const kickingGamesData = {
   title: 'KICKING GAMES',
@@ -94,7 +95,7 @@ const golfData = {
   icon: golfIcon_White,
   icon_withBackground: golfIcon_Green,
   pageRoute: kickingGamesData.pageRoute,
-  gif: "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif",
+  gif: golfGif,
   description: {
     long_html: getGolfDescriptionHtml()
   },
@@ -102,7 +103,7 @@ const golfData = {
     resources: [
       {
         description: 'Rules',
-        link: 'https://www.google.com'
+        link: 'http://www.footbag.org/rules/chapter/400'
       }
     ]
   }

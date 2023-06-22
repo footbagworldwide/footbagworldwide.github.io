@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import ColumnDivider from '../../../../components/column-divider/column-divider';
 import { ImageLink } from '../../../../components/links/link-components';
 import './how-to-play-single-sport.css';
@@ -22,17 +23,19 @@ function HowToPlayItem(props) {
 }
 
 function HowToPlayResources(props) {
-  const resources = props.resources;
+  const singleSportGame = props.singleSportGame;
+
+  const resources = singleSportGame.howToPlay.resources;
   const resourcesCount = resources.length;
 
   return (
     <div className={`how-to-play-item-container how-to-play-item-container_${resourcesCount}`}>
       { resources.map((resource, index) => {
           return (
-            <>
+            <Fragment key={`howToPlay_${singleSportGame.title}_Resource_${index}`}>
               <HowToPlayItem item={resource} />
               { index < resourcesCount - 1 && <ColumnDivider className="how-to-play-divider" /> }
-            </>
+            </Fragment>
           )
         })
       }
@@ -47,7 +50,7 @@ function HowToPlaySingleSport(props) {
     <div className="footbag-game-section page-subsection">
       <h2 className="footbag-game-section-header">HOW TO PLAY {singleSportGame.title}</h2>
       <div className="how-to-play-description">{ singleSportGame.howToPlay.description_html }</div>
-      <HowToPlayResources resources={singleSportGame.howToPlay.resources} />
+      <HowToPlayResources singleSportGame={singleSportGame} />
     </div>
   );
 }

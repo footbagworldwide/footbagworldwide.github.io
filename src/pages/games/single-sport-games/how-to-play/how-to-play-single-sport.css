@@ -6,6 +6,10 @@
   color: var(--color-primary);
 }
 
+.how-to-play-icon {
+  height: 35px
+}
+
 @media (max-width: 650px) {
   .how-to-play-item-container {
     display: block;
@@ -24,13 +28,16 @@
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 651px) {
   .how-to-play-item-container {
     display: grid;
+  }
+
+  .how-to-play-item-container_3 {
     grid-template-columns: 1fr .01fr 1fr .01fr 1fr;
   }
-}
 
-.how-to-play-icon {
-  height: 35px
+  .how-to-play-item-container_2 {
+    grid-template-columns: 1fr .01fr 1fr;
+  }
 }

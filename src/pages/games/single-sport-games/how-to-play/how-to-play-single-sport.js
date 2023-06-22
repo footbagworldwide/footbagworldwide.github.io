@@ -21,6 +21,25 @@ function HowToPlayItem(props) {
   );
 }
 
+function HowToPlayResources(props) {
+  const resources = props.resources;
+  const resourcesCount = resources.length;
+
+  return (
+    <div className={`how-to-play-item-container how-to-play-item-container_${resourcesCount}`}>
+      { resources.map((resource, index) => {
+          return (
+            <>
+              <HowToPlayItem item={resource} />
+              { index < resourcesCount - 1 && <ColumnDivider className="how-to-play-divider" /> }
+            </>
+          )
+        })
+      }
+    </div>
+  );
+}
+
 function HowToPlaySingleSport(props) {
   const singleSportGame = props.singleSportGame;
   
@@ -28,13 +47,7 @@ function HowToPlaySingleSport(props) {
     <div className="footbag-game-section page-subsection">
       <h2 className="footbag-game-section-header">HOW TO PLAY {singleSportGame.title}</h2>
       <div className="how-to-play-description">{ singleSportGame.howToPlay.description_html }</div>
-      <div className="how-to-play-item-container">
-        <HowToPlayItem item={singleSportGame.howToPlay.resources[0]} />
-        <ColumnDivider className="how-to-play-divider" />
-        <HowToPlayItem item={singleSportGame.howToPlay.resources[1]} />
-        <ColumnDivider className="how-to-play-divider" />
-        <HowToPlayItem item={singleSportGame.howToPlay.resources[2]} />
-      </div>
+      <HowToPlayResources resources={singleSportGame.howToPlay.resources} />
     </div>
   );
 }

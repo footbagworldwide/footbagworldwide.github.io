@@ -65,16 +65,14 @@ const netData = {
     resources: [
       {
         icon: bagIcon,
-        description: 'Where to buy footbags'
+        description: 'Where to buy footbags',
+        link: 'https://www.google.com/maps/d/u/1/viewer?ll=29.266980342843063%2C20.834407986080684&z=2&mid=1LRMnbHRgoKWllqSTuKL4RvfGmUmYDL6A'
       },
       {
         icon: shoeIcon,
-        description: 'Where to buy footbag shoes'
-      },
-      {
-        icon: listIcon,
-        description: 'Trick list'
-      },
+        description: 'Where to buy footbag shoes',
+        link: 'http://footbag.org/reference/-/Footbag_Net#Equipment'
+      }
     ]
   },
   competition: {
@@ -87,7 +85,8 @@ const netData = {
           // worlds 2022
           type: VideoType.Youtube,
           id: 'SzroZ78NKQs'
-        }
+        },
+        rulesLink: 'http://footbag.org/rules/chapter/300#305'
       },
       {
         title: 'DOUBLES',
@@ -96,7 +95,8 @@ const netData = {
           // worlds 2022
           type: VideoType.Youtube,
           id: 'SzroZ78NKQs'
-        }
+        },
+        rulesLink: 'http://footbag.org/rules/chapter/300#305'
       }
     ]
   }

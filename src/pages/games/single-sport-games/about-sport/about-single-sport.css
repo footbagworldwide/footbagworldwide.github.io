@@ -1,11 +1,11 @@
-.single-sport-about-gif img {
+.single-sport-about-gif {
   max-width: 450px;
+  margin: 0 auto;
 }
 
 @media (max-width: 850px) {
   .single-sport-about-content-container {
     display: block;
-    text-align: center;
   }
 }
 
@@ -17,11 +17,11 @@
   }
 
   .single-sport-about-gif {
-    text-align: right !important;
-  }  
+    justify-self: right;
+  }
 }
 
 .single-sport-about-description {
-  text-align: left !important;
+  text-align: left;
   margin: 0;
 }

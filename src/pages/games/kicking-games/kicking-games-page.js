@@ -27,7 +27,9 @@ function KickingGameItem(props) {
       </div>
       <div>
         <h2 className="footbag-game-section-header">{kickingGame.title}</h2>
-        <img src={kickingGame.gif} alt={`Gif of ${kickingGame.title}`} className="footbag-game-gif" />
+        <div className="footbag-game-gif">
+          <img src={kickingGame.gif} alt={`Gif of ${kickingGame.title}`} />
+        </div>
         <p>{kickingGame.description.long_html}</p>
         <KickingGameMoreInfo kickingGame={kickingGame} />
       </div>

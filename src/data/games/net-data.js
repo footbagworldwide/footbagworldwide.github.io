@@ -3,7 +3,6 @@ import netIcon_white from '../../assets/images/games/icon_net_white.svg';
 import netGif from '../../assets/images/games/gif_net.gif';
 import bagIcon from '../../assets/images/icons/freestyle-page/freestyle-bag.svg';
 import shoeIcon from '../../assets/images/icons/freestyle-page/freestyle-shoe.svg';
-import listIcon from '../../assets/images/icons/freestyle-page/trick-list.svg';
 import { VideoType } from "../../components/video/video.js";
 
 function getDescriptionHtml() {

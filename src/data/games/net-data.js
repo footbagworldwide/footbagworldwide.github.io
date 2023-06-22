@@ -80,21 +80,31 @@ const netData = {
     events: [
       {
         title: 'SINGLES',
-        description: 'In singles, each player has a maximum of 2 kicks to return the footbag over the net into the opponent\'s side of the court. The best-case scenario is that a player uses his 1st kick as a set to spike the footbag with his 2nd kick into the opponent\'s court, or he chooses to return the footbag with his 1st kick. Frequently players are chasing the footbag and using their 2 kicks to return the footbag.',
+        description:
+          'In singles, each player has a maximum of 2 kicks to return the footbag over ' +
+          'the net into the opponent\'s side of the court. The best-case scenario is that ' +
+          'a player uses his 1st kick as a set to spike the footbag with his 2nd kick into the ' +
+          'opponent\'s court, or he chooses to return the footbag with his 1st kick. Frequently ' +
+          'players are chasing the footbag and using their 2 kicks to return the footbag.',
         video:  {
-          // worlds 2022
+          // worlds 2019 singles finals
           type: VideoType.Youtube,
-          id: 'SzroZ78NKQs'
+          id: 'Rep-1rQbX-o'
         },
         rulesLink: 'http://footbag.org/rules/chapter/300#305'
       },
       {
         title: 'DOUBLES',
-        description: 'In doubles, teams of two players on opposing sides of the net have a total of three kicks to return the footbag to the opposite side. In addition, each team must alternate kicks, meaning the same player may not kick the footbag twice in a row before returning the footbag to the opposite side. It is not necessary for a team to use all three kicks to return the footbag to the opposite side of the net (they may return in one, two, or three kicks; so long as they alternate).',
+        description:
+          'In doubles, teams of two players on opposing sides of the net have a total of three ' +
+          'kicks to return the footbag to the opposite side. In addition, each team must alternate ' +
+          'kicks, meaning the same player may not kick the footbag twice in a row before returning ' +
+          'the footbag to the opposite side. It is not necessary for a team to use all three kicks to ' +
+          'return the footbag to the opposite side of the net.',
         video:  {
-          // worlds 2022
-          type: VideoType.Youtube,
-          id: 'SzroZ78NKQs'
+          // worlds 2019 mixed doubles finals
+          type: VideoType.Youtube,          
+          id: 'lcDP3JGvkP0'
         },
         rulesLink: 'http://footbag.org/rules/chapter/300#305'
       }

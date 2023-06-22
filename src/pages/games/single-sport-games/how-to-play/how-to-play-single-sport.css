@@ -2,12 +2,16 @@
   margin-top: 2rem;
 }
 
+.how-to-play-item a {
+  color: var(--color-primary);
+}
+
 @media (max-width: 650px) {
   .how-to-play-item-container {
     display: block;
   }
 
-  .how-to-play-itme {
+  .how-to-play-item {
     margin-bottom: 1rem;
   }
 

@@ -6,7 +6,7 @@ function HowToPlayItem(props) {
   const item = props.item;
 
   return (
-    <div className='how-to-play-itme'>
+    <div className='how-to-play-item'>
       <div>
         <ImageLink
           className="how-to-play-icon"
@@ -16,7 +16,7 @@ function HowToPlayItem(props) {
           route={item.link}
         />
       </div>
-      <strong>{item.description}</strong>
+      <a href={item.link} target='_blank' rel='noreferrer'><strong>{item.description}</strong></a>
     </div>
   );
 }

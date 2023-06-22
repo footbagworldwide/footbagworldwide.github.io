@@ -67,7 +67,8 @@ const freestyleData = {
     resources: [
       {
         icon: bagIcon,
-        description: 'Where to buy footbags'
+        description: 'Where to buy footbags',
+        link: "https://www.google.com/maps/d/u/1/viewer?ll=29.266980342843063%2C20.834407986080684&z=2&mid=1LRMnbHRgoKWllqSTuKL4RvfGmUmYDL6A"
       },
       {
         icon: shoeIcon,
@@ -76,7 +77,8 @@ const freestyleData = {
       },
       {
         icon: listIcon,
-        description: 'Trick list'
+        description: 'Trick tutorials',
+        link: "https://www.youtube.com/@AnzTrikz/videos"
       },
     ]
   },

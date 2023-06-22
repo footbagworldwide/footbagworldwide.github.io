@@ -7,28 +7,16 @@ function OtherGame(props) {
   const arrowRight = props.arrowRight === true;
   const short = props.short === true;
 
-  const OtherGameButton = (buttonProps) => {
-    return (
-      <ButtonLink route={otherGame.pageRoute} className="other-game-button">
-        { arrowLeft && <i className="fa-solid fa-chevron-left"></i> } {buttonProps.title} { arrowRight && <i className="fa-solid fa-chevron-right"></i> }
-      </ButtonLink>
-    );
-  };
+  const buttonText = short ? otherGame.title_short : otherGame.title;
 
-  if(short) {
-    return (
-      <div className='footbag-game-section'>
-        <OtherGameButton title={otherGame.title_short} />
-      </div>
-    );
-  } else {
-    return (
-      <div className='footbag-game-section'>
-        <div><ImageLink src={otherGame.icon_withBackground} alt={`Icon for ${otherGame.title}`} route={otherGame.pageRoute} className="footbag-game-other-icon" /></div>
-        <OtherGameButton title={`DISCOVER ${otherGame.title}`} />
-      </div>
-    );
-  }
+  return (
+    <div className='footbag-game-section'>
+      { !short && <div><ImageLink src={otherGame.icon_withBackground} alt={`Icon for ${otherGame.title}`} route={otherGame.pageRoute} className="footbag-game-other-icon" /></div> }
+      <ButtonLink route={otherGame.pageRoute} className="other-game-button">
+        { arrowLeft && <i className="fa-solid fa-chevron-left"></i> } {buttonText} { arrowRight && <i className="fa-solid fa-chevron-right"></i> }
+      </ButtonLink>
+    </div>
+  );
 }
 
 function FootbagGameHeader(props) {
@@ -54,7 +42,6 @@ function FootbagGameHeader(props) {
     return (
       <div className="footbag-game-header-container_short">
         <HeaderIcon />
-        <h3>DISCOVER OTHER FOOTBAG GAMES</h3>
         <div className="footbag-game-header-discover-others">
           <OtherGame otherGame={headerData.otherGames[0]} arrowLeft={true} short={true} />
           <OtherGame otherGame={headerData.otherGames[1]} arrowRight={true} short={true} />

@@ -10,6 +10,10 @@
   .footbag-game-header-container_short {
     display: block;
   }
+
+  .other-game-button {
+    min-width: 100px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -20,6 +24,10 @@
 
   .footbag-game-header-container_short {
     display: none;
+  }
+
+  .other-game-button {
+    min-width: 200px;
   }
 }
 

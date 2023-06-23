@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.2d78d602.css",
-    "main.js": "/static/js/main.fc4c0af9.js",
+    "main.js": "/static/js/main.7cf1995b.js",
     "static/media/gif_freestyle.gif": "/static/media/gif_freestyle.ee805d3842238e7a30c0.gif",
     "static/media/gif_net.gif": "/static/media/gif_net.8d12e6b453cc8e1905ae.gif",
     "static/media/gif_golf.gif": "/static/media/gif_golf.1a977317b45fe2dee707.gif",
     "static/media/gif_twosquare.gif": "/static/media/gif_twosquare.41f2b3c8b57cd643fcc6.gif",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
     "static/media/WFC2022.png": "/static/media/WFC2022.b1dd5ab5788738326c5d.png",
+    "static/media/ifpa-community.jpg": "/static/media/ifpa-community.be9d12b141e8f0404c9d.jpg",
     "static/media/WFC2017.jpg": "/static/media/WFC2017.d600dabec61712ca2905.jpg",
     "static/media/WFC2019.jpg": "/static/media/WFC2019.fa844641f93b30f7bd0e.jpg",
     "static/media/WFC2018.jpg": "/static/media/WFC2018.a4e7987ae75fd27831e7.jpg",
@@ -39,10 +40,10 @@
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "index.html": "/index.html",
     "main.2d78d602.css.map": "/static/css/main.2d78d602.css.map",
-    "main.fc4c0af9.js.map": "/static/js/main.fc4c0af9.js.map"
+    "main.7cf1995b.js.map": "/static/js/main.7cf1995b.js.map"
   },
   "entrypoints": [
     "static/css/main.2d78d602.css",
-    "static/js/main.fc4c0af9.js"
+    "static/js/main.7cf1995b.js"
   ]
 }

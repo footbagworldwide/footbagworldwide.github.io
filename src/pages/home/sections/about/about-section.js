@@ -33,7 +33,7 @@ function AboutSection() {
         title="HISTORY OF FOOTBAG"
         description="Footbag roots can be found deep in the ancient cultures of Asia and the Americas, with similar games being played as far back as 3000 years ago. Its current form was established in North America in the 1970s, and it has spread globally and evolved into many forms since."
         imageSrc={historyImage}
-        imageAlt="Vintage picture of footbag player"
+        imageAlt="Book icon"
       />
       <AboutSectionItem
         title="ABOUT IFPA"

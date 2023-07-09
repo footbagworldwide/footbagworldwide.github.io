@@ -8,7 +8,7 @@ function HeroSectionMobile() {
   
   return (
     <div>
-      <img className="hero-gif" src={communityPhoto} alt="Picture of Worlds 2016 attendees" />
+      <img className="hero-gif" src={communityPhoto} alt="Worlds 2016 attendees" />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import './about-single-sport.css';
+import Html5Video from '../../../../components/html5-video/html-5-video';
 
 function AboutSingleSport(props) {
   const singleSportGame = props.singleSportGame;
@@ -7,7 +8,9 @@ function AboutSingleSport(props) {
     <div className="footbag-game-section page-subsection footbag-game-section-with-background">
       <h2 className="footbag-game-section-header">WHAT IS {singleSportGame.title}?</h2>
       <div className="single-sport-about-content-container">
-        <div className="footbag-game-gif"><img src={singleSportGame.gif} alt={`Gif of ${singleSportGame.title}`} /></div>
+        <div className="footbag-game-video">
+          <Html5Video src={singleSportGame.video} alt={`Demonstration of ${singleSportGame.title.toLowerCase()}`} />
+        </div>
         <div className="single-sport-about-description">{singleSportGame.description.long_html}</div>
       </div>
     </div>

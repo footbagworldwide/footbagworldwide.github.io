@@ -1,6 +1,6 @@
-import netIcon_green from '../../assets/images/games/icon_net_green.svg';
-import netIcon_white from '../../assets/images/games/icon_net_white.svg';
-import netGif from '../../assets/images/games/gif_net.gif';
+import netIcon_green from '../../assets/images/games/net/icon_net_green.svg';
+import netIcon_white from '../../assets/images/games/net/icon_net_white.svg';
+import netVideo from '../../assets/images/games/net/video_net.webm';
 import bagIcon from '../../assets/images/icons/freestyle-page/freestyle-bag.svg';
 import shoeIcon from '../../assets/images/icons/freestyle-page/freestyle-shoe.svg';
 import { VideoType } from "../../components/video/video.js";
@@ -54,7 +54,7 @@ const netData = {
   icon: netIcon_white,
   icon_withBackground: netIcon_green,
   pageRoute: '/games/net',
-  gif: netGif,
+  video: netVideo,
   description: {
     short: "Footbag net is an acrobatic sport played over a net and using only your feet. Play solo or with a partner for an intense competitive experience.",
     long_html: getDescriptionHtml()

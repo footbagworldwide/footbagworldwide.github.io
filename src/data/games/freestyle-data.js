@@ -1,6 +1,6 @@
-import freestyleIcon_green from '../../assets/images/games/icon_freestyle_green.svg';
-import freestyleIcon_white from '../../assets/images/games/icon_freestyle_white.svg';
-import freestyleGif from '../../assets/images/games/gif_freestyle.gif';
+import freestyleIcon_green from '../../assets/images/games/freestyle/icon_freestyle_green.svg';
+import freestyleIcon_white from '../../assets/images/games/freestyle/icon_freestyle_white.svg';
+import freestyleVideo from '../../assets/images/games/freestyle/video_freestyle.webm';
 import bagIcon from '../../assets/images/icons/freestyle-page/freestyle-bag.svg';
 import shoeIcon from '../../assets/images/icons/freestyle-page/freestyle-shoe.svg';
 import listIcon from '../../assets/images/icons/freestyle-page/trick-list.svg';
@@ -57,7 +57,7 @@ const freestyleData = {
   icon: freestyleIcon_white,
   icon_withBackground: freestyleIcon_green,
   pageRoute: '/games/freestyle',
-  gif: freestyleGif,
+  video: freestyleVideo,
   description: {
     short: "Freestyle footbag is a fast-paced, creative, and technical sport centered around doing tricks with a footbag and your legs. Great for exercising the body and the mind.",
     long_html: getDescriptionHtml()

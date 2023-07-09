@@ -2,6 +2,7 @@ import './kicking-games-page.css'
 import '../footbag-games.css';
 import { kickingGamesData, hackySackData, twoSquareData, golfData, netData, freestyleData } from '../../../data/games/footbag-games-data.js';
 import FootbagGameHeader from '../header/footbag-game-header';
+import Html5Video from '../../../components/html5-video/html-5-video';
 
 function FootbagGameIcon(props) {
   const kickingGame = props.kickingGame;
@@ -27,8 +28,8 @@ function KickingGameItem(props) {
       </div>
       <div>
         <h2 className="footbag-game-section-header">{kickingGame.title}</h2>
-        <div className="footbag-game-gif">
-          <img src={kickingGame.gif} alt={`Gif of ${kickingGame.title}`} />
+        <div className="footbag-game-video">
+          <Html5Video src={kickingGame.video} alt={`Demonstration of ${kickingGame.title.toLowerCase()}`} />
         </div>
         <p>{kickingGame.description.long_html}</p>
         <KickingGameMoreInfo kickingGame={kickingGame} />

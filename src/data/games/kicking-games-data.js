@@ -1,13 +1,13 @@
-import hackySackIcon_green from '../../assets/images/games/icon_hackysack_green.svg';
-import hackySackIcon_white from '../../assets/images/games/icon_hackysack_white.svg';
+import hackySackIcon_green from '../../assets/images/games/hackysack/icon_hackysack_green.svg';
+import hackySackIcon_white from '../../assets/images/games/hackysack/icon_hackysack_white.svg';
 
-import twoSquareIcon_White from '../../assets/images/games/icon_twosquare_white.svg';
-import twoSquareIcon_Green from '../../assets/images/games/icon_twosquare_green.svg';
-import twoSquareGif from '../../assets/images/games/gif_twosquare.gif';
+import twoSquareIcon_White from '../../assets/images/games/square/icon_twosquare_white.svg';
+import twoSquareIcon_Green from '../../assets/images/games/square/icon_twosquare_green.svg';
+import twoSquareVideo from '../../assets/images/games/square/video_4square.webm';
 
-import golfIcon_White from '../../assets/images/games/icon_golf_white.svg';
-import golfIcon_Green from '../../assets/images/games/icon_golf_green.svg';
-import golfGif from '../../assets/images/games/gif_golf.gif'
+import golfIcon_White from '../../assets/images/games/golf/icon_golf_white.svg';
+import golfIcon_Green from '../../assets/images/games/golf/icon_golf_green.svg';
+import golfVideo from '../../assets/images/games/golf/video_golf.webm'
 
 const kickingGamesData = {
   title: 'KICKING GAMES',
@@ -34,7 +34,7 @@ const hackySackData = {
   icon: hackySackIcon_white,
   icon_withBackground: hackySackIcon_green,
   pageRoute: kickingGamesData.pageRoute,
-  gif: "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif",
+  video: twoSquareVideo,
   description: {
     short: "Hacky sack is the original and most well-known footbag game. Fun and easy to pick-up; grab a bag with some friends, and keep it off the ground together.",
     long_html: getHackySackDescriptionHtml()
@@ -57,7 +57,7 @@ const twoSquareData = {
   icon: twoSquareIcon_White,
   icon_withBackground: twoSquareIcon_Green,
   pageRoute: kickingGamesData.pageRoute,
-  gif: twoSquareGif,
+  video: twoSquareVideo,
   description: {
     long_html: getTwoSquareDescriptionHtml()
   },
@@ -95,7 +95,7 @@ const golfData = {
   icon: golfIcon_White,
   icon_withBackground: golfIcon_Green,
   pageRoute: kickingGamesData.pageRoute,
-  gif: golfGif,
+  video: golfVideo,
   description: {
     long_html: getGolfDescriptionHtml()
   },

@@ -28,7 +28,7 @@ function getExternalVideoLink(video) {
   }
 }
 
-function Video(props) {
+function ExternalVideo(props) {
   const video = props.video;
   const className = props.className;
 
@@ -45,6 +45,28 @@ function Video(props) {
       title={title}
     ></iframe>
   );
+}
+
+function InternalVideo(props) {
+  const src = props.src;
+  const alt = props.alt;
+
+  return (
+    <video width="100%" loop={true} autoPlay="autoplay" muted>
+      <source src={src} type="video/webm"></source>
+      <p>{alt}</p>
+    </video>
+  );
+}
+
+function Video(props) {
+  const internal = props.internal ? true : false;
+
+  if(internal) {
+    return InternalVideo(props);
+  } else {
+    return ExternalVideo(props);
+  }
 }
 
 export { Video, VideoType, getExternalVideoLink };

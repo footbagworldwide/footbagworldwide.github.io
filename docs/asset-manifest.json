@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d78d602.css",
-    "main.js": "/static/js/main.7cf1995b.js",
-    "static/media/gif_freestyle.gif": "/static/media/gif_freestyle.ee805d3842238e7a30c0.gif",
-    "static/media/gif_net.gif": "/static/media/gif_net.8d12e6b453cc8e1905ae.gif",
-    "static/media/gif_golf.gif": "/static/media/gif_golf.1a977317b45fe2dee707.gif",
-    "static/media/gif_twosquare.gif": "/static/media/gif_twosquare.41f2b3c8b57cd643fcc6.gif",
+    "main.css": "/static/css/main.e705a3d8.css",
+    "main.js": "/static/js/main.fea91b85.js",
+    "static/media/video_freestyle.webm": "/static/media/video_freestyle.841ae1772da4b861afd7.webm",
+    "static/media/video_golf.webm": "/static/media/video_golf.c2aad4f7e95924bd6a29.webm",
+    "static/media/video_net.webm": "/static/media/video_net.b6967c3d475fe2a0a031.webm",
+    "static/media/video_4square.webm": "/static/media/video_4square.4cbfd583531bc138ff97.webm",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
     "static/media/WFC2022.png": "/static/media/WFC2022.b1dd5ab5788738326c5d.png",
     "static/media/ifpa-community.jpg": "/static/media/ifpa-community.be9d12b141e8f0404c9d.jpg",
@@ -37,13 +37,13 @@
     "static/media/trick-list.svg": "/static/media/trick-list.d8095a7ee5152758adf5a023425d986a.svg",
     "static/media/envelope.svg": "/static/media/envelope.9a82687072166deb6fdd59631ad4ae39.svg",
     "static/media/videos.svg": "/static/media/videos.35f7437de3c53f7689844e783f4e5223.svg",
-    "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "index.html": "/index.html",
-    "main.2d78d602.css.map": "/static/css/main.2d78d602.css.map",
-    "main.7cf1995b.js.map": "/static/js/main.7cf1995b.js.map"
+    "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
+    "main.e705a3d8.css.map": "/static/css/main.e705a3d8.css.map",
+    "main.fea91b85.js.map": "/static/js/main.fea91b85.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d78d602.css",
-    "static/js/main.7cf1995b.js"
+    "static/css/main.e705a3d8.css",
+    "static/js/main.fea91b85.js"
   ]
 }

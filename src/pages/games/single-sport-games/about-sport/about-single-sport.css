@@ -3,6 +3,10 @@
     display: block;
   }
 
+  .single-sport-about-description {
+    padding-top: 1rem;
+  }
+
   .footbag-game-video {
     margin: 0 auto;
   }

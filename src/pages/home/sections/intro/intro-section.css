@@ -9,6 +9,14 @@
   margin-top: 0;
 }
 
+.intro-header h1 {
+  margin-bottom: 0;
+}
+
+.intro-header h2 {
+  margin-top: 0;
+}
+
 .footbag-description {
 	font-size: medium;
 	margin: 2rem 4rem 4rem 4rem;

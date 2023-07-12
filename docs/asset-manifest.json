@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.e705a3d8.css",
-    "main.js": "/static/js/main.dba9c1ac.js",
+    "main.css": "/static/css/main.c6d7d19c.css",
+    "main.js": "/static/js/main.6f121b3b.js",
+    "static/media/video_hackysack.webm": "/static/media/video_hackysack.482c17f0bda5133a2e43.webm",
     "static/media/video_freestyle.webm": "/static/media/video_freestyle.3000b054326890967b68.webm",
     "static/media/video_golf.webm": "/static/media/video_golf.c2aad4f7e95924bd6a29.webm",
     "static/media/video_net.webm": "/static/media/video_net.b6967c3d475fe2a0a031.webm",
@@ -39,11 +40,11 @@
     "static/media/videos.svg": "/static/media/videos.35f7437de3c53f7689844e783f4e5223.svg",
     "index.html": "/index.html",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
-    "main.e705a3d8.css.map": "/static/css/main.e705a3d8.css.map",
-    "main.dba9c1ac.js.map": "/static/js/main.dba9c1ac.js.map"
+    "main.c6d7d19c.css.map": "/static/css/main.c6d7d19c.css.map",
+    "main.6f121b3b.js.map": "/static/js/main.6f121b3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e705a3d8.css",
-    "static/js/main.dba9c1ac.js"
+    "static/css/main.c6d7d19c.css",
+    "static/js/main.6f121b3b.js"
   ]
 }

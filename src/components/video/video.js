@@ -48,12 +48,28 @@ function ExternalVideo(props) {
 }
 
 function InternalVideo(props) {
-  const src = props.src;
+  let sources;
+  if(props.sources) {
+    sources = props.sources;
+  } else {
+    sources = [props.src];
+  }
+
   const alt = props.alt;
 
   return (
     <video width="100%" loop={true} autoPlay="autoplay" muted>
-      <source src={src} type="video/webm"></source>
+      {
+        sources.map(src => {
+          console.log(src);
+          const videoType = src.substr(src.lastIndexOf('.') + 1);
+          console.log(videoType);
+
+          return (
+            <source src={src} type={`video/${videoType}`} key={`video-source_${src}`} />
+          );
+        })
+      }
       <p>{alt}</p>
     </video>
   );

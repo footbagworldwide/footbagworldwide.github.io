@@ -1,6 +1,7 @@
 import hackySackIcon_green from '../../assets/images/games/hackysack/icon_hackysack_green.svg';
 import hackySackIcon_white from '../../assets/images/games/hackysack/icon_hackysack_white.svg';
-import hackySackVideo from '../../assets/images/games/hackysack/video_hackysack.webm';
+import hackySackVideo_webm from '../../assets/images/games/hackysack/video_hackysack.webm';
+import hackySackVideo_ogv from '../../assets/images/games/hackysack/video_hackysack.ogv';
 
 import twoSquareIcon_White from '../../assets/images/games/square/icon_twosquare_white.svg';
 import twoSquareIcon_Green from '../../assets/images/games/square/icon_twosquare_green.svg';
@@ -35,7 +36,10 @@ const hackySackData = {
   icon: hackySackIcon_white,
   icon_withBackground: hackySackIcon_green,
   pageRoute: kickingGamesData.pageRoute,
-  video: hackySackVideo,
+  videos: [
+    hackySackVideo_webm,
+    hackySackVideo_ogv
+  ],
   description: {
     short: "Hacky sack is the original and most well-known footbag game. Fun and easy to pick-up; grab a bag with some friends, and keep it off the ground together.",
     long_html: getHackySackDescriptionHtml()

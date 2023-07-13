@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.def0934f.css",
-    "main.js": "/static/js/main.8ca13055.js",
+    "main.js": "/static/js/main.f895cf9b.js",
     "static/media/video_hackysack.ogv": "/static/media/video_hackysack.36aeb11818eb346c3544.ogv",
     "static/media/video_hackysack.webm": "/static/media/video_hackysack.482c17f0bda5133a2e43.webm",
     "static/media/video_freestyle.webm": "/static/media/video_freestyle.3000b054326890967b68.webm",
     "static/media/video_golf.webm": "/static/media/video_golf.c2aad4f7e95924bd6a29.webm",
+    "static/media/video_4square.ogv": "/static/media/video_4square.46051d4d717df66563d2.ogv",
     "static/media/video_net.webm": "/static/media/video_net.b6967c3d475fe2a0a031.webm",
     "static/media/video_4square.webm": "/static/media/video_4square.2d4f47b41e291b427719.webm",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
@@ -42,10 +43,10 @@
     "index.html": "/index.html",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "main.def0934f.css.map": "/static/css/main.def0934f.css.map",
-    "main.8ca13055.js.map": "/static/js/main.8ca13055.js.map"
+    "main.f895cf9b.js.map": "/static/js/main.f895cf9b.js.map"
   },
   "entrypoints": [
     "static/css/main.def0934f.css",
-    "static/js/main.8ca13055.js"
+    "static/js/main.f895cf9b.js"
   ]
 }

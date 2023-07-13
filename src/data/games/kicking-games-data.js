@@ -5,7 +5,8 @@ import hackySackVideo_ogv from '../../assets/images/games/hackysack/video_hackys
 
 import twoSquareIcon_White from '../../assets/images/games/square/icon_twosquare_white.svg';
 import twoSquareIcon_Green from '../../assets/images/games/square/icon_twosquare_green.svg';
-import twoSquareVideo from '../../assets/images/games/square/video_4square.webm';
+import twoSquareVideo_webm from '../../assets/images/games/square/video_4square.webm';
+import twoSquareVideo_ogv from '../../assets/images/games/square/video_4square.ogv';
 
 import golfIcon_White from '../../assets/images/games/golf/icon_golf_white.svg';
 import golfIcon_Green from '../../assets/images/games/golf/icon_golf_green.svg';
@@ -62,7 +63,10 @@ const twoSquareData = {
   icon: twoSquareIcon_White,
   icon_withBackground: twoSquareIcon_Green,
   pageRoute: kickingGamesData.pageRoute,
-  video: twoSquareVideo,
+  videos: [
+    twoSquareVideo_webm,
+    twoSquareVideo_ogv 
+  ],
   description: {
     long_html: getTwoSquareDescriptionHtml()
   },

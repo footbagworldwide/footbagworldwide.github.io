@@ -2,16 +2,19 @@ import hackySackIcon_green from '../../assets/images/games/hackysack/icon_hackys
 import hackySackIcon_white from '../../assets/images/games/hackysack/icon_hackysack_white.svg';
 import hackySackVideo_webm from '../../assets/images/games/hackysack/video_hackysack.webm';
 import hackySackVideo_mp4 from '../../assets/images/games/hackysack/video_hackysack.mp4';
+import hackySackVideo_thumbnail from '../../assets/images/games/hackysack/thumbnail_hackysack.gif';
 
 import twoSquareIcon_White from '../../assets/images/games/square/icon_twosquare_white.svg';
 import twoSquareIcon_Green from '../../assets/images/games/square/icon_twosquare_green.svg';
 import twoSquareVideo_webm from '../../assets/images/games/square/video_4square.webm';
 import twoSquareVideo_mp4 from '../../assets/images/games/square/video_4square.mp4';
+import twoSquareVideo_thumbnail from '../../assets/images/games/square/thumbnail_4square.gif';
 
 import golfIcon_White from '../../assets/images/games/golf/icon_golf_white.svg';
 import golfIcon_Green from '../../assets/images/games/golf/icon_golf_green.svg';
-import golfVideo_webm from '../../assets/images/games/golf/video_golf.webm'
-import golfVideo_mp4 from '../../assets/images/games/golf/video_golf.mp4'
+import golfVideo_webm from '../../assets/images/games/golf/video_golf.webm';
+import golfVideo_mp4 from '../../assets/images/games/golf/video_golf.mp4';
+import golfVideo_thumbnail from '../../assets/images/games/golf/thumbnail_golf.gif';
 
 const kickingGamesData = {
   title: 'KICKING GAMES',
@@ -42,6 +45,7 @@ const hackySackData = {
     hackySackVideo_webm,
     hackySackVideo_mp4
   ],
+  videoThumbnail: hackySackVideo_thumbnail,
   description: {
     short: "Hacky sack is the original and most well-known footbag game. Fun and easy to pick-up; grab a bag with some friends, and keep it off the ground together.",
     long_html: getHackySackDescriptionHtml()
@@ -68,6 +72,7 @@ const twoSquareData = {
     twoSquareVideo_webm,
     twoSquareVideo_mp4 
   ],
+  videoThumbnail: twoSquareVideo_thumbnail,
   description: {
     long_html: getTwoSquareDescriptionHtml()
   },
@@ -109,6 +114,7 @@ const golfData = {
     golfVideo_webm,
     golfVideo_mp4
   ],
+  videoThumbnail: golfVideo_thumbnail,
   description: {
     long_html: getGolfDescriptionHtml()
   },

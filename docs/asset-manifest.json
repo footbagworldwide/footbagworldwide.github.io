@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.def0934f.css",
-    "main.js": "/static/js/main.dffadf04.js",
-    "static/media/video_hackysack.ogv": "/static/media/video_hackysack.36aeb11818eb346c3544.ogv",
+    "main.js": "/static/js/main.b2f7f49d.js",
     "static/media/video_hackysack.webm": "/static/media/video_hackysack.482c17f0bda5133a2e43.webm",
     "static/media/video_freestyle.webm": "/static/media/video_freestyle.3000b054326890967b68.webm",
+    "static/media/video_freestyle.mp4": "/static/media/video_freestyle.8e550f628243a5e613d0.mp4",
     "static/media/video_golf.webm": "/static/media/video_golf.c2aad4f7e95924bd6a29.webm",
-    "static/media/video_4square.ogv": "/static/media/video_4square.46051d4d717df66563d2.ogv",
+    "static/media/video_hackysack.mp4": "/static/media/video_hackysack.a2ad73e1958a0a024ea3.mp4",
     "static/media/video_net.webm": "/static/media/video_net.b6967c3d475fe2a0a031.webm",
     "static/media/video_4square.webm": "/static/media/video_4square.2d4f47b41e291b427719.webm",
     "static/media/video_net.mp4": "/static/media/video_net.72286045478eb5ea5005.mp4",
+    "static/media/video_golf.mp4": "/static/media/video_golf.33d7ee50ad17065498cb.mp4",
+    "static/media/video_4square.mp4": "/static/media/video_4square.8dbccd7c94fc8155c519.mp4",
     "static/media/WFC2015.jpg": "/static/media/WFC2015.58bab7708ecef54cb6f7.jpg",
     "static/media/WFC2022.png": "/static/media/WFC2022.b1dd5ab5788738326c5d.png",
     "static/media/ifpa-community.jpg": "/static/media/ifpa-community.be9d12b141e8f0404c9d.jpg",
@@ -44,10 +46,10 @@
     "index.html": "/index.html",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "main.def0934f.css.map": "/static/css/main.def0934f.css.map",
-    "main.dffadf04.js.map": "/static/js/main.dffadf04.js.map"
+    "main.b2f7f49d.js.map": "/static/js/main.b2f7f49d.js.map"
   },
   "entrypoints": [
     "static/css/main.def0934f.css",
-    "static/js/main.dffadf04.js"
+    "static/js/main.b2f7f49d.js"
   ]
 }

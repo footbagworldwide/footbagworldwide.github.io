@@ -1,16 +1,17 @@
 import hackySackIcon_green from '../../assets/images/games/hackysack/icon_hackysack_green.svg';
 import hackySackIcon_white from '../../assets/images/games/hackysack/icon_hackysack_white.svg';
 import hackySackVideo_webm from '../../assets/images/games/hackysack/video_hackysack.webm';
-import hackySackVideo_ogv from '../../assets/images/games/hackysack/video_hackysack.ogv';
+import hackySackVideo_mp4 from '../../assets/images/games/hackysack/video_hackysack.mp4';
 
 import twoSquareIcon_White from '../../assets/images/games/square/icon_twosquare_white.svg';
 import twoSquareIcon_Green from '../../assets/images/games/square/icon_twosquare_green.svg';
 import twoSquareVideo_webm from '../../assets/images/games/square/video_4square.webm';
-import twoSquareVideo_ogv from '../../assets/images/games/square/video_4square.ogv';
+import twoSquareVideo_mp4 from '../../assets/images/games/square/video_4square.mp4';
 
 import golfIcon_White from '../../assets/images/games/golf/icon_golf_white.svg';
 import golfIcon_Green from '../../assets/images/games/golf/icon_golf_green.svg';
-import golfVideo from '../../assets/images/games/golf/video_golf.webm'
+import golfVideo_webm from '../../assets/images/games/golf/video_golf.webm'
+import golfVideo_mp4 from '../../assets/images/games/golf/video_golf.mp4'
 
 const kickingGamesData = {
   title: 'KICKING GAMES',
@@ -39,7 +40,7 @@ const hackySackData = {
   pageRoute: kickingGamesData.pageRoute,
   videos: [
     hackySackVideo_webm,
-    hackySackVideo_ogv
+    hackySackVideo_mp4
   ],
   description: {
     short: "Hacky sack is the original and most well-known footbag game. Fun and easy to pick-up; grab a bag with some friends, and keep it off the ground together.",
@@ -65,7 +66,7 @@ const twoSquareData = {
   pageRoute: kickingGamesData.pageRoute,
   videos: [
     twoSquareVideo_webm,
-    twoSquareVideo_ogv 
+    twoSquareVideo_mp4 
   ],
   description: {
     long_html: getTwoSquareDescriptionHtml()
@@ -104,7 +105,10 @@ const golfData = {
   icon: golfIcon_White,
   icon_withBackground: golfIcon_Green,
   pageRoute: kickingGamesData.pageRoute,
-  video: golfVideo,
+  videos: [
+    golfVideo_webm,
+    golfVideo_mp4
+  ],
   description: {
     long_html: getGolfDescriptionHtml()
   },

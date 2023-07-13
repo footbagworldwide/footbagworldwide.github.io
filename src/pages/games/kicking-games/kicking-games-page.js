@@ -29,7 +29,7 @@ function KickingGameItem(props) {
       <div>
         <h2 className="footbag-game-section-header">{kickingGame.title}</h2>
         <div className="footbag-game-video">
-          <Video internal sources={kickingGame.videos} src={kickingGame.video} alt={`Demonstration of ${kickingGame.title.toLowerCase()}`} />
+          <Video internal sources={kickingGame.videos} alt={`Demonstration of ${kickingGame.title.toLowerCase()}`} />
         </div>
         <p>{kickingGame.description.long_html}</p>
         <KickingGameMoreInfo kickingGame={kickingGame} />

@@ -9,7 +9,7 @@ function AboutSingleSport(props) {
       <h2 className="footbag-game-section-header">WHAT IS {singleSportGame.title}?</h2>
       <div className="single-sport-about-content-container">
         <div className="footbag-game-video">
-          <Video internal src={singleSportGame.video} alt={`Demonstration of ${singleSportGame.title.toLowerCase()}`} />
+          <Video internal sources={singleSportGame.videos} src={singleSportGame.video} alt={`Demonstration of ${singleSportGame.title.toLowerCase()}`} />
         </div>
         <div className="single-sport-about-description">{singleSportGame.description.long_html}</div>
       </div>

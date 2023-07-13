@@ -61,9 +61,10 @@ function InternalVideo(props) {
     <video width="100%" loop={true} autoPlay="autoplay" muted>
       {
         sources.map(src => {
-          console.log(src);
-          const videoType = src.substr(src.lastIndexOf('.') + 1);
-          console.log(videoType);
+          let videoType = src.substr(src.lastIndexOf('.') + 1);
+          if(videoType === 'ogv') {
+            videoType = 'ogg';
+          }
 
           return (
             <source src={src} type={`video/${videoType}`} key={`video-source_${src}`} />

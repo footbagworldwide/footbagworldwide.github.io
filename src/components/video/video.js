@@ -58,7 +58,7 @@ function InternalVideo(props) {
   const alt = props.alt;
 
   return (
-    <video width="100%" loop={true} autoPlay="autoplay" muted>
+    <video width="100%" loop={true} autoPlay="autoplay" muted playsInline>
       {
         sources.map(src => {
           let videoType = src.substr(src.lastIndexOf('.') + 1);

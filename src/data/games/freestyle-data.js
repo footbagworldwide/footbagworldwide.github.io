@@ -12,15 +12,15 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Freestyle Footbag is a sport where players demonstrate their abilities by performing
-      <strong className="highlighted-description"> sequences of acrobatic tricks</strong>. Tricks flow
-      naturally from one to the next, creating flowing and free-form strings and combos. Tricks
-      are created by combining different components between moments when the bag touches the body, such as
-      <strong className="highlighted-description"> spins</strong>,
-      <strong className="highlighted-description"> dexterities</strong> (circling the bag with a leg),
-      or <strong className="highlighted-description">ducking</strong> the bag with the head and neck.
-      The list of tricks is nearly endless and can be combined in any order, leading to a limitless
-      variety of combos and styles.
+      Freestyle Footbag is a sport where players show off their skills by performing
+      <strong className="highlighted-description"> sequences of acrobatic tricks</strong>. Freestyle tricks
+      combine different components, such as <strong className="highlighted-description"> spinning</strong> the
+      body, <strong className="highlighted-description">ducking</strong> the bag with the head and neck, and
+      <strong className="highlighted-description"> dexterities</strong> (circling the bag with a leg).
+      <br/><br/>Tricks are
+      linked naturally from one to the next to create <strong className="highlighted-description">flowing, free-form,
+      </strong> and <strong className="highlighted-description">expressive</strong> strings and combos. The list of
+      tricks is nearly endless and can be combined in any order, leading to a limitless variety of combos and styles.
     </>
   );
 }
@@ -46,10 +46,9 @@ function getCompetitionHtml() {
       <p>
         Freestyle footbag is a great way to exercise due to its versability and can be practiced anywhere and anytime.
         However, freestyle footbag is not only a hobby, but has been a competitive Sport since 1979, when the first
-        World Footbag Championships were held in Portland, Oregon (USA). During a freestyle footbag event, there are
-        many competitive categories that are held.
+        World Footbag Championships were held in Portland, Oregon (USA).
       </p>
-      <p>Here are some examples:</p>
+      <p>Here are some examples of the competitive formats held during a freestyle footbag event:</p>
     </>
   );
 }
@@ -66,7 +65,7 @@ const freestyleData = {
   ],
   videoThumbnail: freestyleVideo_thumbnail,
   description: {
-    short: "Freestyle footbag is a fast-paced, creative, and technical sport centered around doing tricks with a footbag and your legs. Great for exercising the body and the mind.",
+    short: "Freestyle footbag is a fast-paced, creative, and technical sport centered around doing tricks with a footbag and the legs. Great for exercising the body and the mind.",
     long_html: getDescriptionHtml()
   },
   howToPlay: {

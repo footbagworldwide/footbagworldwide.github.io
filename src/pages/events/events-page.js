@@ -85,9 +85,9 @@ function EventsPage() {
 			<div id="events-page-header" className='page-subsection'>
 				<h1 id="events-title">EVENTS</h1>
 				<p>
-          Footbag events are where players, competitors, and friends gather to celebrate their love of footbag. The World
+          Footbag events are gatherings of players, competitors, and friends to celebrate their love of footbag. The World
           Championships is the biggest event of the year, which is organized by IFPA. It has intense competition, amazing
-          displays of skills, but most of all, fun times for all!
+          displays of skills, and most of all, fun times for all!
         </p>
 			</div>
       <h3 className="events-section-header"><div>UPCOMING EVENTS</div></h3>

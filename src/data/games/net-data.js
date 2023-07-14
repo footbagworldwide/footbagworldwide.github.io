@@ -12,10 +12,9 @@ function getDescriptionHtml() {
   return (
     <>
       Footbag Net is played on a badminton court over a 5 foot high net. Players volley the footbag back and forth over the net using only their feet
-      or any part of their lower leg (i.e. below the knee). Footbag Net combines the court strategy of beach-volleyball, jumping and kicking skills
-      from martial arts and elements from tennis as serves must be diagonal. Players demonstrate remarkable agility by spiking the footbag over the net,
-      using any part of the foot (toe, sole, inside or outside). Defending spikes can be done either by digging shots before the footbag hits the ground
-      or blocking spikes in the air with amazing foot-to-foot battles over the net.
+      or any part of their lower leg (below the knee). Footbag Net combines the court strategy of beach volleyball, jumping and kicking skills
+      from martial arts, and elements from tennis. Players demonstrate remarkable agility by flying through the air to spike the footbag over the net,
+      leading to amazing foot-to-foot battles as defenders attempt to block it.
       <br/>
       <br/>
       Footbag Net is a recreational activity and a competitive sport. Competitions are held throughout the year almost all over the world. Play in Footbag
@@ -28,9 +27,9 @@ function getDescriptionHtml() {
 function getHowToPlayHtml() {
   return (
     <>
-      Footbag Net is a great way to exercise due to the countless kicking drills. All you need is a net footbag and a wall. For basic
-      kicks and a first approach to the sport you can wear casual clothes, shoes with flat surfaces and all you need is a footbag net bag. It\'s much more
-      fun to practice your basic kicks with at least one partner as you can attempt countless kicking drills.
+      Footbag Net is a great way to exercise due to the countless kicking drills. For basic kicks and a first approach to the sport
+      you can wear casual clothes, shoes with flat surfaces and all you need is a net footbag. It's much more fun to practice your
+      basic kicks with at least one partner as you can attempt countless kicking drills.
     </>
   );
 }
@@ -38,7 +37,7 @@ function getHowToPlayHtml() {
 function getCompetitionHtml() {
   return (
     <>
-      <p>Footbag Net can be played singles (1 vs 1), doubles (2 vs 2) or mixed doubles.</p>
+      <p>Footbag Net can be played singles (1 vs 1), doubles (2 vs 2), or mixed doubles.</p>
 
       <p>There are 2 scoring systems:</p>
       <p>1. Rally scoring: the winner of every rally will be awarded 1 point.</p>
@@ -63,7 +62,7 @@ const netData = {
   ],
   videoThumbnail: netVideo_thumbnail,
   description: {
-    short: "Footbag net is an acrobatic sport played over a net and using only your feet. Play solo or with a partner for an intense competitive experience.",
+    short: "Footbag net is an acrobatic sport played over a net and using only the feet to kick the bag. Play solo or with a partner for an intense competitive experience.",
     long_html: getDescriptionHtml()
   },
   howToPlay: {
@@ -97,7 +96,7 @@ const netData = {
           type: VideoType.Youtube,
           id: 'Rep-1rQbX-o'
         },
-        rulesLink: 'http://footbag.org/rules/chapter/300#305'
+        rulesLink: 'http://footbag.org/rules/chapter/300#303'
       },
       {
         title: 'DOUBLES',
@@ -112,7 +111,7 @@ const netData = {
           type: VideoType.Youtube,          
           id: 'lcDP3JGvkP0'
         },
-        rulesLink: 'http://footbag.org/rules/chapter/300#305'
+        rulesLink: 'http://footbag.org/rules/chapter/300#303'
       }
     ]
   }

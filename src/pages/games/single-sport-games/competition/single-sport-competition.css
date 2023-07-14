@@ -48,6 +48,10 @@
   padding: 5%;
 }
 
+.single-sport-competitive-event-description {
+  min-height: 6rem;
+}
+
 .competitive-event-video-container {
   height: 400px;
   padding: 1rem;

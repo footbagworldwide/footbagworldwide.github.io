@@ -19,7 +19,7 @@ const events = [
       "Delayed by the COVID-19 pandemic, Worlds 2023 in Colombia is the first time " +
       "the event will be held in South America. Players from all over the world will " +
       "travel to Medellin to put their skills to the test, reunite with friends, " +
-      "and have a fun vacation centered around their unique passion.",
+      "and have an unforgettable trip centered around their unique passion.",
     url: 'https://worldfootbag2023.com/'
 	},
 	{

@@ -31,13 +31,13 @@ function AboutSection() {
     <div className='home-page-section page-subsection about-section-container'>
       <AboutSectionItem
         title="HISTORY OF FOOTBAG"
-        description="Footbag roots can be found deep in the ancient cultures of Asia and the Americas, with similar games being played as far back as 3000 years ago. Its current form was established in North America in the 1970s, and it has spread globally and evolved into many forms since."
+        description="Footbag roots can be found deep in the ancient cultures of Asia and the Americas, with similar games being played as far back as 3000 years ago. Its current form was established in North America in the 1970s, and has since spread worldwide and evolved into many forms."
         imageSrc={historyImage}
         imageAlt="Book icon"
       />
       <AboutSectionItem
         title="ABOUT IFPA"
-        description="IFPA (International Footbag Players' Association, Inc.) is a volunteer-run, charitable non-profit corporation, dedicated to the growth of footbag play world-wide as lifetime recreation and as an amateur, competitive sport."
+        description="IFPA (International Footbag Players' Association, Inc.) is a volunteer-run, charitable non-profit corporation, dedicated to the growth of footbag play worldwide as lifetime recreation and as an amateur, competitive sport."
         imageSrc={ifpaImage}
         imageAlt="IFPA logo"
         className="about-ifpa-logo"

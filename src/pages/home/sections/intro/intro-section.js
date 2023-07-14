@@ -33,7 +33,7 @@ function IntroSection() {
 					Footbag is a series of sports where players use their feet to kick
 					a small bag in a variety of styles that range from light and casual to complex
 					and competitive.<br/><br/>Footbag sports are played all over the world, bonding together a dedicated
-					community around their love for unique and skillful sports.
+					community around the love for their unique and skillful hobbies.
 			</p>
 			<div className='footbag-games-container'>
         <FootbagGameItem footbagGame={hackySackData} />

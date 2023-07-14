@@ -12,7 +12,7 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Freestyle Footbag is a footbag sport where players demonstrate their abilities by performing
+      Freestyle Footbag is a sport where players demonstrate their abilities by performing
       <strong className="highlighted-description"> sequences of acrobatic tricks</strong>. Tricks flow
       naturally from one to the next, creating flowing and free-form strings and combos. Tricks
       are created by combining different components between moments when the bag touches the body, such as
@@ -30,7 +30,7 @@ function getHowToPlayHtml() {
     <>
       <p>
         Practicing freestyle footbag is like having a GYM in your pocket! When first learning the basics of the sport
-        all you is some casual clothes, shoes, and a FOOTBAG!
+        all you need is some casual clothes, shoes, and a FOOTBAG!
       </p>
       <p>
         Once you gain experience and begin to learn more difficult tricks, you will need equipment suited for the sport. 
@@ -44,9 +44,9 @@ function getCompetitionHtml() {
   return (
     <>
       <p>
-        Freestyle footbag is a great way to esercise due to its versability and can be practiced anywhere and anytime.
+        Freestyle footbag is a great way to exercise due to its versability and can be practiced anywhere and anytime.
         However, freestyle footbag is not only a hobby, but has been a competitive Sport since 1979, when the first
-        World Footbag Championships where held in Portland, Oregon (USA). During a freestyle footbag event, there are
+        World Footbag Championships were held in Portland, Oregon (USA). During a freestyle footbag event, there are
         many competitive categories that are held.
       </p>
       <p>Here are some examples:</p>
@@ -105,7 +105,7 @@ const freestyleData = {
       },
       {
         title: 'CIRCLE',
-        description: 'Circle takes the traditional way that freestyle footbag is played with a group a puts a competitive spin on it. Players take turns with the bag to show off their technical skills in direct competition with each other.',
+        description: 'Circle takes the traditional way that freestyle footbag is played with a group and puts a competitive spin on it. Players take turns with the bag to show off their technical skills in direct competition with each other.',
         video:  {
           // worlds 2017 circle final
           type: VideoType.Youtube,

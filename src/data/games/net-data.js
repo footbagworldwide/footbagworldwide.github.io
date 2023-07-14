@@ -11,7 +11,7 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Footbag Net is played on a badminton court over a 5 feet high net. Players volley the footbag back and forth over the net using only their feet
+      Footbag Net is played on a badminton court over a 5 foot high net. Players volley the footbag back and forth over the net using only their feet
       or any part of their lower leg (i.e. below the knee). Footbag Net combines the court strategy of beach-volleyball, jumping and kicking skills
       from martial arts and elements from tennis as serves must be diagonal. Players demonstrate remarkable agility by spiking the footbag over the net,
       using any part of the foot (toe, sole, inside or outside). Defending spikes can be done either by digging shots before the footbag hits the ground
@@ -28,7 +28,7 @@ function getDescriptionHtml() {
 function getHowToPlayHtml() {
   return (
     <>
-      Footbag Net is a great way to exercise due to the countless kicking drills. All you need is a footbag net bag and a mostly plane surface. For basic
+      Footbag Net is a great way to exercise due to the countless kicking drills. All you need is a net footbag and a wall. For basic
       kicks and a first approach to the sport you can wear casual clothes, shoes with flat surfaces and all you need is a footbag net bag. It\'s much more
       fun to practice your basic kicks with at least one partner as you can attempt countless kicking drills.
     </>
@@ -89,9 +89,9 @@ const netData = {
         description:
           'In singles, each player has a maximum of 2 kicks to return the footbag over ' +
           'the net into the opponent\'s side of the court. The best-case scenario is that ' +
-          'a player uses his 1st kick as a set to spike the footbag with his 2nd kick into the ' +
-          'opponent\'s court, or he chooses to return the footbag with his 1st kick. Frequently ' +
-          'players are chasing the footbag and using their 2 kicks to return the footbag.',
+          'a player\'s first kick is a set so that they can spike the footbag with the second kick into the ' +
+          'opponent\'s court, or chooses to return the footbag with the first kick. Frequently ' +
+          'players are chasing the footbag and using their two kicks to return the footbag.',
         video:  {
           // worlds 2019 singles finals
           type: VideoType.Youtube,

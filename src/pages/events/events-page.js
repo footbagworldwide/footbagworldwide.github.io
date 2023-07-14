@@ -39,8 +39,8 @@ function PastEventIcons(props) {
       <div><img className="event-page-link-icon" src={videosIcon} alt="Icon for videos" /></div>
       <div><img className="event-page-link-icon" src={resultsIcon} alt="Icon for results" /></div>
       <div><span>{event.location}</span></div>
-      <div><a className="event-link" href={event.videoLink} target="_blank" rel="noreferrer">Video</a></div>
-      <div><a className="event-link" href={event.resultsLink} target="_blank" rel="noreferrer">Results</a></div>
+      <div><a href={event.videoLink} target="_blank" rel="noreferrer">Video</a></div>
+      <div><a href={event.resultsLink} target="_blank" rel="noreferrer">Results</a></div>
     </>
   );
 }
@@ -56,18 +56,26 @@ function LatestEventSection() {
       <div>
         <h3 id="latest-event-title">{latestEvent.title}</h3>
         <p>{latestEvent.description}</p>
-        <div id="latest-event-icon-container">
-          <div>
-            <img className="event-page-link-icon" src={locationIcon} alt="Icon for location" />
-            <strong className="latest-event-icon">{latestEvent.location}</strong>
-          </div>
-          <div>
-            <img className="event-page-link-icon" src={emailIcon} alt="Icon for email" />
-            <strong className="latest-event-icon"><EmailLink>Contact for more info</EmailLink></strong>
-          </div>
+        <div className="event-icon-container">
+          <LatestEventIcons event={latestEvent} />
         </div>
       </div>
     </div>
+  );
+}
+
+function LatestEventIcons(props) {
+  const latestEvent = props.event;
+
+  return (
+    <>
+      <div><img className="event-page-link-icon" src={locationIcon} alt="Icon for location" /></div>
+      <div><i className="event-page-link-icon fa-solid fa-arrow-up-right-from-square"></i></div>
+      <div><img className="event-page-link-icon" src={emailIcon} alt="Icon for email" /></div>
+      <div><strong>{latestEvent.location}</strong></div>
+      <div><strong><a href={latestEvent.url} target='_blank' rel='noreferrer'>Website</a></strong></div>
+      <div><strong><EmailLink>Contact</EmailLink></strong></div>
+    </>
   );
 }
 

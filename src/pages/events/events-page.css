@@ -54,19 +54,12 @@
   }
 }
 
+#latest-event-container .event-icon-container {
+  text-align: center;
+}
 
 #latest-event-title {
   color: var(--color-secondary)
-}
-
-#latest-event-icon-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.latest-event-icon {
-  padding-top: -1rem;
-  padding-left: 1rem;
 }
 
 #past-events-container {
@@ -82,10 +75,9 @@
 
 .event-icon-container {
 	display: grid;
-	grid-template-rows: repeat(2, 20px);
-	grid-template-columns: repeat(3, 60px);
-	justify-content: space-evenly;
-	row-gap: 1rem;
+	grid-template-rows: 2.5rem 1fr;
+	grid-template-columns: repeat(3, 1fr);
+  padding: 0 5%;
 }
 
 .event-page-link-icon {
@@ -96,4 +88,8 @@
 #all-events-button-container {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.fa-arrow-up-right-from-square {
+  color: var(--color-secondary);
 }

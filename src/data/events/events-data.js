@@ -46,7 +46,7 @@ const events = [
 	{
 		title: "WFC 2019",
 		location: "Warsaw, POLAND",
-		resultsLink: "http://www.footbag.org/events/show/1547415984m",
+		resultsLink: "http://www.footbag.org/events/show/1547415984",
 		videoLink: "https://www.youtube.com/playlist?list=PLxP76n1rTXfGBQnFMrUqHzb3aRfCYabGq",
 		imagePath: logo_2019
 	},

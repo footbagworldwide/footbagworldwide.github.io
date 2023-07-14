@@ -76,7 +76,7 @@ const netData = {
       },
       {
         icon: shoeIcon,
-        description: 'Where to buy footbag shoes',
+        description: 'Where to buy footbag net shoes',
         link: 'http://footbag.org/reference/-/Footbag_Net#Equipment'
       }
     ]

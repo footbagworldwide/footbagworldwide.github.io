@@ -79,13 +79,14 @@ const freestyleData = {
       },
       {
         icon: shoeIcon,
-        description: 'Where to buy footbag shoes',
+        description: 'Where to buy freestyle footbag shoes',
         link: "https://docs.google.com/spreadsheets/d/11sJNAUOd8lOjcqc0l76r4wlP3mwc7ODS0G55nhdApws/edit#gid=0"
       },
       {
         icon: listIcon,
-        description: 'Trick tutorials',
-        link: "https://www.youtube.com/@AnzTrikz/videos"
+        description: 'Beginner freestyle tutorials',
+        // Anz Trickz "Footbag Getting Started"
+        link: "https://www.youtube.com/playlist?list=PLCB1E614589D7B975"
       },
     ]
   },

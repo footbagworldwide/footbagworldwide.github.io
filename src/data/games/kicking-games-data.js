@@ -57,7 +57,7 @@ function getTwoSquareDescriptionHtml() {
     <>
       Two or four square takes the classic schoolyard game and combines it
       with footbag. Score points against your opponents by making the bag drop in their square
-      and trying to stop it from dropping in your square.
+      while trying to stop it from dropping in your square.
     </>
   );
 }

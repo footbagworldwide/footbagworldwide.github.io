@@ -13,14 +13,14 @@ function getDescriptionHtml() {
   return (
     <>
       Freestyle Footbag is a sport where players show off their skills by performing
-      <strong className="highlighted-description"> sequences of acrobatic tricks</strong>. Freestyle tricks
+      sequences of amazing <strong className="highlighted-description">tricks</strong>. Freestyle tricks
       combine different components, such as <strong className="highlighted-description"> spinning</strong> the
       body, <strong className="highlighted-description">ducking</strong> the bag with the head and neck, and
       <strong className="highlighted-description"> dexterities</strong> (circling the bag with a leg).
       <br/><br/>Tricks are
       linked naturally from one to the next to create <strong className="highlighted-description">flowing, free-form,
-      </strong> and <strong className="highlighted-description">expressive</strong> strings and combos. The list of
-      tricks is nearly endless and can be combined in any order, leading to a limitless variety of combos and styles.
+      and expressive</strong> strings and combos. The list of tricks is nearly endless and can be combined in any order,
+      leading to a limitless variety of combos and styles.
     </>
   );
 }

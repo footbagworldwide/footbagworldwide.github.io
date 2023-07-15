@@ -11,10 +11,10 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Footbag Net is played on a badminton court over a 5 foot high net. Players volley the footbag back and forth over the net using only their feet
-      or any part of their lower leg (below the knee). Footbag Net combines the court strategy of beach volleyball, jumping and kicking skills
-      from martial arts, and elements from tennis. Players demonstrate remarkable agility by flying through the air to spike the footbag over the net,
-      leading to amazing foot-to-foot battles as defenders attempt to block it.
+      Footbag Net is an <strong className="highlighted-description">acrobatic</strong> sport played on a badminton court over a 5 foot high net.
+      Players volley the footbag back and forth over the net using only their feet or any part of their lower leg (below the knee). Footbag Net combines
+      the <strong className="highlighted-description">court strategy</strong> of beach volleyball, jumping and kicking skills from martial arts, and elements from tennis. Players demonstrate remarkable agility
+      by <strong className="highlighted-description">flying through the air</strong> to spike the footbag over the net, leading to amazing foot-to-foot battles as defenders attempt to block it.
       <br/>
       <br/>
       Footbag Net is a recreational activity and a competitive sport. Competitions are held throughout the year almost all over the world. Play in Footbag

@@ -58,10 +58,6 @@ function EventsSection() {
   return (
     <div className="page-subsection home-page-section events-section">
       <h2>EVENTS</h2>
-      <p>
-        Every year the IFPA organizes the World Footbag Championships hosted by local clubs
-        and attended by players around the world.
-      </p>
       <div className='events-section-events-container'>
         <UpcomingEvents />
         <PastEvents className="events-section-past-events" />

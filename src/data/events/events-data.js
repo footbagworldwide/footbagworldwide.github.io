@@ -1,4 +1,4 @@
-import logo_2023 from '../../assets/images/wfc-logos/WFC2023.jpg';
+import logo_2023 from '../../assets/images/wfc-logos/WFC2023.png';
 import logo_2022 from '../../assets/images/wfc-logos/WFC2022.png';
 import logo_2021 from '../../assets/images/wfc-logos/WFC2021.png';
 import logo_2020 from '../../assets/images/wfc-logos/WFC2020.png';

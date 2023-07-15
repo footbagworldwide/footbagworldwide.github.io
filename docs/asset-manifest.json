@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d5a0d34a.css",
-    "main.js": "/static/js/main.1d151306.js",
+    "main.js": "/static/js/main.e140b1a5.js",
     "static/media/video_hackysack.webm": "/static/media/video_hackysack.482c17f0bda5133a2e43.webm",
     "static/media/video_freestyle.webm": "/static/media/video_freestyle.3000b054326890967b68.webm",
     "static/media/video_freestyle.mp4": "/static/media/video_freestyle.8e550f628243a5e613d0.mp4",
@@ -12,6 +12,7 @@
     "static/media/video_net.mp4": "/static/media/video_net.72286045478eb5ea5005.mp4",
     "static/media/thumbnail_hackysack.gif": "/static/media/thumbnail_hackysack.d2ea2aee3bbb40ab54ab.gif",
     "static/media/thumbnail_freestyle.gif": "/static/media/thumbnail_freestyle.98a6db6e1d59d2f1b06e.gif",
+    "static/media/WFC2023.png": "/static/media/WFC2023.ad177fb6938249ab5ea4.png",
     "static/media/video_golf.mp4": "/static/media/video_golf.33d7ee50ad17065498cb.mp4",
     "static/media/video_4square.mp4": "/static/media/video_4square.8dbccd7c94fc8155c519.mp4",
     "static/media/thumbnail_golf.gif": "/static/media/thumbnail_golf.d551092b54aa81d1dad7.gif",
@@ -24,7 +25,6 @@
     "static/media/WFC2019.jpg": "/static/media/WFC2019.fa844641f93b30f7bd0e.jpg",
     "static/media/WFC2018.jpg": "/static/media/WFC2018.a4e7987ae75fd27831e7.jpg",
     "static/media/WFC2021.png": "/static/media/WFC2021.66486b48ad9d178c132f.png",
-    "static/media/WFC2023.jpg": "/static/media/WFC2023.6386db6876a22e5a3032.jpg",
     "static/media/ifpa-logo.svg": "/static/media/ifpa-logo.e131fea7cc7489c35e90c3fd87970415.svg",
     "static/media/icon_net_green.svg": "/static/media/icon_net_green.344211148f561ea42a4520e0c35bd08b.svg",
     "static/media/icon_net_white.svg": "/static/media/icon_net_white.af5bacb188d2eaa57a454d3e8cbb29e3.svg",
@@ -51,10 +51,10 @@
     "index.html": "/index.html",
     "static/media/location.svg": "/static/media/location.eaa801cf04cd5f7f2ca5ccabeac431c8.svg",
     "main.d5a0d34a.css.map": "/static/css/main.d5a0d34a.css.map",
-    "main.1d151306.js.map": "/static/js/main.1d151306.js.map"
+    "main.e140b1a5.js.map": "/static/js/main.e140b1a5.js.map"
   },
   "entrypoints": [
     "static/css/main.d5a0d34a.css",
-    "static/js/main.1d151306.js"
+    "static/js/main.e140b1a5.js"
   ]
 }

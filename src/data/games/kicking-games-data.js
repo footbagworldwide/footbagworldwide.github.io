@@ -27,10 +27,10 @@ const kickingGamesData = {
 function getHackySackDescriptionHtml() {
   return (
     <>
-      Circle kicking, or more commonly known as "hacky sack" is a fun and casual footbag game
-      typically played with a group. The main goal is to keep the footbag off the ground without
-      using your hands, passing to other players in the circle, and trying to get everyone to
-      kick the bag before it drops. 
+      Circle kicking, or more commonly known as "hacky sack" is a fun and casual footbag game played with a group.
+      The main goal is to keep the footbag off the ground without using your hands, passing to the other players in
+      the circle, and trying to get everyone to kick the bag before it drops, known as a "hack." Simple tricks are
+      encouraged, but keep the focus on the group and the flow, and don't hog the bag!
     </>
   );
 }

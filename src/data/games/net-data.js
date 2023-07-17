@@ -11,15 +11,14 @@ import { VideoType } from "../../components/video/video.js";
 function getDescriptionHtml() {
   return (
     <>
-      Footbag Net is an <strong className="highlighted-description">acrobatic</strong> sport played on a badminton court over a 5 foot high net.
-      Players volley the footbag back and forth over the net using only their feet or any part of their lower leg (below the knee). Footbag Net combines
-      the <strong className="highlighted-description">court strategy</strong> of beach volleyball, jumping and kicking skills from martial arts, and elements from tennis. Players demonstrate remarkable agility
-      by <strong className="highlighted-description">flying through the air</strong> to spike the footbag over the net, leading to amazing foot-to-foot battles as defenders attempt to block it.
-      <br/>
-      <br/>
-      Footbag Net is a recreational activity and a competitive sport. Competitions are held throughout the year almost all over the world. Play in Footbag
-      Net is very similar to <a href="https://en.wikipedia.org/wiki/Sepak_Takraw" target="_blank" rel="noreferrer">Sepak Takraw</a> and shuttlecock. However,
-      in Footbag Net, it is an "upper-body foul" if the footbag touches any part of a player's body above the shin.
+      Footbag Net is an <strong className="highlighted-description">acrobatic</strong> sport played on a badminton
+      court over a 5 foot high net. Players volley the footbag back and forth over the net using only their feet or
+      any part of their lower leg (below the knee). Similar to Sepak Takraw, footbag Net combines the
+      <strong className="highlighted-description"> court strategy</strong> of beach volleyball, <strong className="highlighted-description">
+      jumping and kicking skills</strong> from martial arts, and elements from tennis.
+      <br/><br/>
+      Players demonstrate remarkable agility by <strong className="highlighted-description">flying through the air to spike </strong>
+      the footbag over the net, leading to amazing foot-to-foot battles as defenders attempt to block it.
     </>
   );
 }
@@ -89,7 +88,7 @@ const netData = {
           'In singles, each player has a maximum of 2 kicks to return the footbag over ' +
           'the net into the opponent\'s side of the court. The best-case scenario is that ' +
           'a player\'s first kick is a set so that they can spike the footbag with the second kick into the ' +
-          'opponent\'s court, or chooses to return the footbag with the first kick. Frequently ' +
+          'opponent\'s court, or choose to return the footbag with the first kick. Frequently ' +
           'players are chasing the footbag and using their two kicks to return the footbag.',
         video:  {
           // worlds 2019 singles finals
@@ -102,7 +101,7 @@ const netData = {
         title: 'DOUBLES',
         description:
           'In doubles, teams of two players on opposing sides of the net have a total of three ' +
-          'kicks to return the footbag to the opposite side. In addition, each team must alternate ' +
+          'kicks to return the footbag to the opposite side. In addition, players must alternate ' +
           'kicks, meaning the same player may not kick the footbag twice in a row before returning ' +
           'the footbag to the opposite side. It is not necessary for a team to use all three kicks to ' +
           'return the footbag to the opposite side of the net.',

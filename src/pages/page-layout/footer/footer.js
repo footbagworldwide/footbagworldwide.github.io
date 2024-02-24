@@ -64,7 +64,7 @@ function Footer() {
           <DonateSection />
         </div>
 
-        <div className="copyright">Footbag Worldwide 2023, International Footbag Players' Association, Inc. (a non-profit corporation)</div>
+        <div className="copyright">Footbag Worldwide 2024, International Footbag Players' Association, Inc. (a non-profit corporation)</div>
       </footer>
     </>
 	);

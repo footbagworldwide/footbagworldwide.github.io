@@ -1,3 +1,4 @@
+import logo_2024 from '../../assets/images/ifpa-logo_black.svg';
 import logo_2023 from '../../assets/images/wfc-logos/WFC2023.png';
 import logo_2022 from '../../assets/images/wfc-logos/WFC2022.png';
 import logo_2021 from '../../assets/images/wfc-logos/WFC2021.png';
@@ -11,9 +12,18 @@ import logo_2014 from '../../assets/images/wfc-logos/WFC2014.png';
 import logo_2013 from '../../assets/images/wfc-logos/WFC2013.jpg';
 
 const events = [
+  {
+    title: "WFC 2024",
+		location: "Montreal, CANADA",
+		imagePath: logo_2024,
+    description: "The World Footbag Championships is returning to Montreal for the first time since WFC 2013!",
+    url: 'http://footbag.org/events/show/1706036811'
+  },
 	{
 		title: "WFC 2023",
 		location: "Medellin, COLOMBIA",
+    resultsLink: "http://footbag.org/events/show/1678957450",
+    videoLink: "https://www.youtube.com/playlist?list=PLxP76n1rTXfFsQA_tTfVSzElSZIueCuRH",
 		imagePath: logo_2023,
     description:
       "Delayed by the COVID-19 pandemic, Worlds 2023 in Colombia is the first time " +

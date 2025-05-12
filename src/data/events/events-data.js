@@ -1,3 +1,4 @@
+import logo_2025 from '../../assets/images/wfc-logos/WFC2025.png';
 import logo_2024 from '../../assets/images/ifpa-logo_black.svg';
 import logo_2023 from '../../assets/images/wfc-logos/WFC2023.png';
 import logo_2022 from '../../assets/images/wfc-logos/WFC2022.png';
@@ -13,11 +14,20 @@ import logo_2013 from '../../assets/images/wfc-logos/WFC2013.jpg';
 
 const events = [
   {
+    title: "WFC 2025",
+		location: "Nantes, FRANCE",
+		imagePath: logo_2025,
+    description: "The World Footbag Championships is returning to France for the first time since WFC 2014!",
+    url: 'http://footbag.org/events/show/1741024635'
+  },
+  {
     title: "WFC 2024",
 		location: "Montreal, CANADA",
 		imagePath: logo_2024,
     description: "The World Footbag Championships is returning to Montreal for the first time since WFC 2013!",
-    url: 'http://footbag.org/events/show/1706036811'
+    url: 'http://footbag.org/events/show/1706036811',
+    resultsLink: 'http://footbag.org/events/show/1706036811',
+    videoLink: 'https://www.youtube.com/watch?v=euLrL1zCvVQ'
   },
 	{
 		title: "WFC 2023",

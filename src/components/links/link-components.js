@@ -50,7 +50,7 @@ function ImageLink(props) {
 
 function EmailLink(props) {
   const className = props.className;
-  const emailAddress = 'info@footbagworldwide.com';
+  const emailAddress = props.email ?? 'info@footbagworldwide.com';
 
   return (
     <a className={className} href={`mailto:${emailAddress}`}>

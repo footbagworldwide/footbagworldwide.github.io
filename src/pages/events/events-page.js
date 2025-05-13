@@ -74,7 +74,7 @@ function LatestEventIcons(props) {
       <div><img className="event-page-link-icon" src={emailIcon} alt="Icon for email" /></div>
       <div><strong>{latestEvent.location}</strong></div>
       <div><strong><a href={latestEvent.url} target='_blank' rel='noreferrer'>Website</a></strong></div>
-      <div><strong><EmailLink>Contact</EmailLink></strong></div>
+      <div><strong><EmailLink email={latestEvent.email}>Contact</EmailLink></strong></div>
     </>
   );
 }

@@ -18,7 +18,8 @@ const events = [
 		location: "Nantes, FRANCE",
 		imagePath: logo_2025,
     description: "The World Footbag Championships is returning to France for the first time since WFC 2014!",
-    url: 'http://footbag.org/events/show/1741024635'
+    url: 'http://footbag.org/events/show/1741024635',
+    email: 'carnabal.footbag@gmail.com'
   },
   {
     title: "WFC 2024",
